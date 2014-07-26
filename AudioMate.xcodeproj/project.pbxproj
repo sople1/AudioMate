@@ -62,7 +62,6 @@
 		45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B56A188451A60052112B /* AMButtonCellView.m */; };
 		45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */; };
 		45C6E10B196C271F005189BA /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C6E102196C26DD005189BA /* Sparkle.framework */; };
-		45C6E10D196C272A005189BA /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C6E10C196C272A005189BA /* Sparkle.framework */; };
 		45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */; };
 		45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C381688D11600FE7692 /* AMPreferences.m */; };
 		45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C3C1688D12900FE7692 /* AMAppDelegate.m */; };
@@ -285,7 +284,6 @@
 				45A36ADA16BF098100A82041 /* Security.framework in Frameworks */,
 				45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */,
 				459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */,
-				45C6E10D196C272A005189BA /* Sparkle.framework in Frameworks */,
 				459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */,
 				45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */,
 				45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */,
@@ -657,7 +655,7 @@
 					45FA5625166BC8C500C1D92D = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -1088,6 +1086,7 @@
 			baseConfigurationReference = 502013C4C1054995B577EA81 /* Pods-AudioMate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1111,6 +1110,7 @@
 			baseConfigurationReference = 502013C4C1054995B577EA81 /* Pods-AudioMate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
