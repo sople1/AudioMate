@@ -4,33 +4,33 @@ Control all your audio devices from the status bar, receive system notifications
 
 <img src="https://github.com/sonicbee9/AudioMate/raw/develop/Docs/AudioMate.png" class="center">
 
-### User control
+### Setup
 
-Change the master output volume, sample rate, clock source, system default input and output and more!
+Steps (make sure [CocoaPods](http://cocoapods.org) is installed)
 
-### Always in the status bar!
+```bash
+$ git submodule sync
+$ git submodule update
+$ pod install
+```
 
-AudioMate can display up to 2 parameters in the status bar at once:
+### Build & Run
 
-* the device's master volume (graphical, percentage, or dB)
-* the device's sample rate
-* the device's clock source
+1. Open `AMCoreAudio.xcworkspace` in Xcode 5.x (or later)
+2. Hit Run (Cmd + R)
 
-### Device actions
+### Requirements
 
-Decide what actions to run when a device is connected, such as setting the device's master volume, sample rate, or clock source.
+* Xcode 5.x (for development)
+* Mac OS X 10.7 or later
+* 64-bit
 
-### System notifications
+## External Dependencies
 
-Receive system notifications about relevant events happening on your audio devices, such as when...
+(Managed by Cocoapods)
 
-* a device is added or removed
-* a device's volume changes
-* a device's mute state changes
-* a device's sample rate changes
-* a device's clock source changes
-
-Note: This functionality requires Growl when using Mac OS X 10.7. For later versions, Mac OS X's Notification Center (already integrated into Mac OS X 10.8 and later) will be used instead.
+* [AMCoreAudio](https://github.com/sonicbee9/AMCoreAudio)
+* [LVDebounce](https://github.com/layervault/LVDebounce)
 
 ### Further Development & Patches
 
