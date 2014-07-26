@@ -26,7 +26,7 @@
 @property (weak) IBOutlet NSTextField *masterVolumeTextField;
 @property (weak) IBOutlet NSPopUpButton *sampleRatePopUpButton;
 @property (weak) IBOutlet NSPopUpButton *clockSourcePopUpButton;
-@property (weak) IBOutlet id<AMDeviceActionsPanelDelegate> sheetDelegate;
+@property (assign) IBOutlet id<AMDeviceActionsPanelDelegate> sheetDelegate;
 
 @property (nonatomic, retain) AMCoreAudioDevice *audioDevice;
 

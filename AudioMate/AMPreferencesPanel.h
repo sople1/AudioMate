@@ -25,6 +25,6 @@
 @property (weak) IBOutlet NSButton *displayDeviceChangesNotificationsCheckbox;
 @property (weak) IBOutlet NSButton *playFeedbackSoundCheckbox;
 @property (weak) IBOutlet NSButton *popupIsTransientCheckbox;
-@property (weak) IBOutlet id<AMPreferencesPanelDelegate> sheetDelegate;
+@property (assign) IBOutlet id<AMPreferencesPanelDelegate> sheetDelegate;
 
 @end
