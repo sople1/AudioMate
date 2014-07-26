@@ -1,6 +1,6 @@
 # Easy audio control for your Mac.
 
-Control all your audio devices from the status bar, receive system notifications when relevant events happen on your audio devices and more.
+Control all your audio devices from the status bar, receive system notifications when relevant events happen on your audio devices and more. For more information, please visit [AudioMate's website](http://audiomateapp.com).
 
 <img src="https://github.com/sonicbee9/AudioMate/raw/develop/Docs/AudioMate.png" class="center">
 
