@@ -302,6 +302,8 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
+    [self setup];
+
     NSDictionary *attributes;
 
     [self.statusItem drawStatusBarBackgroundInRect:dirtyRect
