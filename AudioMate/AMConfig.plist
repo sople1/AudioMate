@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URLs</key>
+	<dict>
+		<key>WebsiteURL</key>
+		<string>http://www.troikalabs.com</string>
+		<key>ProductURL</key>
+		<string>http://www.audiomateapp.com</string>
+		<key>ContactURL</key>
+		<string>http://www.audiomateapp.com/contact</string>
+		<key>TwitterURL</key>
+		<string>http://www.twitter.com/troikalabs</string>
+	</dict>
+</dict>
+</plist>

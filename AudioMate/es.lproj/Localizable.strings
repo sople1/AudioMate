@@ -1,0 +1,158 @@
+﻿/* No comment provided by engineer. */
+"%.1fms in" = "%.1fms entrada";
+
+/* No comment provided by engineer. */
+"%.1fms out" = "%.1fms salida";
+
+/* No comment provided by engineer. */
+"%@ Actions" = "Acciones para %@";
+
+/* No comment provided by engineer. */
+"%@ appeared" = "%@ añadido";
+
+/* No comment provided by engineer. */
+"%@ audio was muted" = "%@ en silencio";
+
+/* No comment provided by engineer. */
+"%@ audio was unmuted" = "%@ activo";
+
+/* No comment provided by engineer. */
+"%@ clock source" = "Fuente de reloj %@";
+
+/* No comment provided by engineer. */
+"%@ clock source changed to %@" = "La fuente de reloj de %1$@ ha cambiado a %2$@";
+
+/* No comment provided by engineer. */
+"%@ disappeared" = "%@ retirado";
+
+/* No comment provided by engineer. */
+"%@ sample rate changed to %@" = "La frecuencia de muestreo de %1$@ ha cambiado a %2$@";
+
+/* No comment provided by engineer. */
+"%@ volume changed to %@" = "El volumen de %1$@ ha cambiado a %2$@";
+
+/* No comment provided by engineer. */
+"%d in/ %d out" = "%1$d de entrada/%2$d de salida";
+
+/* No comment provided by engineer. */
+"/ " = "/ ";
+
+/* No comment provided by engineer. */
+"Audio Device Appeared" = "Dispositivo añadido";
+
+/* No comment provided by engineer. */
+"Audio Device Disappeared" = "Dispositivo retirado";
+
+/* No comment provided by engineer. */
+"Audio Muted" = "Audio en silencio";
+
+/* No comment provided by engineer. */
+"Audio Unmuted" = "Audio activo";
+
+/* No comment provided by engineer. */
+"Blue appearance" = "Apariencia Azul";
+
+/* No comment provided by engineer. */
+"Channels layout: %@\nI/O latency: %@" = "Configuración de canales: %1$@\nLatencia de entrada/salida: %2$@";
+
+/* No comment provided by engineer. */
+"Clock Source Changed" = "Nueva fuente de reloj";
+
+/* No comment provided by engineer. */
+"Default" = "Desbloqueada";
+
+/* No comment provided by engineer. */
+"Default clock source" = "Fuente de reloj desbloqueada";
+
+/* No comment provided by engineer. */
+"Getting Started / Register…" = "Instrucciones de uso / Registro…";
+
+/* No comment provided by engineer. */
+"Getting Started…" = "Instrucciones de uso…";
+
+/* No comment provided by engineer. */
+"Graphite appearance" = "Apariencia Grafito";
+
+/* No comment provided by engineer. */
+"Honor system's appearance" = "Usar la apariencia del sistema";
+
+/* No comment provided by engineer. */
+"Muted" = "Silenciado";
+
+/* No comment provided by engineer. */
+"N/A" = "N/D";
+
+/* No comment provided by engineer. */
+"None" = "Ninguno";
+
+/* No comment provided by engineer. */
+"OK" = "OK";
+
+/* No comment provided by engineer. */
+"Play alerts and sound effects through %@" = "Reproducir alertas y efectos mediante %@";
+
+/* No comment provided by engineer. */
+"Please double-check that you have entered your name and serial number correctly." = "Por favor compruebe que haya introducido su nombre y número de serie correctamente.";
+
+/* No comment provided by engineer. */
+"Quit" = "Salir";
+
+/* No comment provided by engineer. */
+"Register Now" = "Registrar ahora";
+
+/* No comment provided by engineer. */
+"Registration details are not valid" = "Los detalles de registro no son válidos";
+
+/* No comment provided by engineer. */
+"Sample Rate" = "Frecuencia de muestreo";
+
+/* No comment provided by engineer. */
+"Sample Rate + Clock Source" = "Frecuencia de muestreo + Fuente de reloj";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume" = "Frecuencia de muestreo + Volumen de Salida Maestro";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Graphic" = "Frecuencia de muestreo + Volumen de Salida Maestro Gráfico";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Percentage" = "Frecuencia de muestreo + Volumen de Salida Maestro (%)";
+
+/* No comment provided by engineer. */
+"Sample Rate Changed" = "Nueva frecuencia de muestreo";
+
+/* No comment provided by engineer. */
+"Show Master Volumes" = "Mostrar volúmenes maestro";
+
+/* No comment provided by engineer. */
+"Show Preferences" = "Mostrar preferencias";
+
+/* No comment provided by engineer. */
+"Show Sample Rates" = "Mostrar frecuencias de muestreo";
+
+/* No comment provided by engineer. */
+"Thanks for registering!" = "¡Gracias por registrarse!";
+
+/* No comment provided by engineer. */
+"Thanks for trying AudioMate!" = "¡Gracias por probar AudioMate!";
+
+/* No comment provided by engineer. */
+"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "El tiempo de prueba se ha terminado. Si desea continuar usando AudioMate sin interrupciones, por favor registre su copia.";
+
+/* No comment provided by engineer. */
+"Unmuted" = "Activado";
+
+/* No comment provided by engineer. */
+"Use %@ for sound input" = "Utilizar %@ para la entrada de sonido";
+
+/* No comment provided by engineer. */
+"Use %@ for sound output" = "Utilizar %@ para la salida de sonido";
+
+/* No comment provided by engineer. */
+"Volume Changed" = "Nuevo volumen";
+
+/* No comment provided by engineer. */
+"Your copy is now fully registered." = "Su copia ha sido registrada correctamente.";
+
+/* No comment provided by engineer. */
+"Match system's default audio output device" = "Dispositivo de salida de audio predeterminado del sistema";

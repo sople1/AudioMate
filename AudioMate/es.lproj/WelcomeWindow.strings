@@ -1,0 +1,33 @@
+﻿
+/* Class = "JNWAnimatableWindow"; title = "AudioMate — Getting Started"; ObjectID = "1"; */
+"1.title" = "AudioMate — Instrucciones de uso";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "13"; */
+"13.title" = "Cerrar";
+
+/* Class = "NSButtonCell"; title = "Don't show at startup"; ObjectID = "15"; */
+"15.title" = "No mostrar al inicio";
+
+/* Class = "NSButtonCell"; title = "Register AudioMate"; ObjectID = "24"; */
+"24.title" = "Registrar AudioMate";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "30"; */
+"30.title" = "Nombre:";
+
+/* Class = "NSTextFieldCell"; title = "Serial Number:"; ObjectID = "34"; */
+"34.title" = "Número de serie:";
+
+/* Class = "NSWindow"; title = "Register"; ObjectID = "36"; */
+"36.title" = "Registrar";
+
+/* Class = "NSButtonCell"; title = "Register"; ObjectID = "39"; */
+"39.title" = "Registrar";
+
+/* Class = "NSButtonCell"; title = "Not yet"; ObjectID = "41"; */
+"41.title" = "Aún no";
+
+/* Class = "NSTextFieldCell"; title = "If you already have a license, please enter your license details below, otherwise, you may acquire your license by first visiting our website:"; ObjectID = "247"; */
+"247.title" = "Si ya dispone de una licencia, por favor introduzca sus datos de licencia a continuación. En caso contrario, podrá adquirir una licencia visitando nuestra web:";
+
+/* Class = "NSButtonCell"; title = "Go to AudioMate's website"; ObjectID = "252"; */
+"252.title" = "Ir a la web de AudioMate";

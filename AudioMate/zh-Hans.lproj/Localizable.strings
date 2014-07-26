@@ -1,0 +1,155 @@
+﻿/* No comment provided by engineer. */
+"%.1fms in" = "%.1fms的输入";
+
+/* No comment provided by engineer. */
+"%.1fms out" = "%.1fms的输出";
+
+/* No comment provided by engineer. */
+"%@ Actions" = "%@行动";
+
+/* No comment provided by engineer. */
+"%@ appeared" = "%@ 连接";
+
+/* No comment provided by engineer. */
+"%@ audio was muted" = "%@为静音";
+
+/* No comment provided by engineer. */
+"%@ audio was unmuted" = "%@音频静音";
+
+/* No comment provided by engineer. */
+"%@ clock source" = "%@时钟源";
+
+/* No comment provided by engineer. */
+"%@ clock source changed to %@" = "%1$@时钟源更改为%2$@";
+
+/* No comment provided by engineer. */
+"%@ disappeared" = "%@已断开";
+
+/* No comment provided by engineer. */
+"%@ sample rate changed to %@" = "%1$@采样率更改为%2$@";
+
+/* No comment provided by engineer. */
+"%@ volume changed to %@" = "%1$@音量更改为%2$@";
+
+/* No comment provided by engineer. */
+"%d in/ %d out" = "%1$d 个输入/%2$d 个输出";
+
+/* No comment provided by engineer. */
+"/ " = "/";
+
+/* No comment provided by engineer. */
+"Audio Device Appeared" = "连接音频设备";
+
+/* No comment provided by engineer. */
+"Audio Device Disappeared" = "音频设备断开连接";
+
+/* No comment provided by engineer. */
+"Audio Muted" = "音频静音";
+
+/* No comment provided by engineer. */
+"Audio Unmuted" = "音频不静音";
+
+/* No comment provided by engineer. */
+"Blue appearance" = "蓝色外观";
+
+/* No comment provided by engineer. */
+"Channels layout: %@\nI/O latency: %@" = "音频通道设计：%1$@\n音频延迟：%2$@";
+
+/* No comment provided by engineer. */
+"Clock Source Changed" = "时钟源改变";
+
+/* No comment provided by engineer. */
+"Default" = "默认";
+
+/* No comment provided by engineer. */
+"Default clock source" = "默认时钟源";
+
+/* No comment provided by engineer. */
+"Getting Started / Register…" = "开始/注册…";
+
+/* No comment provided by engineer. */
+"Getting Started…" = "开始…";
+
+/* No comment provided by engineer. */
+"Graphite appearance" = "石墨色外观";
+
+/* No comment provided by engineer. */
+"Honor system's appearance" = "使用系统的外观";
+
+/* No comment provided by engineer. */
+"Muted" = "静音";
+
+/* No comment provided by engineer. */
+"N/A" = "不可用";
+
+/* No comment provided by engineer. */
+"None" = "没有";
+
+/* No comment provided by engineer. */
+"OK" = "确定";
+
+/* No comment provided by engineer. */
+"Play alerts and sound effects through %@" = "使用 %@ 播放警告声音和声音效果";
+
+/* No comment provided by engineer. */
+"Please double-check that you have entered your name and serial number correctly." = "请仔细检查您所输入的名字和序列号是否正确。";
+
+/* No comment provided by engineer. */
+"Quit" = "退出";
+
+/* No comment provided by engineer. */
+"Register Now" = "立即注册";
+
+/* No comment provided by engineer. */
+"Registration details are not valid" = "注册的详细信息无效";
+
+/* No comment provided by engineer. */
+"Sample Rate" = "采样率";
+
+/* No comment provided by engineer. */
+"Sample Rate + Clock Source" = "采样率+时钟源";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume" = "采样率+主输出音量";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Graphic" = "采样率+图形化的主输出音量";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Percentage" = "采样率+主输出音量（％）";
+
+/* No comment provided by engineer. */
+"Sample Rate Changed" = "采样率改变";
+
+/* No comment provided by engineer. */
+"Show Master Volumes" = "显示主音量";
+
+/* No comment provided by engineer. */
+"Show Preferences" = "显示偏好";
+
+/* No comment provided by engineer. */
+"Show Sample Rates" = "显示采样率";
+
+/* No comment provided by engineer. */
+"Thanks for registering!" = "感谢您的注册！";
+
+/* No comment provided by engineer. */
+"Thanks for trying AudioMate!" = "感谢您试用 AudioMate！";
+
+/* No comment provided by engineer. */
+"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "试用期已结束。如果您想不间断继续使用 AudioMate，请注册您的副本。";
+
+/* No comment provided by engineer. */
+"Unmuted" = "没有静音";
+
+/* No comment provided by engineer. */
+"Use %@ for sound input" = "采用 %@ 用于声音输入";
+
+/* No comment provided by engineer. */
+"Use %@ for sound output" = "采用 %@ 用于声音输出";
+
+/* No comment provided by engineer. */
+"Volume Changed" = "改变音量";
+
+/* No comment provided by engineer. */
+"Your copy is now fully registered." = "您的副本现已注册完成。";

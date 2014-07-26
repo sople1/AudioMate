@@ -1,0 +1,13 @@
+PODS:
+  - AMCoreAudio (1.3.2)
+  - LVDebounce (0.0.4)
+
+DEPENDENCIES:
+  - AMCoreAudio (~> 1.3.2)
+  - LVDebounce (~> 0.0.4)
+
+SPEC CHECKSUMS:
+  AMCoreAudio: 675d2c05c7a46bb709f88b7730dfb7b13a0a5337
+  LVDebounce: 697df869ab4b11a543844acab021def0e1364d83
+
+COCOAPODS: 0.33.1
