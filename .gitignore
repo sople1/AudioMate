@@ -10,3 +10,5 @@ project.xcworkspace/
 xcuserdata/
 Pods/
 AudioMate/AudioMate-Info.plist
+
+Build/*
