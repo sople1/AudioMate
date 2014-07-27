@@ -145,6 +145,10 @@
 
 /* Begin PBXFileReference section */
 		14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEB160019853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		1CEB160119853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1CEB160219853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CEB160319853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4509DF66188157C200881203 /* generate-xib-files.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-xib-files.rb"; path = "Scripts/generate-xib-files.rb"; sourceTree = "<group>"; };
 		4509DF7318816AE500881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4509DF7818816B0600881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MoveApplication.strings; sourceTree = "<group>"; };
@@ -895,6 +899,7 @@
 				45737024188994C200C34775 /* zh-Hant */,
 				4573702B1889954000C34775 /* zh-Hans */,
 				457370311889956400C34775 /* ja */,
+				1CEB160119853F52007B82EC /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -907,6 +912,7 @@
 				45737027188994D700C34775 /* zh-Hant */,
 				4573702A1889954000C34775 /* zh-Hans */,
 				457370301889956400C34775 /* ja */,
+				1CEB160019853F52007B82EC /* ko */,
 			);
 			name = MoveApplication.strings;
 			sourceTree = "<group>";
@@ -919,6 +925,7 @@
 				457370291889950200C34775 /* zh-Hant */,
 				4573702C1889954000C34775 /* zh-Hans */,
 				457370321889956400C34775 /* ja */,
+				1CEB160319853F52007B82EC /* ko */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -959,6 +966,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45F62C531688D17900FE7692 /* en */,
+				1CEB160219853F52007B82EC /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
