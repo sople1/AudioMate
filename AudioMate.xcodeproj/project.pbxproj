@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45019DC61880419600BF0193 /* NSString+SymlinksAndAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = 45019DC31880419600BF0193 /* NSString+SymlinksAndAliases.m */; };
-		45019DC71880419600BF0193 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 45019DC51880419600BF0193 /* PFMoveApplication.m */; };
 		4509DF7418816AE500881203 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4509DF7218816AE500881203 /* Localizable.strings */; };
 		4509DF7918816B0600881203 /* MoveApplication.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4509DF7718816B0600881203 /* MoveApplication.strings */; };
 		45131DF4195B683400FF4DFE /* AMAudioDeviceActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */; };
@@ -26,8 +24,9 @@
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
 		453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
-		45328A03196C2FC9003282F4 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 45C6E102196C26DD005189BA /* Sparkle.framework */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
+		455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
+		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
 		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
 		4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */; };
 		4555211216DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */; };
@@ -55,13 +54,11 @@
 		459D6DBA1687EF95007F2226 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DB91687EF95007F2226 /* AMAppDelegate.m */; };
 		459D6DBD1687EF96007F2226 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DBB1687EF96007F2226 /* MainMenu.xib */; };
 		459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6DC31687F00D007F2226 /* ServiceManagement.framework */; };
-		459D6DCD1687F07D007F2226 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DCA1687F07D007F2226 /* StartAtLoginController.m */; };
 		459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
 		45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36A8516BF027100A82041 /* QuartzCore.framework */; };
 		45A36ADA16BF098100A82041 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36AD916BF098100A82041 /* Security.framework */; };
 		45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B56A188451A60052112B /* AMButtonCellView.m */; };
 		45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */; };
-		45C6E10B196C271F005189BA /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C6E102196C26DD005189BA /* Sparkle.framework */; };
 		45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */; };
 		45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C381688D11600FE7692 /* AMPreferences.m */; };
 		45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C3C1688D12900FE7692 /* AMAppDelegate.m */; };
@@ -76,40 +73,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45C6E101196C26DD005189BA /* PBXContainerItemProxy */ = {
+		455404A11984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = Sparkle;
 		};
-		45C6E103196C26DD005189BA /* PBXContainerItemProxy */ = {
+		455404A31984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
 			remoteInfo = "Sparkle Test App";
 		};
-		45C6E105196C26DD005189BA /* PBXContainerItemProxy */ = {
+		455404A51984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 612279D90DB5470200AB99EA;
 			remoteInfo = "Sparkle Unit Tests";
 		};
-		45C6E107196C26DD005189BA /* PBXContainerItemProxy */ = {
+		455404A71984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
 			remoteInfo = BinaryDelta;
 		};
-		45C6E109196C26DD005189BA /* PBXContainerItemProxy */ = {
+		455404A91984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55C14BB7136EEF1500649790;
 			remoteInfo = Autoupdate;
+		};
+		455404AB198499A400029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Sparkle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -120,7 +124,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				45328A03196C2FC9003282F4 /* Sparkle.framework in Copy Embedded Frameworks */,
+				455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */,
 				453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */,
 			);
 			name = "Copy Embedded Frameworks";
@@ -141,16 +145,15 @@
 
 /* Begin PBXFileReference section */
 		14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45019DC21880419600BF0193 /* NSString+SymlinksAndAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SymlinksAndAliases.h"; sourceTree = "<group>"; };
-		45019DC31880419600BF0193 /* NSString+SymlinksAndAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SymlinksAndAliases.m"; sourceTree = "<group>"; };
-		45019DC41880419600BF0193 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		45019DC51880419600BF0193 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		4509DF66188157C200881203 /* generate-xib-files.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-xib-files.rb"; path = "Scripts/generate-xib-files.rb"; sourceTree = "<group>"; };
 		4509DF7318816AE500881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4509DF7818816B0600881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = com.troikalabs.AudioMate.GNTPClientService.xpc; path = GrowlXPCClient/com.troikalabs.AudioMate.GNTPClientService.xpc; sourceTree = "<group>"; };
 		45131DF2195B683400FF4DFE /* AMAudioDeviceActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActions.h; sourceTree = "<group>"; };
 		45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActions.m; sourceTree = "<group>"; };
+		451735011984964C003D4204 /* libPods-AudioMate-LetsMove.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-LetsMove.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LetsMove.a"; sourceTree = "<group>"; };
+		451735021984964C003D4204 /* libPods-AudioMate-LVDebounce.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-LVDebounce.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LVDebounce.a"; sourceTree = "<group>"; };
+		451735031984964C003D4204 /* libPods-AudioMate-StartAtLoginController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-StartAtLoginController.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-StartAtLoginController.a"; sourceTree = "<group>"; };
 		451AD491185F136F00D59E64 /* AMAudioEventNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioEventNotifier.h; path = AudioMate/AMAudioEventNotifier.h; sourceTree = SOURCE_ROOT; };
 		451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioEventNotifier.m; path = AudioMate/AMAudioEventNotifier.m; sourceTree = SOURCE_ROOT; };
 		451C1FBC168F469300D06A74 /* AMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMApplication.h; path = AudioMate/AMApplication.h; sourceTree = SOURCE_ROOT; };
@@ -169,6 +172,7 @@
 		45279A3D188AA60F0058FB69 /* Volume-control.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Volume-control.pdf"; sourceTree = "<group>"; };
 		454FF74D16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMClockSourcePopUpButtonCellView.h; path = AudioMate/AMClockSourcePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
 		454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMClockSourcePopUpButtonCellView.m; path = AudioMate/AMClockSourcePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
+		455404961984999300029F39 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ExternalDeps/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
 		4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTableView+ContextMenu.h"; path = "AudioMate/NSTableView+ContextMenu.h"; sourceTree = SOURCE_ROOT; };
 		4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTableView+ContextMenu.m"; path = "AudioMate/NSTableView+ContextMenu.m"; sourceTree = SOURCE_ROOT; };
 		4555210B16DD2F3C00FE7210 /* AMAudioDeviceDefaultsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceDefaultsCellView.h; path = AudioMate/AMAudioDeviceDefaultsCellView.h; sourceTree = SOURCE_ROOT; };
@@ -181,7 +185,6 @@
 		456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesCellView.m; sourceTree = SOURCE_ROOT; };
 		456BCA0C17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesExtrasCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.h; sourceTree = SOURCE_ROOT; };
 		456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesExtrasCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.m; sourceTree = SOURCE_ROOT; };
-		456D712B185B293800FAAB0C /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ExternalDeps/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
 		4573702218898D8300C34775 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45737024188994C200C34775 /* zh-Hant */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		45737027188994D700C34775 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MoveApplication.strings"; sourceTree = "<group>"; };
@@ -229,8 +232,6 @@
 		459D6DB91687EF95007F2226 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
 		459D6DBC1687EF96007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		459D6DC31687F00D007F2226 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = /System/Library/Frameworks/ServiceManagement.framework; sourceTree = "<absolute>"; };
-		459D6DC91687F07D007F2226 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
-		459D6DCA1687F07D007F2226 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
 		459D6E291688006B007F2226 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Frameworks/Growl.framework; sourceTree = "<group>"; };
 		459D6E6D16880482007F2226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45A36A8516BF027100A82041 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
@@ -240,7 +241,6 @@
 		45AB3A3D166E2BD900B07220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		45B5E3CF1885B9D300F19354 /* NSPopoverFrame+LionFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPopoverFrame+LionFixes.h"; sourceTree = "<group>"; };
 		45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPopoverFrame+LionFixes.m"; sourceTree = "<group>"; };
-		45C6E10C196C272A005189BA /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug/Sparkle.framework"; sourceTree = "<group>"; };
 		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
 		45E048CC18816B31005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MoveApplication.strings; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C6E10B196C271F005189BA /* Sparkle.framework in Frameworks */,
+				455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */,
 				45A36ADA16BF098100A82041 /* Security.framework in Frameworks */,
 				45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */,
 				459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */,
@@ -294,17 +294,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45019DC11880419600BF0193 /* LetsMove */ = {
-			isa = PBXGroup;
-			children = (
-				45019DC21880419600BF0193 /* NSString+SymlinksAndAliases.h */,
-				45019DC31880419600BF0193 /* NSString+SymlinksAndAliases.m */,
-				45019DC41880419600BF0193 /* PFMoveApplication.h */,
-				45019DC51880419600BF0193 /* PFMoveApplication.m */,
-			);
-			path = LetsMove;
-			sourceTree = "<group>";
-		};
 		451E1C2718460411009628DA /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +351,18 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		455404971984999300029F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				455404A21984999300029F39 /* Sparkle.framework */,
+				455404A41984999300029F39 /* Sparkle Test App.app */,
+				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
+				455404A81984999300029F39 /* BinaryDelta */,
+				455404AA1984999300029F39 /* Autoupdate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4555210416DCF94100FE7210 /* CellViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,15 +405,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		458E3578196F3B0200C7C630 /* ExternalDeps */ = {
-			isa = PBXGroup;
-			children = (
-				45019DC11880419600BF0193 /* LetsMove */,
-				459D6DC61687F07D007F2226 /* StartAtLoginController */,
-			);
-			name = ExternalDeps;
-			sourceTree = "<group>";
-		};
 		459D6DAC1687EF95007F2226 /* AudioMateLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,33 +428,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		459D6DC61687F07D007F2226 /* StartAtLoginController */ = {
-			isa = PBXGroup;
-			children = (
-				459D6DC91687F07D007F2226 /* StartAtLoginController.h */,
-				459D6DCA1687F07D007F2226 /* StartAtLoginController.m */,
-			);
-			path = StartAtLoginController;
-			sourceTree = "<group>";
-		};
 		45AB3A3B166E2BBA00B07220 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
 				45AB3A3D166E2BD900B07220 /* README.md */,
 			);
 			name = Docs;
-			sourceTree = "<group>";
-		};
-		45C6E0F7196C26DD005189BA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				45C6E102196C26DD005189BA /* Sparkle.framework */,
-				45C6E104196C26DD005189BA /* Sparkle Test App.app */,
-				45C6E106196C26DD005189BA /* Sparkle Unit Tests.xctest */,
-				45C6E108196C26DD005189BA /* BinaryDelta */,
-				45C6E10A196C26DD005189BA /* Autoupdate.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		45F62C291688C64800FE7692 /* Categories */ = {
@@ -502,9 +473,8 @@
 		45FA561B166BC8C500C1D92D = {
 			isa = PBXGroup;
 			children = (
+				455404961984999300029F39 /* Sparkle.xcodeproj */,
 				451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */,
-				456D712B185B293800FAAB0C /* Sparkle.xcodeproj */,
-				458E3578196F3B0200C7C630 /* ExternalDeps */,
 				45F62C2D1688CC5E00FE7692 /* Scripts */,
 				45AB3A3B166E2BBA00B07220 /* Docs */,
 				45FA5630166BC8C500C1D92D /* AudioMate */,
@@ -527,8 +497,11 @@
 		45FA5629166BC8C500C1D92D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */,
+				451735011984964C003D4204 /* libPods-AudioMate-LetsMove.a */,
+				451735021984964C003D4204 /* libPods-AudioMate-LVDebounce.a */,
+				451735031984964C003D4204 /* libPods-AudioMate-StartAtLoginController.a */,
 				458317D218820D1E001F0BE4 /* AVFoundation.framework */,
-				45C6E10C196C272A005189BA /* Sparkle.framework */,
 				45A36AD916BF098100A82041 /* Security.framework */,
 				45A36A8516BF027100A82041 /* QuartzCore.framework */,
 				459D6E291688006B007F2226 /* Growl.framework */,
@@ -537,7 +510,6 @@
 				45FA562A166BC8C500C1D92D /* Cocoa.framework */,
 				459D6E6D16880482007F2226 /* Foundation.framework */,
 				45FA562C166BC8C500C1D92D /* Other Frameworks */,
-				14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -630,6 +602,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				455404AC198499A400029F39 /* PBXTargetDependency */,
 			);
 			name = AudioMate;
 			productName = AudioDeviceNotifier;
@@ -709,8 +682,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 45C6E0F7196C26DD005189BA /* Products */;
-					ProjectRef = 456D712B185B293800FAAB0C /* Sparkle.xcodeproj */;
+					ProductGroup = 455404971984999300029F39 /* Products */;
+					ProjectRef = 455404961984999300029F39 /* Sparkle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -722,39 +695,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		45C6E102196C26DD005189BA /* Sparkle.framework */ = {
+		455404A21984999300029F39 /* Sparkle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Sparkle.framework;
-			remoteRef = 45C6E101196C26DD005189BA /* PBXContainerItemProxy */;
+			remoteRef = 455404A11984999300029F39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		45C6E104196C26DD005189BA /* Sparkle Test App.app */ = {
+		455404A41984999300029F39 /* Sparkle Test App.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Sparkle Test App.app";
-			remoteRef = 45C6E103196C26DD005189BA /* PBXContainerItemProxy */;
+			remoteRef = 455404A31984999300029F39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		45C6E106196C26DD005189BA /* Sparkle Unit Tests.xctest */ = {
+		455404A61984999300029F39 /* Sparkle Unit Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Sparkle Unit Tests.xctest";
-			remoteRef = 45C6E105196C26DD005189BA /* PBXContainerItemProxy */;
+			remoteRef = 455404A51984999300029F39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		45C6E108196C26DD005189BA /* BinaryDelta */ = {
+		455404A81984999300029F39 /* BinaryDelta */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = BinaryDelta;
-			remoteRef = 45C6E107196C26DD005189BA /* PBXContainerItemProxy */;
+			remoteRef = 455404A71984999300029F39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		45C6E10A196C26DD005189BA /* Autoupdate.app */ = {
+		455404AA1984999300029F39 /* Autoupdate.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = Autoupdate.app;
-			remoteRef = 45C6E109196C26DD005189BA /* PBXContainerItemProxy */;
+			remoteRef = 455404A91984999300029F39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -872,7 +845,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459D6DCD1687F07D007F2226 /* StartAtLoginController.m in Sources */,
 				45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */,
 				458E356E196EDEC400C7C630 /* AMPreferencesPanel.m in Sources */,
 				458E3572196EE08900C7C630 /* AMSheetPanel.m in Sources */,
@@ -880,7 +852,6 @@
 				45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */,
 				45F62C431688D12B00FE7692 /* AMPopoverController.m in Sources */,
 				45F62C6A1688D1AF00FE7692 /* main.m in Sources */,
-				45019DC61880419600BF0193 /* NSString+SymlinksAndAliases.m in Sources */,
 				451C1FBE168F469300D06A74 /* AMApplication.m in Sources */,
 				45879E6C19716825004037D2 /* AMNotificationsPreferences.m in Sources */,
 				4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */,
@@ -894,7 +865,6 @@
 				4555211216DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m in Sources */,
 				458E357C196F422400C7C630 /* AMCellView.m in Sources */,
 				4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */,
-				45019DC71880419600BF0193 /* PFMoveApplication.m in Sources */,
 				451AD493185F136F00D59E64 /* AMAudioEventNotifier.m in Sources */,
 				454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */,
 				45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */,
@@ -907,6 +877,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		455404AC198499A400029F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sparkle;
+			targetProxy = 455404AB198499A400029F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4509DF7218816AE500881203 /* Localizable.strings */ = {
@@ -1098,7 +1076,6 @@
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1123,7 +1100,6 @@
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -1,3 +1,6 @@
+[submodule "ExternalDeps/yoursway-create-dmg"]
+	path = ExternalDeps/yoursway-create-dmg
+	url = https://github.com/andreyvit/yoursway-create-dmg
 [submodule "ExternalDeps/Sparkle"]
 	path = ExternalDeps/Sparkle
 	url = https://github.com/sparkle-project/Sparkle.git
