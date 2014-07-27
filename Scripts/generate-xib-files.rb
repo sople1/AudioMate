@@ -16,7 +16,7 @@ require 'Benchmark'
 
 xibFiles = %w(MainMenu)
 baseLang = "en"
-languages = %w(es ja zh-Hans zh-Hant)
+languages = %w(es ja zh-Hans zh-Hant ko)
 
 # ---
 
