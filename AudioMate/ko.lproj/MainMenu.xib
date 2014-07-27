@@ -880,11 +880,11 @@ Gw
                         </tabViewItems>
                     </tabView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                        <rect key="frame" x="423" y="13" width="63" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
+                        <buttonCell key="cell" type="push" title="닫기" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name="AppleSDGothicNeo-Regular"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
