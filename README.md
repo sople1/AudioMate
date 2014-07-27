@@ -6,12 +6,20 @@ Control all your audio devices from the status bar, receive system notifications
 
 ### Setup
 
-Steps (make sure [CocoaPods](http://cocoapods.org) is installed)
+(Make sure [CocoaPods](http://cocoapods.org) is installed)
+
+```bash
+$ git submodule init
+$ git submodule update
+$ pod install
+```
+
+Keeping dependencies up to date:
 
 ```bash
 $ git submodule sync
 $ git submodule update
-$ pod install
+$ pod update
 ```
 
 ### Build & Run
@@ -33,6 +41,7 @@ $ pod install
 * [LVDebounce](https://github.com/layervault/LVDebounce)
 * [LetsMove](https://github.com/potionfactory/LetsMove)
 * [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController)
+* [yoursway-create-dmg](https://github.com/andreyvit/yoursway-create-dmg)
 
 ### Further Development & Patches
 
