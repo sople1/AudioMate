@@ -25,12 +25,14 @@ $ pod install
 * Mac OS X 10.7 or later
 * 64-bit
 
-## External Dependencies
+### External Dependencies
 
 (Managed by Cocoapods)
 
 * [AMCoreAudio](https://github.com/sonicbee9/AMCoreAudio)
 * [LVDebounce](https://github.com/layervault/LVDebounce)
+* [LetsMove](https://github.com/potionfactory/LetsMove)
+* [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController)
 
 ### Further Development & Patches
 
