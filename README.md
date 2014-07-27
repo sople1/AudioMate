@@ -4,17 +4,16 @@ Control all your audio devices from the status bar, receive system notifications
 
 <img src="https://github.com/sonicbee9/AudioMate/raw/develop/Docs/AudioMate.png" class="center">
 
-### Setup
+### Getting Started
 
 (Make sure [CocoaPods](http://cocoapods.org) is installed)
 
 ```bash
-$ git submodule init
-$ git submodule update
+$ git clone --recursive git@github.com:sonicbee9/AudioMate.git
 $ pod install
 ```
 
-Keeping dependencies up to date:
+### Keeping Dependencies Up To Date
 
 ```bash
 $ git submodule sync
@@ -35,7 +34,7 @@ $ pod update
 
 ### External Dependencies
 
-(Managed by Cocoapods)
+(Managed either with Cocoapods or git submodules)
 
 * [AMCoreAudio](https://github.com/sonicbee9/AMCoreAudio)
 * [LVDebounce](https://github.com/layervault/LVDebounce)
