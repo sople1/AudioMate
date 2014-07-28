@@ -40,6 +40,7 @@ $ pod update
 * [LVDebounce](https://github.com/layervault/LVDebounce)
 * [LetsMove](https://github.com/potionfactory/LetsMove)
 * [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController)
+* [Sparkle](https://github.com/sparkle-project/Sparkle.git)
 * [yoursway-create-dmg](https://github.com/andreyvit/yoursway-create-dmg)
 
 ### Further Development & Patches
