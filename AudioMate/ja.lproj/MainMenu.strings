@@ -105,7 +105,7 @@
 "LtE-0Q-Oks.title" = "このオーディオデバイスが利用可能になった時:";
 
 /* Class = "NSButtonCell"; title = "Everytime a device is added or removed"; ObjectID = "NYQ-uW-vnB"; */
-"NYQ-uW-vnB.title" = "デバイスが追加または削除される都度";
+"NYQ-uW-vnB.title" = "デバイスが追加または削除される度";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Otv-5I-vcf"; */
 "Otv-5I-vcf.title" = "Text Cell";
