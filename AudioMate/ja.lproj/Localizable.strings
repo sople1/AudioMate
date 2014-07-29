@@ -17,7 +17,7 @@
 "%@ audio was unmuted" = "%@オーディオのミュートが解除されました";
 
 /* No comment provided by engineer. */
-"%@ clock source" = "%@時計ソース";
+"%@ clock source" = "%@クロックソース";
 
 /* No comment provided by engineer. */
 "%@ clock source changed to %@" = "%1$@クロックソースが%2$@に変更されました";
