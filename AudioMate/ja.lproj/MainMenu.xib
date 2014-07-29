@@ -296,7 +296,7 @@
                                         </prototypeCellViews>
                                     </tableColumn>
                                     <tableColumn identifier="ClockSource" width="20" minWidth="20" maxWidth="20" hidden="YES" id="zfd-Fg-OE5">
-                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="時計ソース">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="クロックソース">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -492,7 +492,7 @@
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-Ov-UlC">
                     <rect key="frame" x="459" y="13" width="67" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="push" title="やめる" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K1T-cy-QeO">
+                    <buttonCell key="cell" type="push" title="終了" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K1T-cy-QeO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -615,7 +615,7 @@ Gw
                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="dew-7N-GxI">
                                     <rect key="frame" x="16" y="18" width="249" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <buttonCell key="cell" type="check" title="時計ソースを設定する" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kiS-JL-rVJ">
+                                    <buttonCell key="cell" type="check" title="クロックソースを設定する" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kiS-JL-rVJ">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -832,7 +832,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
                                             <rect key="frame" x="15" y="45" width="285" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスの時計ソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
+                                            <buttonCell key="cell" type="check" title="デバイスのクロックソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -1060,7 +1060,7 @@ Gw
                                 </prototypeCellViews>
                             </tableColumn>
                             <tableColumn identifier="ClockSource" width="20" minWidth="20" maxWidth="20" hidden="YES" id="Gia-BP-lu2">
-                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="時計ソース">
+                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="クロックソース">
                                     <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
