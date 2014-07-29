@@ -185,6 +185,7 @@
 		4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceNameCellView.m; path = AudioMate/AMAudioDeviceNameCellView.m; sourceTree = SOURCE_ROOT; };
 		4555210F16DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSampleRatePopUpButtonCellView.h; path = AudioMate/AMSampleRatePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
 		4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSampleRatePopUpButtonCellView.m; path = AudioMate/AMSampleRatePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
+		4567A0B21987987D00010AB6 /* AudioMateLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AudioMateLauncher.entitlements; sourceTree = "<group>"; };
 		456BCA0717AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesCellView.h; sourceTree = SOURCE_ROOT; };
 		456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesCellView.m; sourceTree = SOURCE_ROOT; };
 		456BCA0C17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesExtrasCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.h; sourceTree = SOURCE_ROOT; };
@@ -412,6 +413,7 @@
 		459D6DAC1687EF95007F2226 /* AudioMateLauncher */ = {
 			isa = PBXGroup;
 			children = (
+				4567A0B21987987D00010AB6 /* AudioMateLauncher.entitlements */,
 				459D6DB81687EF95007F2226 /* AMAppDelegate.h */,
 				459D6DB91687EF95007F2226 /* AMAppDelegate.m */,
 				459D6DBB1687EF96007F2226 /* MainMenu.xib */,
@@ -625,7 +627,7 @@
 					459D6DA81687EF95007F2226 = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -980,13 +982,13 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -998,13 +1000,13 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1085,7 +1087,6 @@
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1110,7 +1111,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
