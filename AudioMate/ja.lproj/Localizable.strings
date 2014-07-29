@@ -20,7 +20,7 @@
 "%@ clock source" = "%@時計ソース";
 
 /* No comment provided by engineer. */
-"%@ clock source changed to %@" = "%1$@時計ソースが%2$@に変更されました";
+"%@ clock source changed to %@" = "%1$@クロックソースが%2$@に変更されました";
 
 /* No comment provided by engineer. */
 "%@ disappeared" = "%@が消えました";
@@ -56,16 +56,16 @@
 "Channels layout: %@\nI/O latency: %@" = "チャンネルのレイアウト:%1$@\nI/Oレイテンシ:　%2$@";
 
 /* No comment provided by engineer. */
-"Clock Source Changed" = "時計ソースが変更されました";
+"Clock Source Changed" = "クロックソースが変更されました";
 
 /* No comment provided by engineer. */
 "Default" = "デフォルト";
 
 /* No comment provided by engineer. */
-"Default clock source" = "時計ソースの初期設定";
+"Default clock source" = "デフォルトのクロックソース";
 
 /* No comment provided by engineer. */
-"Getting Started / Register…" = "始めましょう / に登録する…";
+"Getting Started / Register…" = "始めましょう / 登録する…";
 
 /* No comment provided by engineer. */
 "Getting Started…" = "始めましょう…";
@@ -74,7 +74,7 @@
 "Graphite appearance" = "グラファイト外観";
 
 /* No comment provided by engineer. */
-"Honor system's appearance" = "システム定義された外観";
+"Honor system's appearance" = "システム定義の外観を優先";
 
 /* No comment provided by engineer. */
 "Muted" = "ミュート";
@@ -86,70 +86,70 @@
 "None" = "なし";
 
 /* No comment provided by engineer. */
-"OK" = "确定";
+"OK" = "OK";
 
 /* No comment provided by engineer. */
 "Play alerts and sound effects through %@" = "アラートと音響効果を%@から再生する";
 
 /* No comment provided by engineer. */
-"Please double-check that you have entered your name and serial number correctly." = "请仔细检查您所输入的名字和序列号是否正确。";
+"Please double-check that you have entered your name and serial number correctly." = "ユーザー名とシリアル番号を正しく入力したか、もう一度確認してください。";
 
 /* No comment provided by engineer. */
-"Quit" = "退出";
+"Quit" = "終了";
 
 /* No comment provided by engineer. */
-"Register Now" = "立即注册";
+"Register Now" = "今すぐ登録";
 
 /* No comment provided by engineer. */
-"Registration details are not valid" = "注册的详细信息无效";
+"Registration details are not valid" = "登録情報が正しくありません";
 
 /* No comment provided by engineer. */
 "Sample Rate" = "サンプルレート";
 
 /* No comment provided by engineer. */
-"Sample Rate + Clock Source" = "サンプルレート+時計ソース";
+"Sample Rate + Clock Source" = "サンプルレート+クロックソース";
 
 /* No comment provided by engineer. */
 "Sample Rate + Master Output Volume" = "サンプルレート+マスター出力音量";
 
 /* No comment provided by engineer. */
-"Sample Rate + Master Output Volume Graphic" = "サンプルレート+マスター出力音量グラフィック";
+"Sample Rate + Master Output Volume Graphic" = "サンプルレート+マスター出力音量(グラフィック)";
 
 /* No comment provided by engineer. */
-"Sample Rate + Master Output Volume Percentage" = "サンプルレート+マスター出力ボリュームパーセント";
+"Sample Rate + Master Output Volume Percentage" = "サンプルレート+マスター出力音量(パーセント)";
 
 /* No comment provided by engineer. */
 "Sample Rate Changed" = "サンプルレートが変更されました";
 
 /* No comment provided by engineer. */
-"Show Master Volumes" = "マスター音量を表示する";
+"Show Master Volumes" = "マスター音量を表示";
 
 /* No comment provided by engineer. */
-"Show Preferences" = "表示設定画面";
+"Show Preferences" = "設定画面を表示";
 
 /* No comment provided by engineer. */
-"Show Sample Rates" = "サンプルレートを表示する";
+"Show Sample Rates" = "サンプルレートを表示";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "感谢您的注册！";
+"Thanks for registering!" = "ユーザー登録ありがとうございます！";
 
 /* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "感谢您试用 AudioMate！";
+"Thanks for trying AudioMate!" = "AudioMate をお試しいただきありがとう！";
 
 /* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "トライアル期間が終了しました。AudioMateを中断することなく継続して使用する場合は、あなたのコピーのご登録をお願いします。";
+"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "トライアル期間が終了しました。AudioMate を継続して使用する場合は、ユーザー登録をお願いします。";
 
 /* No comment provided by engineer. */
 "Unmuted" = "ミュート解除";
 
 /* No comment provided by engineer. */
-"Use %@ for sound input" = "音響入力に%@を使用する";
+"Use %@ for sound input" = "音声入力に%@を使用する";
 
 /* No comment provided by engineer. */
-"Use %@ for sound output" = "音響出力に%@を使用する";
+"Use %@ for sound output" = "音声出力に%@を使用する";
 
 /* No comment provided by engineer. */
 "Volume Changed" = "音量が変更されました";
 
 /* No comment provided by engineer. */
-"Your copy is now fully registered." = "あなたのコピーが完全に登録されました。";
+"Your copy is now fully registered." = "ユーザー登録が完了しました。";

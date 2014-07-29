@@ -808,7 +808,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="rhd-lt-mhL">
                                             <rect key="frame" x="15" y="105" width="253" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスの音量が変更される都度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pvc-Lw-x7N">
+                                            <buttonCell key="cell" type="check" title="デバイスの音量が変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pvc-Lw-x7N">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -816,7 +816,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5rU-5B-8pD">
                                             <rect key="frame" x="15" y="85" width="274" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスのミュートの状態が変更される都度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lGm-Bg-NOp">
+                                            <buttonCell key="cell" type="check" title="デバイスのミュートの状態が変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lGm-Bg-NOp">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -824,7 +824,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5JY-6K-WaX">
                                             <rect key="frame" x="15" y="65" width="280" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスのサンプルレートが変更される都度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ukj-fb-hoL">
+                                            <buttonCell key="cell" type="check" title="デバイスのサンプルレートが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ukj-fb-hoL">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -832,7 +832,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
                                             <rect key="frame" x="15" y="45" width="285" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスの時計ソースが変更される都度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
+                                            <buttonCell key="cell" type="check" title="デバイスの時計ソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -840,7 +840,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="97I-cG-Xae">
                                             <rect key="frame" x="15" y="125" width="272" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスが追加または削除される都度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NYQ-uW-vnB">
+                                            <buttonCell key="cell" type="check" title="デバイスが追加または削除される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NYQ-uW-vnB">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
