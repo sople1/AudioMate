@@ -153,3 +153,6 @@
 
 /* No comment provided by engineer. */
 "Your copy is now fully registered." = "ユーザー登録が完了しました。";
+
+/* No comment provided by engineer. */
+"Match system's default audio output device" = "システムのデフォルト出力デバイスに合わせる";
