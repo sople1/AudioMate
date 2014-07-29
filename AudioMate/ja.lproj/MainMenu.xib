@@ -184,7 +184,7 @@
                                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-a7-qK3">
                                                         <rect key="frame" x="0.0" y="15" width="280" height="17"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Audio Device Name" id="uxN-8j-6jS">
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" title="オーディオデバイス名" id="uxN-8j-6jS">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -378,7 +378,7 @@
                                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-wp-H5v">
                                                         <rect key="frame" x="0.0" y="8" width="20" height="24"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        <buttonCell key="cell" type="check" title="ミュート " bezelStyle="regularSquare" imagePosition="only" inset="2" id="CQX-JG-KCV">
+                                                        <buttonCell key="cell" type="check" title="ミュート" bezelStyle="regularSquare" imagePosition="only" inset="2" id="CQX-JG-KCV">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" metaFont="system"/>
                                                         </buttonCell>
@@ -470,7 +470,7 @@
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="ube-mF-uvK">
                     <rect key="frame" x="18" y="22" width="107" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <buttonCell key="cell" type="check" title="ログインで開始する" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AIi-70-pzy">
+                    <buttonCell key="cell" type="check" title="ログイン時に AudioMate を開始" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AIi-70-pzy">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -557,7 +557,7 @@
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-Ko-SFz">
                         <rect key="frame" x="412" y="13" width="74" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="クローズ" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3q-Ne-Clp">
+                        <buttonCell key="cell" type="push" title="閉じる" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3q-Ne-Clp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
@@ -598,7 +598,7 @@ Gw
                                     <constraints>
                                         <constraint firstAttribute="width" constant="245" id="HOA-Qp-ZIe"/>
                                     </constraints>
-                                    <buttonCell key="cell" type="check" title="サンプルレートを設定する" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pV6-XF-mfY">
+                                    <buttonCell key="cell" type="check" title="サンプルレートを設定" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pV6-XF-mfY">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -832,7 +832,7 @@ Gw
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
                                             <rect key="frame" x="15" y="45" width="285" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="デバイスのクロックソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
+                                            <buttonCell key="cell" type="check" title="デバイスの時計ソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -881,7 +881,7 @@ Gw
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
                         <rect key="frame" x="412" y="13" width="74" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="クローズ" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
+                        <buttonCell key="cell" type="push" title="閉じる" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
