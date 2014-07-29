@@ -48,7 +48,7 @@
 "6ia-Om-4SA.title" = "OtherViews";
 
 /* Class = "NSTextFieldCell"; title = "Device information to show in status bar:"; ObjectID = "89Z-X0-Esm"; */
-"89Z-X0-Esm.title" = "デバイス情報をステータスバーに表示する:";
+"89Z-X0-Esm.title" = "ステータスバーに表示するデバイス情報:";
 
 /* Class = "NSTextFieldCell"; title = "Status bar appearance:"; ObjectID = "8U8-sj-JEX"; */
 "8U8-sj-JEX.title" = "ステータスバーの外観:";
@@ -78,7 +78,7 @@
 "EYe-Z8-IGn.title" = "設定画面";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's clock source changes"; ObjectID = "G27-4f-I57"; */
-"G27-4f-I57.title" = "デバイスの時計ソースが変更される度";
+"G27-4f-I57.title" = "デバイスのクロックソースが変更される度";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Gb4-MC-qcj"; */
 "Gb4-MC-qcj.title" = "Text Cell";
@@ -90,7 +90,7 @@
 "H25-Y6-xqp.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Check for Updates"; ObjectID = "J8b-Kd-dif"; */
-"J8b-Kd-dif.title" = "更新をチェックする";
+"J8b-Kd-dif.title" = "更新をチェック";
 
 /* Class = "NSButtonCell"; title = "Quit"; ObjectID = "K1T-cy-QeO"; */
 "K1T-cy-QeO.title" = "終了";
@@ -138,7 +138,7 @@
 "Wde-Nx-pnz.label" = "一般";
 
 /* Class = "NSButtonCell"; title = "Play feedback sound when changing master output volume"; ObjectID = "Wk0-Af-tG6"; */
-"Wk0-Af-tG6.title" = "マスター出力音量変更時にフィードバックサウンドを再生する";
+"Wk0-Af-tG6.title" = "マスター出力音量変更時にフィードバックサウンドを再生";
 
 /* Class = "NSButtonCell"; title = "Close"; ObjectID = "X3q-Ne-Clp"; */
 "X3q-Ne-Clp.title" = "閉じる";
@@ -159,7 +159,7 @@
 "dPg-pn-ivv.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Show selected device information in status bar:"; ObjectID = "gZr-iP-bif"; */
-"gZr-iP-bif.title" = "選択したデバイスの情報をステータスバーに表示する:";
+"gZr-iP-bif.title" = "選択したデバイスの情報をステータスバーに表示:";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jNg-f5-jeI"; */
 "jNg-f5-jeI.title" = "Text Cell";
@@ -177,7 +177,7 @@
 "lX0-H2-Yme.title" = "OtherViews";
 
 /* Class = "NSButtonCell"; title = "Dismiss popup when another app becomes active"; ObjectID = "n5P-h6-G7H"; */
-"n5P-h6-G7H.title" = "他のアプリの実行中はポップアップが出ないようにする";
+"n5P-h6-G7H.title" = "他のアプリの実行中はポップアップを出さない";
 
 /* Class = "NSTextFieldCell"; title = "-24.65"; ObjectID = "o3I-F9-af1"; */
 "o3I-F9-af1.title" = "-24.65";
