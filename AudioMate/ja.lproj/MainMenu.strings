@@ -126,7 +126,7 @@
 "RJy-Sr-KQo.title" = "OtherViews";
 
 /* Class = "NSButtonCell"; title = "Set Master Volume to"; ObjectID = "UWJ-YH-3as"; */
-"UWJ-YH-3as.title" = "マスター音量を設定する";
+"UWJ-YH-3as.title" = "マスター音量を設定";
 
 /* Class = "NSTextFieldCell"; title = "dB"; ObjectID = "Ubr-nQ-dD0"; */
 "Ubr-nQ-dD0.title" = "dB";
@@ -165,7 +165,7 @@
 "jNg-f5-jeI.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Set Clock Source to"; ObjectID = "kiS-JL-rVJ"; */
-"kiS-JL-rVJ.title" = "クロックソースを設定する";
+"kiS-JL-rVJ.title" = "クロックソースを設定";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's mute state changes"; ObjectID = "lGm-Bg-NOp"; */
 "lGm-Bg-NOp.title" = "デバイスのミュートの状態が変更される度";
