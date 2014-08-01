@@ -86,7 +86,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="803">
-                    <rect key="frame" x="79" y="169" width="218" height="14"/>
+                    <rect key="frame" x="79" y="169" width="193" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="© 2014 TroikaLabs. 모든 권리 보유 중." id="829">
                         <font key="font" metaFont="smallSystem"/>
@@ -348,7 +348,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xn7-Vf-lD6">
-                                                        <rect key="frame" x="0.0" y="10" width="120" height="21"/>
+                                                        <rect key="frame" x="0.0" y="10" width="120" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="-100" doubleValue="-50" tickMarkPosition="above" sliderType="linear" id="DGF-N9-ptp"/>
                                                     </slider>
@@ -468,7 +468,7 @@
                     </connections>
                 </popUpButton>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="ube-mF-uvK">
-                    <rect key="frame" x="18" y="22" width="107" height="18"/>
+                    <rect key="frame" x="18" y="22" width="140" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="check" title="로그인할 때 이 앱 실행" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AIi-70-pzy">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -479,7 +479,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-hB-e1z">
-                    <rect key="frame" x="303" y="13" width="156" height="32"/>
+                    <rect key="frame" x="351" y="13" width="112" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="push" title="업데이트 확인" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J8b-Kd-dif">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -490,7 +490,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-Ov-UlC">
-                    <rect key="frame" x="459" y="13" width="67" height="32"/>
+                    <rect key="frame" x="463" y="13" width="63" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="push" title="종료" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K1T-cy-QeO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -549,13 +549,13 @@
         <window title="조절 항목" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="lUJ-iP-jRJ" customClass="AMDeviceActionsPanel">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="139" y="81" width="500" height="226"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="nnv-oG-vSn">
                 <rect key="frame" x="0.0" y="0.0" width="500" height="226"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-Ko-SFz">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                        <rect key="frame" x="423" y="13" width="63" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="닫기" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3q-Ne-Clp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -630,7 +630,7 @@ Gw
                                     </popUpButtonCell>
                                 </popUpButton>
                                 <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Vi-tw-dJQ">
-                                    <rect key="frame" x="269" y="79" width="80" height="21"/>
+                                    <rect key="frame" x="269" y="79" width="80" height="20"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="76" id="8rH-aI-OB2"/>
@@ -714,7 +714,7 @@ Gw
         <window title="환경 설정" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="EYe-Z8-IGn" customClass="AMPreferencesPanel">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="139" y="81" width="500" height="300"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="G5x-Yv-w2v">
                 <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -730,7 +730,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="fLb-L6-sC6">
-                                            <rect key="frame" x="14" y="130" width="336" height="18"/>
+                                            <rect key="frame" x="14" y="130" width="262" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="마스터 출력 볼륨을 조정하면 피드백 사운드를 재생하기" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="Wk0-Af-tG6">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -738,7 +738,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-YY-1uK">
-                                            <rect key="frame" x="14" y="148" width="285" height="18"/>
+                                            <rect key="frame" x="14" y="148" width="218" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="다른 앱을 활성화하면 이 앱이 팝업한 창 닫기" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="n5P-h6-G7H">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -764,7 +764,7 @@ Gw
                                             </popUpButtonCell>
                                         </popUpButton>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-qD-WnD">
-                                            <rect key="frame" x="15" y="97" width="223" height="14"/>
+                                            <rect key="frame" x="15" y="97" width="242" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="메뉴 바 아이콘에 보일 디바이스 정보를 선택해 주세요." id="89Z-X0-Esm">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -773,7 +773,7 @@ Gw
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70A-hn-OOF">
-                                            <rect key="frame" x="15" y="46" width="126" height="14"/>
+                                            <rect key="frame" x="15" y="46" width="178" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="메뉴 바 아이콘 모양새를 선택해 주세요." id="8U8-sj-JEX">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -806,7 +806,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="rhd-lt-mhL">
-                                            <rect key="frame" x="15" y="105" width="253" height="18"/>
+                                            <rect key="frame" x="15" y="105" width="192" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="디바이스의 볼륨이 조절될 때마다" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pvc-Lw-x7N">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -814,7 +814,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5rU-5B-8pD">
-                                            <rect key="frame" x="15" y="85" width="274" height="18"/>
+                                            <rect key="frame" x="15" y="85" width="219" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="디바이스의 음소거 설정이 바뀔 때마다" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lGm-Bg-NOp">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -822,7 +822,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5JY-6K-WaX">
-                                            <rect key="frame" x="15" y="65" width="280" height="18"/>
+                                            <rect key="frame" x="15" y="65" width="241" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="디바이스의 샘플링 레이트를 변경할 때마다" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ukj-fb-hoL">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -830,7 +830,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
-                                            <rect key="frame" x="15" y="45" width="285" height="18"/>
+                                            <rect key="frame" x="15" y="45" width="245" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="디바이스의 클럭 정보 장치를 변경할 때마다" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -838,7 +838,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="97I-cG-Xae">
-                                            <rect key="frame" x="15" y="125" width="272" height="18"/>
+                                            <rect key="frame" x="15" y="125" width="215" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="디바이스가 감지되거나 분리될 때마다" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NYQ-uW-vnB">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -879,7 +879,7 @@ Gw
                         </tabViewItems>
                     </tabView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                        <rect key="frame" x="423" y="13" width="63" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="닫기" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1109,7 +1109,7 @@ Gw
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSG-30-2Ot">
-                                                <rect key="frame" x="0.0" y="10" width="120" height="21"/>
+                                                <rect key="frame" x="0.0" y="10" width="120" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="-100" doubleValue="-50" tickMarkPosition="above" sliderType="linear" id="Fpx-s8-WG3"/>
                                             </slider>

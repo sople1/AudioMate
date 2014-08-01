@@ -86,7 +86,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="803">
-                    <rect key="frame" x="79" y="169" width="218" height="14"/>
+                    <rect key="frame" x="79" y="169" width="252" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="© 2014 TroikaLabs。無断複写·転載を禁じます。" id="829">
                         <font key="font" metaFont="smallSystem"/>
@@ -348,7 +348,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xn7-Vf-lD6">
-                                                        <rect key="frame" x="0.0" y="10" width="120" height="21"/>
+                                                        <rect key="frame" x="0.0" y="10" width="120" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="-100" doubleValue="-50" tickMarkPosition="above" sliderType="linear" id="DGF-N9-ptp"/>
                                                     </slider>
@@ -468,7 +468,7 @@
                     </connections>
                 </popUpButton>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="ube-mF-uvK">
-                    <rect key="frame" x="18" y="22" width="107" height="18"/>
+                    <rect key="frame" x="18" y="22" width="215" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="check" title="ログイン時に AudioMate を開始" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AIi-70-pzy">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -479,7 +479,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-hB-e1z">
-                    <rect key="frame" x="303" y="13" width="156" height="32"/>
+                    <rect key="frame" x="329" y="13" width="131" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="push" title="更新をチェック" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J8b-Kd-dif">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -490,7 +490,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-Ov-UlC">
-                    <rect key="frame" x="459" y="13" width="67" height="32"/>
+                    <rect key="frame" x="460" y="13" width="66" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="push" title="終了" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K1T-cy-QeO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -549,13 +549,13 @@
         <window title="アクション" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="lUJ-iP-jRJ" customClass="AMDeviceActionsPanel">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="139" y="81" width="500" height="226"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="nnv-oG-vSn">
                 <rect key="frame" x="0.0" y="0.0" width="500" height="226"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-Ko-SFz">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                        <rect key="frame" x="407" y="13" width="79" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="閉じる" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3q-Ne-Clp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -630,7 +630,7 @@ Gw
                                     </popUpButtonCell>
                                 </popUpButton>
                                 <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Vi-tw-dJQ">
-                                    <rect key="frame" x="269" y="79" width="80" height="21"/>
+                                    <rect key="frame" x="269" y="79" width="80" height="20"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="76" id="8rH-aI-OB2"/>
@@ -714,7 +714,7 @@ Gw
         <window title="設定画面" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="EYe-Z8-IGn" customClass="AMPreferencesPanel">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="139" y="81" width="500" height="300"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="G5x-Yv-w2v">
                 <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -730,7 +730,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="fLb-L6-sC6">
-                                            <rect key="frame" x="14" y="130" width="336" height="18"/>
+                                            <rect key="frame" x="14" y="130" width="308" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="マスター出力音量変更時にフィードバックサウンドを再生" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="Wk0-Af-tG6">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -738,7 +738,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-YY-1uK">
-                                            <rect key="frame" x="14" y="148" width="285" height="18"/>
+                                            <rect key="frame" x="14" y="148" width="253" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="他のアプリの実行中はポップアップを出さない" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="n5P-h6-G7H">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -764,7 +764,7 @@ Gw
                                             </popUpButtonCell>
                                         </popUpButton>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-qD-WnD">
-                                            <rect key="frame" x="15" y="97" width="223" height="14"/>
+                                            <rect key="frame" x="15" y="97" width="206" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ステータスバーに表示するデバイス情報:" id="89Z-X0-Esm">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -773,7 +773,7 @@ Gw
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70A-hn-OOF">
-                                            <rect key="frame" x="15" y="46" width="126" height="14"/>
+                                            <rect key="frame" x="15" y="46" width="118" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ステータスバーの外観:" id="8U8-sj-JEX">
                                                 <font key="font" metaFont="smallSystem"/>
@@ -806,7 +806,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="rhd-lt-mhL">
-                                            <rect key="frame" x="15" y="105" width="253" height="18"/>
+                                            <rect key="frame" x="15" y="105" width="204" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="デバイスの音量が変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pvc-Lw-x7N">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -814,7 +814,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5rU-5B-8pD">
-                                            <rect key="frame" x="15" y="85" width="274" height="18"/>
+                                            <rect key="frame" x="15" y="85" width="269" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="デバイスのミュートの状態が変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lGm-Bg-NOp">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -822,7 +822,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="5JY-6K-WaX">
-                                            <rect key="frame" x="15" y="65" width="280" height="18"/>
+                                            <rect key="frame" x="15" y="65" width="269" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="デバイスのサンプルレートが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ukj-fb-hoL">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -830,7 +830,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
-                                            <rect key="frame" x="15" y="45" width="285" height="18"/>
+                                            <rect key="frame" x="15" y="45" width="269" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="デバイスのクロックソースが変更される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -838,7 +838,7 @@ Gw
                                             </buttonCell>
                                         </button>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="97I-cG-Xae">
-                                            <rect key="frame" x="15" y="125" width="272" height="18"/>
+                                            <rect key="frame" x="15" y="125" width="230" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="デバイスが追加または削除される度" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NYQ-uW-vnB">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -879,7 +879,7 @@ Gw
                         </tabViewItems>
                     </tabView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                        <rect key="frame" x="407" y="13" width="79" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="閉じる" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1109,7 +1109,7 @@ Gw
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSG-30-2Ot">
-                                                <rect key="frame" x="0.0" y="10" width="120" height="21"/>
+                                                <rect key="frame" x="0.0" y="10" width="120" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="-100" doubleValue="-50" tickMarkPosition="above" sliderType="linear" id="Fpx-s8-WG3"/>
                                             </slider>
