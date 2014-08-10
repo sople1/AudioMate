@@ -270,6 +270,9 @@
 		45FA562F166BC8C500C1D92D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45FA5668166BD3FF00C1D92D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
 		502013C4C1054995B577EA81 /* Pods-AudioMate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.xcconfig"; path = "Pods/Pods-AudioMate.xcconfig"; sourceTree = "<group>"; };
+		B8242DE3198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		B8242DE4198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8242DE5198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -902,6 +905,7 @@
 				4573702B1889954000C34775 /* zh-Hans */,
 				457370311889956400C34775 /* ja */,
 				1CEB160119853F52007B82EC /* ko */,
+				B8242DE4198C0EFE00D43D61 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -915,6 +919,7 @@
 				4573702A1889954000C34775 /* zh-Hans */,
 				457370301889956400C34775 /* ja */,
 				1CEB160019853F52007B82EC /* ko */,
+				B8242DE3198C0EFE00D43D61 /* ru */,
 			);
 			name = MoveApplication.strings;
 			sourceTree = "<group>";
@@ -928,6 +933,7 @@
 				4573702C1889954000C34775 /* zh-Hans */,
 				457370321889956400C34775 /* ja */,
 				1CEB160319853F52007B82EC /* ko */,
+				B8242DE5198C0EFE00D43D61 /* ru */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

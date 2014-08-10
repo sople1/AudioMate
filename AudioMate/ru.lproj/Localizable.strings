@@ -1,0 +1,158 @@
+﻿/* No comment provided by engineer. */
+"%.1fms in" = "Входов: %.1fms";
+
+/* No comment provided by engineer. */
+"%.1fms out" = "выходов: %.1fms";
+
+/* No comment provided by engineer. */
+"%@ Actions" = "Действия для %@";
+
+/* No comment provided by engineer. */
+"%@ appeared" = "Устройство %@ подключено";
+
+/* No comment provided by engineer. */
+"%@ audio was muted" = "Звук %@ отключен";
+
+/* No comment provided by engineer. */
+"%@ audio was unmuted" = "Звук %@ включен";
+
+/* No comment provided by engineer. */
+"%@ clock source" = "Тактовый генератор %@";
+
+/* No comment provided by engineer. */
+"%@ clock source changed to %@" = "Тактовый генератор %1$@ изменён на %2$@";
+
+/* No comment provided by engineer. */
+"%@ disappeared" = "Устройство %@ было отключено";
+
+/* No comment provided by engineer. */
+"%@ sample rate changed to %@" = "Частота дискретизации %1$@ изменена на %2$@";
+
+/* No comment provided by engineer. */
+"%@ volume changed to %@" = "Громкость %1$@ изменена на %2$@";
+
+/* No comment provided by engineer. */
+"%d in/ %d out" = "Входов: %1$d, выходов: %2$d";
+
+/* No comment provided by engineer. */
+"/ " = ", ";
+
+/* No comment provided by engineer. */
+"Audio Device Appeared" = "Звуковое устройство подключено";
+
+/* No comment provided by engineer. */
+"Audio Device Disappeared" = "Звуковое устройство отключено";
+
+/* No comment provided by engineer. */
+"Audio Muted" = "Звук отключен";
+
+/* No comment provided by engineer. */
+"Audio Unmuted" = "Звук включен";
+
+/* No comment provided by engineer. */
+"Blue appearance" = "Синий";
+
+/* No comment provided by engineer. */
+"Channels layout: %@\nI/O latency: %@" = "Каналы: %1$@\nЗадержка ввода/вывода: %2$@"; // FIXME
+
+/* No comment provided by engineer. */
+"Clock Source Changed" = "Тактовый генератор изменён";
+
+/* No comment provided by engineer. */
+"Default" = "По умолчанию";
+
+/* No comment provided by engineer. */
+"Default clock source" = "Тактовый генератор по умолчанию";
+
+/* No comment provided by engineer. */
+"Getting Started / Register…" = "Начало работы / Регистрация…";
+
+/* No comment provided by engineer. */
+"Getting Started…" = "Начало работы…";
+
+/* No comment provided by engineer. */
+"Graphite appearance" = "Графит";
+
+/* No comment provided by engineer. */
+"Honor system's appearance" = "В соответствии с оформлением системы";
+
+/* No comment provided by engineer. */
+"Muted" = "Звук отключен";
+
+/* No comment provided by engineer. */
+"N/A" = "н/д";
+
+/* No comment provided by engineer. */
+"None" = "Нет";
+
+/* No comment provided by engineer. */
+"OK" = "ОК";
+
+/* No comment provided by engineer. */
+"Play alerts and sound effects through %@" = "Воспроизводить уведомления и звуковые эффекты через %@";
+
+/* No comment provided by engineer. */
+"Please double-check that you have entered your name and serial number correctly." = "Пожалуйста, проверьте, что вы правильно ввели ваше имя и серийный номер.";
+
+/* No comment provided by engineer. */
+"Quit" = "Выход";
+
+/* No comment provided by engineer. */
+"Register Now" = "Зарегистрироваться";
+
+/* No comment provided by engineer. */
+"Registration details are not valid" = "Регистрационные данные неверны";
+
+/* No comment provided by engineer. */
+"Sample Rate" = "Частота дискретизации";
+
+/* No comment provided by engineer. */
+"Sample Rate + Clock Source" = "Частота дискретизации + тактовый генератор";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume" = "Частота дискретизации + громкость";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Graphic" = "Частота дискретизации + громкость (графически)";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Percentage" = "Частота дискретизации + громкость (в процентах)";
+
+/* No comment provided by engineer. */
+"Sample Rate Changed" = "Частота дискретизации изменена";
+
+/* No comment provided by engineer. */
+"Show Master Volumes" = "Показывать громкости выходов";
+
+/* No comment provided by engineer. */
+"Show Preferences" = "Показать свойства";
+
+/* No comment provided by engineer. */
+"Show Sample Rates" = "Показывать частоты дискретизации";
+
+/* No comment provided by engineer. */
+"Thanks for registering!" = "Благодарим за регистрацию!";
+
+/* No comment provided by engineer. */
+"Thanks for trying AudioMate!" = "Благодарим за то, что попробовали AudioMate!";
+
+/* No comment provided by engineer. */
+"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "Период пробного использования истёк. Если вы хотите продолжить использование AudioMate без ограничений, пожалуйста, зарегистрируйте свою копию.";
+
+/* No comment provided by engineer. */
+"Unmuted" = "Звук включен";
+
+/* No comment provided by engineer. */
+"Use %@ for sound input" = "Использовать %@ для ввода звука";
+
+/* No comment provided by engineer. */
+"Use %@ for sound output" = "Использовать %@ для вывода звука";
+
+/* No comment provided by engineer. */
+"Volume Changed" = "Громкость изменена";
+
+/* No comment provided by engineer. */
+"Your copy is now fully registered." = "Ваша копия зарегистрирована.";
+
+/* No comment provided by engineer. */
+"Match system's default audio output device" = "В соответствии с системным устройством вывода по умолчанию";
