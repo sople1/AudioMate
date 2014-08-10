@@ -3,7 +3,7 @@
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
 | 2.0.5         | Added Russian (ru) localization (thanks to [@BasicXP](https://github.com/BasicXP)!). | August 10th, 2014|
-|               | More improvements in Japanese (ja) localization (thanks to [@shaolin405mi16](https://github.com/shaolin405mi16)!). ||
+|               | More improvements in Japanese (ja) localization ([@shaolin405mi16](https://github.com/shaolin405mi16)). ||
 | 2.0.4         | Improved Japanese (ja) localization (thanks to [@shaolin405mi16](https://github.com/shaolin405mi16)!). | July 29th, 2014|
 |               | Fixed broken Login at Startup when sandbox is on. ||
 | 2.0.3         | Added Korean (ko) localization (thanks to [@sople1](https://github.com/sople1)!). | July 28th, 2014|
