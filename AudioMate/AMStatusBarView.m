@@ -69,7 +69,8 @@
         // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
         // in that case, we want to force our UI to use the light theme.
 
-        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.originalAppearance &&
+            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
         }
@@ -143,7 +144,8 @@
     {
         NSColor *fontColor;
 
-        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.originalAppearance &&
+            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             fontColor = [NSColor whiteColor];
         }
@@ -188,7 +190,8 @@
     {
         NSColor *fontColor;
 
-        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.originalAppearance &&
+            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             fontColor = [NSColor whiteColor];
         }
@@ -231,7 +234,8 @@
     {
         NSColor *shadowColor;
 
-        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.originalAppearance &&
+            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             shadowColor = [NSColor blackColor];
         }
