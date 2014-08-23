@@ -68,7 +68,7 @@
 
         // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
         // in that case, we want to force our UI to use the light theme.
-        
+
         if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
@@ -116,13 +116,13 @@
     }
 }
 
--(NSAppearance *)originalAppearance
+- (NSAppearance *)originalAppearance
 {
     if (!_originalAppearance)
     {
         _originalAppearance = self.effectiveAppearance;
     }
-    
+
     return _originalAppearance;
 }
 
@@ -142,7 +142,7 @@
     if (!_textFontAttributes)
     {
         NSColor *fontColor;
-        
+
         if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             fontColor = [NSColor whiteColor];
@@ -151,7 +151,7 @@
         {
             fontColor = [NSColor blackColor];
         }
-        
+
         _textFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
@@ -187,7 +187,7 @@
     if (!_largeTextFontAttributes)
     {
         NSColor *fontColor;
-        
+
         if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             fontColor = [NSColor whiteColor];
@@ -196,7 +196,7 @@
         {
             fontColor = [NSColor blackColor];
         }
-        
+
         _largeTextFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
@@ -213,7 +213,7 @@
     if (!_largeHighlightedTextFontAttributes)
     {
         NSColor *fontColor = [NSColor whiteColor];
-        
+
         _largeHighlightedTextFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
@@ -230,7 +230,7 @@
     if (!_textShadow)
     {
         NSColor *shadowColor;
-        
+
         if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
         {
             shadowColor = [NSColor blackColor];
@@ -474,8 +474,6 @@
 
 - (void)drawVolumeGraphic
 {
-    DLog(@"drawing graphic volume");
-    
     NSSize imageSize;
     NSRect bounds;
     CGFloat imageX;
