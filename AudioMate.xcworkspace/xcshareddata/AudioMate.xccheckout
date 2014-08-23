@@ -10,37 +10,37 @@
 	<string>AudioMate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>00403D64-737E-4A74-955E-63A548B00B19</key>
+		<key>1189CF5EA96C2B2EC6EF05493325A821575A3558</key>
 		<string>ssh://github.com/sonicbee9/AudioMate.git</string>
-		<key>8B6BD2A5-54EE-4E1D-8564-3DDAAA1DA45D</key>
-		<string>https://github.com/sparkle-project/Sparkle.git</string>
 		<key>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</key>
 		<string>https://github.com/rowanj/Sparkle.git</string>
+		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
+		<string>https://github.com/sparkle-project/Sparkle.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AudioMate.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>00403D64-737E-4A74-955E-63A548B00B19</key>
+		<key>1189CF5EA96C2B2EC6EF05493325A821575A3558</key>
 		<string>..</string>
-		<key>8B6BD2A5-54EE-4E1D-8564-3DDAAA1DA45D</key>
-		<string>../ExternalDeps/Sparkle</string>
 		<key>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</key>
-		<string>../../../Sparkle</string>
+		<string>../../Sparkle</string>
+		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
+		<string>../ExternalDeps/Sparkle</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/sonicbee9/AudioMate.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>00403D64-737E-4A74-955E-63A548B00B19</string>
+	<string>1189CF5EA96C2B2EC6EF05493325A821575A3558</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>00403D64-737E-4A74-955E-63A548B00B19</string>
+			<string>1189CF5EA96C2B2EC6EF05493325A821575A3558</string>
 			<key>IDESourceControlWCCName</key>
 			<string>gh-AudioMate</string>
 		</dict>
@@ -48,7 +48,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8B6BD2A5-54EE-4E1D-8564-3DDAAA1DA45D</string>
+			<string>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sparkle</string>
 		</dict>
@@ -56,7 +56,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</string>
+			<string>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sparkle</string>
 		</dict>

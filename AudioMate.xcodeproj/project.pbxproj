@@ -990,11 +990,13 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1008,11 +1010,13 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1082,6 +1086,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1092,7 +1097,9 @@
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1104,6 +1111,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1116,7 +1124,9 @@
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

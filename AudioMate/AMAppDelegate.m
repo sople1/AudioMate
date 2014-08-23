@@ -144,7 +144,7 @@
     }
 
     // Refresh the status bar if necessary
-
+    
     [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
 
     // Generate system notification

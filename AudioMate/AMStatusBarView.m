@@ -32,6 +32,7 @@
 @property (nonatomic, retain) NSDictionary *largeTextFontAttributes;
 @property (nonatomic, retain) NSDictionary *largeHighlightedTextFontAttributes;
 @property (nonatomic, retain) NSShadow *textShadow;
+@property (nonatomic, retain) NSAppearance *originalAppearance;
 
 @end
 
@@ -64,6 +65,14 @@
         _isHighlighted = NO;
         _topLine = @"";
         _bottomLine = @"";
+
+        // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
+        // in that case, we want to force our UI to use the light theme.
+        
+        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        {
+            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+        }
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(controlTintChanged:)
@@ -107,6 +116,16 @@
     }
 }
 
+-(NSAppearance *)originalAppearance
+{
+    if (!_originalAppearance)
+    {
+        _originalAppearance = self.effectiveAppearance;
+    }
+    
+    return _originalAppearance;
+}
+
 - (NSMutableParagraphStyle *)paragraphStyle
 {
     if (!_paragraphStyle)
@@ -122,12 +141,25 @@
 {
     if (!_textFontAttributes)
     {
+        NSColor *fontColor;
+        
+        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        {
+            fontColor = [NSColor whiteColor];
+        }
+        else
+        {
+            fontColor = [NSColor blackColor];
+        }
+        
         _textFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:[NSColor blackColor],
+            NSForegroundColorAttributeName:fontColor,
             NSParagraphStyleAttributeName:self.paragraphStyle
         };
+
+        DLog(@"textFontAttributes = %@", _textFontAttributes);
     }
 
     return _textFontAttributes;
@@ -137,10 +169,12 @@
 {
     if (!_highlightedTextFontAttributes)
     {
+        NSColor *fontColor = [NSColor whiteColor];
+
         _highlightedTextFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:[NSColor whiteColor],
+            NSForegroundColorAttributeName:fontColor,
             NSParagraphStyleAttributeName:self.paragraphStyle
         };
     }
@@ -152,10 +186,21 @@
 {
     if (!_largeTextFontAttributes)
     {
+        NSColor *fontColor;
+        
+        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        {
+            fontColor = [NSColor whiteColor];
+        }
+        else
+        {
+            fontColor = [NSColor blackColor];
+        }
+        
         _largeTextFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:[NSColor blackColor],
+            NSForegroundColorAttributeName:fontColor,
             NSParagraphStyleAttributeName:self.paragraphStyle
         };
     }
@@ -167,10 +212,12 @@
 {
     if (!_largeHighlightedTextFontAttributes)
     {
+        NSColor *fontColor = [NSColor whiteColor];
+        
         _largeHighlightedTextFontAttributes = @{
             NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
                                                 size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:[NSColor whiteColor],
+            NSForegroundColorAttributeName:fontColor,
             NSParagraphStyleAttributeName:self.paragraphStyle
         };
     }
@@ -182,8 +229,19 @@
 {
     if (!_textShadow)
     {
+        NSColor *shadowColor;
+        
+        if ([self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        {
+            shadowColor = [NSColor blackColor];
+        }
+        else
+        {
+            shadowColor = [NSColor whiteColor];
+        }
+
         _textShadow = [NSShadow new];
-        _textShadow.shadowColor = [[NSColor whiteColor] colorWithAlphaComponent:0.5];
+        _textShadow.shadowColor = [shadowColor colorWithAlphaComponent:0.5];
         _textShadow.shadowOffset = NSMakeSize(0.1, -1.1);
         _textShadow.shadowBlurRadius = 0;
     }
@@ -416,6 +474,8 @@
 
 - (void)drawVolumeGraphic
 {
+    DLog(@"drawing graphic volume");
+    
     NSSize imageSize;
     NSRect bounds;
     CGFloat imageX;
