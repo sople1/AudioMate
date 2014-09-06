@@ -2,6 +2,7 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
+| 2.0.6         | Fixed high CPU load on app startup. | September 6th, 2014|
 | 2.0.5         | Added Russian (ru) localization (thanks to [@BasicXP](https://github.com/BasicXP)!). | August 10th, 2014|
 |               | More improvements in Japanese (ja) localization ([@shaolin405mi16](https://github.com/shaolin405mi16)). ||
 | 2.0.4         | Improved Japanese (ja) localization (thanks to [@shaolin405mi16](https://github.com/shaolin405mi16)!). | July 29th, 2014|
