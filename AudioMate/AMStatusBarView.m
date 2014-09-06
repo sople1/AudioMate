@@ -302,7 +302,10 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [self setup];
+    if (NSEqualRects(dirtyRect, self.bounds))
+    {
+        [self setup];
+    }
 
     NSDictionary *attributes;
 
