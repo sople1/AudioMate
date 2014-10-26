@@ -70,10 +70,13 @@
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-        // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
-        // in that case, we want to force our UI to use the light theme.
+        if ([self respondsToSelector:@selector(appearance)])
+        {
+            // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
+            // in that case, we want to force our UI to use the light theme.
 
-        self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+        }
 
 #endif
 
@@ -353,14 +356,17 @@
 {
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-    BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
-
-    if (shouldUseDarkTheme != self.useDarkTheme)
+    if ([self.superview respondsToSelector:@selector(effectiveAppearance)])
     {
-        self.useDarkTheme = shouldUseDarkTheme;
-        self.textShadow = nil;
-        self.largeTextFontAttributes = nil;
-        self.textFontAttributes = nil;
+        BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
+
+        if (shouldUseDarkTheme != self.useDarkTheme)
+        {
+            self.useDarkTheme = shouldUseDarkTheme;
+            self.textShadow = nil;
+            self.largeTextFontAttributes = nil;
+            self.textFontAttributes = nil;
+        }
     }
 
 #endif
