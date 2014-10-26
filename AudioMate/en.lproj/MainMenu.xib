@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.8"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -23,30 +23,13 @@
                 <outlet property="buildNumberTextField" destination="801" id="845"/>
                 <outlet property="checkForUpdatesButton" destination="3HB-hB-e1z" id="dwg-o2-ZOT"/>
                 <outlet property="delegate" destination="797" id="841"/>
-                <outlet property="deviceActionsClockSourcePopUpButton" destination="hGX-HE-7gC" id="CD9-WR-s41"/>
-                <outlet property="deviceActionsMasterVolumeSlider" destination="5Vi-tw-dJQ" id="IPa-ZI-K3p"/>
-                <outlet property="deviceActionsMasterVolumeTextField" destination="QzM-6C-Wom" id="7Fe-qq-nzt"/>
-                <outlet property="deviceActionsSampleRatePopUpButton" destination="r4l-tO-CcP" id="f7g-Xv-Bzc"/>
-                <outlet property="deviceActionsSetClockSourceCheckbox" destination="dew-7N-GxI" id="2lX-0T-4ph"/>
-                <outlet property="deviceActionsSetMasterVolumeCheckbox" destination="s59-UA-Tk7" id="2T6-4f-foJ"/>
-                <outlet property="deviceActionsSetSampleRateCheckbox" destination="kst-n5-mOS" id="eSx-D0-2tD"/>
                 <outlet property="deviceActionsSheet" destination="lUJ-iP-jRJ" id="XNm-El-QHc"/>
-                <outlet property="deviceActionsTitleTextField" destination="evA-oo-x5n" id="goo-EP-yYi"/>
-                <outlet property="deviceInformationToShowPopupButton" destination="QWj-p3-eRq" id="HpJ-IY-YVL"/>
-                <outlet property="displayClockSourceNotificationsCheckbox" destination="kMP-Jz-ZFo" id="WNi-GN-TtI"/>
-                <outlet property="displayDeviceChangesNotificationsCheckbox" destination="97I-cG-Xae" id="2y7-gG-uRf"/>
-                <outlet property="displayMuteNotificationsCheckbox" destination="5rU-5B-8pD" id="FdT-vl-XbK"/>
                 <outlet property="displayPreferencesButton" destination="993" id="uYp-Es-LuA"/>
-                <outlet property="displaySampleRateNotificationsCheckbox" destination="5JY-6K-WaX" id="YB7-cS-zid"/>
-                <outlet property="displayVolumeNotificationsCheckbox" destination="rhd-lt-mhL" id="hEq-pD-JGd"/>
                 <outlet property="featuredAudioDevicePopupButton" destination="ljw-tg-SnX" id="qfp-aX-KkE"/>
                 <outlet property="launchAtLoginCheckbox" destination="ube-mF-uvK" id="8Ec-Ki-WQA"/>
-                <outlet property="playFeedbackSoundCheckbox" destination="fLb-L6-sC6" id="wis-by-FHj"/>
                 <outlet property="popover" destination="795" id="839"/>
-                <outlet property="popupIsTransientCheckbox" destination="Jz1-YY-1uK" id="wyG-DC-Xc9"/>
                 <outlet property="preferencesSheet" destination="EYe-Z8-IGn" id="KEI-Gh-76v"/>
                 <outlet property="showMasterVolumesButton" destination="1985" id="VO3-KS-0Wg"/>
-                <outlet property="statusBarAppearancePopupButton" destination="VgC-Zn-bXa" id="QRB-JF-VER"/>
                 <outlet property="tableView" destination="ERT-Kb-Udc" id="4AN-nW-b6t"/>
                 <outlet property="view" destination="798" id="838"/>
             </connections>
@@ -82,8 +65,8 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="803">
-                    <rect key="frame" x="79" y="169" width="218" height="14"/>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="803">
+                    <rect key="frame" x="79" y="169" width="217" height="14"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="© 2014 TroikaLabs. All Rights Reserved." id="829">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -445,8 +428,8 @@
                         <action selector="changeSelectedStatusbarAudioDevice:" target="796" id="vb5-1a-uQv"/>
                     </connections>
                 </popUpButton>
-                <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ube-mF-uvK">
-                    <rect key="frame" x="18" y="22" width="107" height="18"/>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="ube-mF-uvK">
+                    <rect key="frame" x="18" y="22" width="106" height="18"/>
                     <buttonCell key="cell" type="check" title="Start at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AIi-70-pzy">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
@@ -455,8 +438,8 @@
                         <action selector="setLaunchAtLogin:" target="796" id="VMi-Gt-qYI"/>
                     </connections>
                 </button>
-                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-hB-e1z">
-                    <rect key="frame" x="303" y="13" width="156" height="32"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-hB-e1z">
+                    <rect key="frame" x="304" y="13" width="156" height="32"/>
                     <buttonCell key="cell" type="push" title="Check for Updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J8b-Kd-dif">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -465,8 +448,8 @@
                         <action selector="checkForUpdates:" target="796" id="i0P-wG-inj"/>
                     </connections>
                 </button>
-                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-Ov-UlC">
-                    <rect key="frame" x="459" y="13" width="67" height="32"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNz-Ov-UlC">
+                    <rect key="frame" x="460" y="13" width="66" height="32"/>
                     <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K1T-cy-QeO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -529,8 +512,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="500" height="226"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-Ko-SFz">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-Ko-SFz">
+                        <rect key="frame" x="410" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3q-Ne-Clp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -614,8 +597,8 @@ Gw
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-ao-84q">
-                                    <rect key="frame" x="428" y="82" width="20" height="17"/>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-ao-84q">
+                                    <rect key="frame" x="428" y="82" width="22" height="17"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="dB" id="Ubr-nQ-dD0">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -692,15 +675,15 @@ Gw
                                     <rect key="frame" x="10" y="33" width="454" height="166"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLb-L6-sC6">
-                                            <rect key="frame" x="14" y="130" width="336" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="fLb-L6-sC6">
+                                            <rect key="frame" x="14" y="130" width="335" height="18"/>
                                             <buttonCell key="cell" type="check" title="Play feedback sound when changing master output volume" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="Wk0-Af-tG6">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
                                             </buttonCell>
                                         </button>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-YY-1uK">
-                                            <rect key="frame" x="14" y="148" width="285" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-YY-1uK">
+                                            <rect key="frame" x="14" y="148" width="286" height="18"/>
                                             <buttonCell key="cell" type="check" title="Dismiss popup when another app becomes active" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="n5P-h6-G7H">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -722,16 +705,16 @@ Gw
                                                 <menu key="menu" title="OtherViews" id="6ia-Om-4SA"/>
                                             </popUpButtonCell>
                                         </popUpButton>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-qD-WnD">
-                                            <rect key="frame" x="15" y="97" width="223" height="14"/>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-qD-WnD">
+                                            <rect key="frame" x="15" y="97" width="221" height="14"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Device information to show in status bar:" id="89Z-X0-Esm">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70A-hn-OOF">
-                                            <rect key="frame" x="15" y="46" width="126" height="14"/>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70A-hn-OOF">
+                                            <rect key="frame" x="15" y="46" width="128" height="14"/>
                                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status bar appearance:" id="8U8-sj-JEX">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -762,36 +745,36 @@ Gw
                                     <rect key="frame" x="10" y="33" width="454" height="166"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-lt-mhL">
-                                            <rect key="frame" x="15" y="105" width="253" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="rhd-lt-mhL">
+                                            <rect key="frame" x="15" y="105" width="254" height="18"/>
                                             <buttonCell key="cell" type="check" title="Everytime a device's volume changes" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pvc-Lw-x7N">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rU-5B-8pD">
-                                            <rect key="frame" x="15" y="85" width="274" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="5rU-5B-8pD">
+                                            <rect key="frame" x="15" y="85" width="275" height="18"/>
                                             <buttonCell key="cell" type="check" title="Everytime a device's mute state changes" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lGm-Bg-NOp">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-6K-WaX">
-                                            <rect key="frame" x="15" y="65" width="280" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="5JY-6K-WaX">
+                                            <rect key="frame" x="15" y="65" width="281" height="18"/>
                                             <buttonCell key="cell" type="check" title="Everytime a device's sample rate changes" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ukj-fb-hoL">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
-                                            <rect key="frame" x="15" y="45" width="285" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="kMP-Jz-ZFo">
+                                            <rect key="frame" x="15" y="45" width="288" height="18"/>
                                             <buttonCell key="cell" type="check" title="Everytime a device's clock source changes" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="G27-4f-I57">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97I-cG-Xae">
-                                            <rect key="frame" x="15" y="125" width="272" height="18"/>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="97I-cG-Xae">
+                                            <rect key="frame" x="15" y="125" width="269" height="18"/>
                                             <buttonCell key="cell" type="check" title="Everytime a device is added or removed" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="NYQ-uW-vnB">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -829,8 +812,8 @@ Gw
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
-                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
-                        <rect key="frame" x="412" y="13" width="74" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-vP-w9H">
+                        <rect key="frame" x="410" y="13" width="76" height="32"/>
                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PjO-2a-Mwe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
