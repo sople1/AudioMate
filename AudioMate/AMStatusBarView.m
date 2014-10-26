@@ -67,10 +67,13 @@
         _topLine = @"";
         _bottomLine = @"";
 
-        // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
-        // in that case, we want to force our UI to use the light theme.
+        if ([self respondsToSelector:@selector(appearance)])
+        {
+            // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
+            // in that case, we want to force our UI to use the light theme.
 
-        self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+        }
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(controlTintChanged:)
