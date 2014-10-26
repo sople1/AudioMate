@@ -1,3604 +1,1179 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>14CC9B69B62E41D0972482E8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-AudioMate.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1CEB160019853F52007B82EC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ko</string>
-			<key>path</key>
-			<string>ko.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CEB160119853F52007B82EC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ko</string>
-			<key>path</key>
-			<string>ko.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CEB160219853F52007B82EC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ko</string>
-			<key>path</key>
-			<string>ko.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CEB160319853F52007B82EC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>ko</string>
-			<key>path</key>
-			<string>ko.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2209D33E9EC64C538F3568E0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>29A7BA85406B0FE67AB36776</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79039B7A6E45542E7F47E018</string>
-				<string>DC17B5B54AD871E44FD86ABC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF66188157C200881203</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.ruby</string>
-			<key>name</key>
-			<string>generate-xib-files.rb</string>
-			<key>path</key>
-			<string>Scripts/generate-xib-files.rb</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF7218816AE500881203</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4509DF7318816AE500881203</string>
-				<string>45E048D218817D79005FB110</string>
-				<string>45737024188994C200C34775</string>
-				<string>4573702B1889954000C34775</string>
-				<string>457370311889956400C34775</string>
-				<string>1CEB160119853F52007B82EC</string>
-				<string>B8242DE4198C0EFE00D43D61</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF7318816AE500881203</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF7418816AE500881203</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4509DF7218816AE500881203</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4509DF7718816B0600881203</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4509DF7818816B0600881203</string>
-				<string>45E048CC18816B31005FB110</string>
-				<string>45737027188994D700C34775</string>
-				<string>4573702A1889954000C34775</string>
-				<string>457370301889956400C34775</string>
-				<string>1CEB160019853F52007B82EC</string>
-				<string>B8242DE3198C0EFE00D43D61</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF7818816B0600881203</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4509DF7918816B0600881203</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4509DF7718816B0600881203</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>451250DC1886D00100FC20F7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper</string>
-			<key>name</key>
-			<string>com.troikalabs.AudioMate.GNTPClientService.xpc</string>
-			<key>path</key>
-			<string>GrowlXPCClient/com.troikalabs.AudioMate.GNTPClientService.xpc</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45131DF2195B683400FF4DFE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMAudioDeviceActions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45131DF3195B683400FF4DFE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMAudioDeviceActions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45131DF4195B683400FF4DFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45131DF3195B683400FF4DFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>451735011984964C003D4204</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libPods-AudioMate-LetsMove.a</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LetsMove.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>451735021984964C003D4204</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libPods-AudioMate-LVDebounce.a</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LVDebounce.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>451735031984964C003D4204</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libPods-AudioMate-StartAtLoginController.a</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-StartAtLoginController.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>451AD491185F136F00D59E64</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAudioEventNotifier.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioEventNotifier.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451AD492185F136F00D59E64</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAudioEventNotifier.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioEventNotifier.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451AD493185F136F00D59E64</key>
-		<dict>
-			<key>fileRef</key>
-			<string>451AD492185F136F00D59E64</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>451C1FBC168F469300D06A74</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMApplication.h</string>
-			<key>path</key>
-			<string>AudioMate/AMApplication.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451C1FBD168F469300D06A74</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMApplication.m</string>
-			<key>path</key>
-			<string>AudioMate/AMApplication.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451C1FBE168F469300D06A74</key>
-		<dict>
-			<key>fileRef</key>
-			<string>451C1FBD168F469300D06A74</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>451E1C2718460411009628DA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>451E1C2818460473009628DA</string>
-				<string>451E1C2918460473009628DA</string>
-				<string>458E3569196EC3C800C7C630</string>
-				<string>458E356A196EC3C800C7C630</string>
-				<string>458E356C196EDEC400C7C630</string>
-				<string>458E356D196EDEC400C7C630</string>
-				<string>458E3570196EE08900C7C630</string>
-				<string>458E3571196EE08900C7C630</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Custom Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>451E1C2818460473009628DA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMStatusBarView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMStatusBarView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451E1C2918460473009628DA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMStatusBarView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMStatusBarView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>451E1C2A18460473009628DA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>451E1C2918460473009628DA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>451E5943166D00D600DEF91A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45772C4D184690BE00D07EF6</string>
-				<string>458FA5B3168A1006008C3F39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A19188AA5700058FB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45279A1A188AA5700058FB69</string>
-				<string>45279A22188AA5700058FB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A1A188AA5700058FB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45279A1B188AA5700058FB69</string>
-				<string>45279A1C188AA5700058FB69</string>
-				<string>45279A1D188AA5700058FB69</string>
-				<string>45279A1E188AA5700058FB69</string>
-				<string>45279A20188AA5700058FB69</string>
-				<string>45279A21188AA5700058FB69</string>
-				<string>45279A34188AA5B80058FB69</string>
-				<string>45279A3A188AA60A0058FB69</string>
-				<string>45279A3D188AA60F0058FB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A1B188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>aqua_blue.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A1C188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>Clock.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A1D188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>DefaultInput.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A1E188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>DefaultOutput.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A20188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>graphite.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A21188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.tiff</string>
-			<key>path</key>
-			<string>SystemOutput.tiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A22188AA5700058FB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45279A23188AA5700058FB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Sounds</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A23188AA5700058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>audio.aiff</string>
-			<key>path</key>
-			<string>Select.aiff</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A24188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A1B188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A26188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A1C188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A28188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A1D188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A2A188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A1E188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A2E188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A20188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A30188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A21188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A32188AA5700058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A23188AA5700058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A34188AA5B80058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.pdf</string>
-			<key>path</key>
-			<string>Logo.pdf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A35188AA5B80058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A34188AA5B80058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A3A188AA60A0058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Equalizer.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A3B188AA60A0058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A3A188AA60A0058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45279A3D188AA60F0058FB69</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.pdf</string>
-			<key>path</key>
-			<string>Volume-control.pdf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45279A3E188AA60F0058FB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45279A3D188AA60F0058FB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>453289FA196C2F96003282F4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6E291688006B007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>454FF74D16E5235F0035BD6A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMClockSourcePopUpButtonCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMClockSourcePopUpButtonCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>454FF74E16E5235F0035BD6A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMClockSourcePopUpButtonCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMClockSourcePopUpButtonCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>454FF74F16E5235F0035BD6A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>454FF74E16E5235F0035BD6A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>455404961984999300029F39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.pb-project</string>
-			<key>name</key>
-			<string>Sparkle.xcodeproj</string>
-			<key>path</key>
-			<string>ExternalDeps/Sparkle/Sparkle.xcodeproj</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>455404971984999300029F39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>455404A21984999300029F39</string>
-				<string>455404A41984999300029F39</string>
-				<string>455404A61984999300029F39</string>
-				<string>455404A81984999300029F39</string>
-				<string>455404AA1984999300029F39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>455404A11984999300029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>8DC2EF5B0486A6940098B216</string>
-			<key>remoteInfo</key>
-			<string>Sparkle</string>
-		</dict>
-		<key>455404A21984999300029F39</key>
-		<dict>
-			<key>fileType</key>
-			<string>wrapper.framework</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>Sparkle.framework</string>
-			<key>remoteRef</key>
-			<string>455404A11984999300029F39</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>455404A31984999300029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>61B5F90209C4CEE200B25A18</string>
-			<key>remoteInfo</key>
-			<string>Sparkle Test App</string>
-		</dict>
-		<key>455404A41984999300029F39</key>
-		<dict>
-			<key>fileType</key>
-			<string>wrapper.application</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>Sparkle Test App.app</string>
-			<key>remoteRef</key>
-			<string>455404A31984999300029F39</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>455404A51984999300029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>612279D90DB5470200AB99EA</string>
-			<key>remoteInfo</key>
-			<string>Sparkle Unit Tests</string>
-		</dict>
-		<key>455404A61984999300029F39</key>
-		<dict>
-			<key>fileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>Sparkle Unit Tests.xctest</string>
-			<key>remoteRef</key>
-			<string>455404A51984999300029F39</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>455404A71984999300029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>5D06E8D00FD68C7C005AE3F6</string>
-			<key>remoteInfo</key>
-			<string>BinaryDelta</string>
-		</dict>
-		<key>455404A81984999300029F39</key>
-		<dict>
-			<key>fileType</key>
-			<string>compiled.mach-o.executable</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>BinaryDelta</string>
-			<key>remoteRef</key>
-			<string>455404A71984999300029F39</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>455404A91984999300029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>2</string>
-			<key>remoteGlobalIDString</key>
-			<string>55C14BB7136EEF1500649790</string>
-			<key>remoteInfo</key>
-			<string>Autoupdate</string>
-		</dict>
-		<key>455404AA1984999300029F39</key>
-		<dict>
-			<key>fileType</key>
-			<string>wrapper.application</string>
-			<key>isa</key>
-			<string>PBXReferenceProxy</string>
-			<key>path</key>
-			<string>Autoupdate.app</string>
-			<key>remoteRef</key>
-			<string>455404A91984999300029F39</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>455404AB198499A400029F39</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>455404961984999300029F39</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>8DC2EF4F0486A6940098B216</string>
-			<key>remoteInfo</key>
-			<string>Sparkle</string>
-		</dict>
-		<key>455404AC198499A400029F39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Sparkle</string>
-			<key>targetProxy</key>
-			<string>455404AB198499A400029F39</string>
-		</dict>
-		<key>455404AD198499AD00029F39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>455404A21984999300029F39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>455404AE198499B500029F39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>455404A21984999300029F39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4555210416DCF94100FE7210</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>458E357A196F422400C7C630</string>
-				<string>458E357B196F422400C7C630</string>
-				<string>458E356F196EDF2500C7C630</string>
-				<string>4555210B16DD2F3C00FE7210</string>
-				<string>4555210C16DD2F3D00FE7210</string>
-				<string>4555210D16DD2F3D00FE7210</string>
-				<string>4555210E16DD2F3D00FE7210</string>
-				<string>4555210F16DD2F3D00FE7210</string>
-				<string>4555211016DD2F3D00FE7210</string>
-				<string>454FF74D16E5235F0035BD6A</string>
-				<string>454FF74E16E5235F0035BD6A</string>
-				<string>456BCA0717AAE52E008AF5C3</string>
-				<string>456BCA0817AAE52E008AF5C3</string>
-				<string>456BCA0C17AAE5F8008AF5C3</string>
-				<string>456BCA0D17AAE5F8008AF5C3</string>
-				<string>4584563D18843EC100809657</string>
-				<string>4584563E18843EC100809657</string>
-				<string>45A5B569188451A60052112B</string>
-				<string>45A5B56A188451A60052112B</string>
-				<string>458E3577196F2C2A00C7C630</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CellViews</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4555210816DD2F1400FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSTableView+ContextMenu.h</string>
-			<key>path</key>
-			<string>AudioMate/NSTableView+ContextMenu.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210916DD2F1400FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSTableView+ContextMenu.m</string>
-			<key>path</key>
-			<string>AudioMate/NSTableView+ContextMenu.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210A16DD2F1400FE7210</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4555210916DD2F1400FE7210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4555210B16DD2F3C00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAudioDeviceDefaultsCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceDefaultsCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210C16DD2F3D00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAudioDeviceDefaultsCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceDefaultsCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210D16DD2F3D00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAudioDeviceNameCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceNameCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210E16DD2F3D00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAudioDeviceNameCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceNameCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555210F16DD2F3D00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMSampleRatePopUpButtonCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMSampleRatePopUpButtonCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555211016DD2F3D00FE7210</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMSampleRatePopUpButtonCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMSampleRatePopUpButtonCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4555211116DD2F3D00FE7210</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4555210C16DD2F3D00FE7210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4555211216DD2F3D00FE7210</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4555210E16DD2F3D00FE7210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4555211316DD2F3D00FE7210</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4555211016DD2F3D00FE7210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45633E4F17B512E40073D8DD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Auto Increment Build Number</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/bash</string>
-			<key>shellScript</key>
-			<string># Auto Increment Build Number
-buildPlist=$SRCROOT/$INFOPLIST_FILE
-PlistBuddy="/usr/libexec/PlistBuddy"
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
-CFBundleVersion=`$PlistBuddy -c "Print CFBundleVersion" "$buildPlist"`
-CFBundleVersion=`git --git-dir="$SRCROOT/.git" log --oneline | wc -l`
-$PlistBuddy -c "Set :CFBundleVersion $CFBundleVersion" "$buildPlist"
-</string>
-		</dict>
-		<key>4567A0B21987987D00010AB6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>path</key>
-			<string>AudioMateLauncher.entitlements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>456BCA0717AAE52E008AF5C3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAudioDeviceMasterVolumesCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceMasterVolumesCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>456BCA0817AAE52E008AF5C3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAudioDeviceMasterVolumesCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceMasterVolumesCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>456BCA0917AAE52E008AF5C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>456BCA0817AAE52E008AF5C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>456BCA0C17AAE5F8008AF5C3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAudioDeviceMasterVolumesExtrasCellView.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>456BCA0D17AAE5F8008AF5C3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAudioDeviceMasterVolumesExtrasCellView.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>456BCA0E17AAE5F8008AF5C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>456BCA0D17AAE5F8008AF5C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>457257371885693C0066E978</key>
-		<dict>
-			<key>fileRef</key>
-			<string>457D09DC1885669C00A7FB4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4573702218898D8300C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>es</string>
-			<key>path</key>
-			<string>es.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45737024188994C200C34775</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>zh-Hant</string>
-			<key>path</key>
-			<string>zh-Hant.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45737027188994D700C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>zh-Hant</string>
-			<key>path</key>
-			<string>zh-Hant.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>457370291889950200C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>zh-Hant</string>
-			<key>path</key>
-			<string>zh-Hant.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4573702A1889954000C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>zh-Hans</string>
-			<key>path</key>
-			<string>zh-Hans.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4573702B1889954000C34775</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>zh-Hans</string>
-			<key>path</key>
-			<string>zh-Hans.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4573702C1889954000C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>zh-Hans</string>
-			<key>path</key>
-			<string>zh-Hans.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>457370301889956400C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ja</string>
-			<key>path</key>
-			<string>ja.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>457370311889956400C34775</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ja</string>
-			<key>path</key>
-			<string>ja.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>457370321889956400C34775</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>ja</string>
-			<key>path</key>
-			<string>ja.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45772C4D184690BE00D07EF6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>name</key>
-			<string>Images.xcassets</string>
-			<key>path</key>
-			<string>AudioMate/Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45772C4E184690BE00D07EF6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45772C4D184690BE00D07EF6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>457D09DB1885669C00A7FB4D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSWindow+canBecomeKeyWindow.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>457D09DC1885669C00A7FB4D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSWindow+canBecomeKeyWindow.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458317D218820D1E001F0BE4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AVFoundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AVFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>4584563D18843EC100809657</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMAudioDeviceActionsCellView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4584563E18843EC100809657</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMAudioDeviceActionsCellView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4584563F18843EC100809657</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4584563E18843EC100809657</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45879E5E197164E5004037D2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45F62C371688D11600FE7692</string>
-				<string>45F62C381688D11600FE7692</string>
-				<string>45879E6719716505004037D2</string>
-				<string>45879E6819716505004037D2</string>
-				<string>45879E6A19716825004037D2</string>
-				<string>45879E6B19716825004037D2</string>
-				<string>45879E6D19716B4C004037D2</string>
-				<string>45879E6E19716B4C004037D2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6719716505004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMGeneralPreferences.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6819716505004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMGeneralPreferences.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6919716505004037D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45879E6819716505004037D2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45879E6A19716825004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMNotificationsPreferences.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6B19716825004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMNotificationsPreferences.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6C19716825004037D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45879E6B19716825004037D2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45879E6D19716B4C004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMDevicePreferences.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6E19716B4C004037D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMDevicePreferences.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45879E6F19716B4C004037D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45879E6E19716B4C004037D2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E355C196EB56000C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AMConfig.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E355D196EB56000C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E355C196EB56000C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E3566196EBA9F00C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSImage+BWTinting.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E3567196EBA9F00C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSImage+BWTinting.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E3568196EBA9F00C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E3567196EBA9F00C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E3569196EC3C800C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMDeviceActionsPanel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E356A196EC3C800C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMDeviceActionsPanel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E356B196EC3C800C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E356A196EC3C800C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E356C196EDEC400C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMPreferencesPanel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E356D196EDEC400C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMPreferencesPanel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E356E196EDEC400C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E356D196EDEC400C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E356F196EDF2500C7C630</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMCellViews.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E3570196EE08900C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMSheetPanel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E3571196EE08900C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMSheetPanel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E3572196EE08900C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E3571196EE08900C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E3577196F2C2A00C7C630</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMAudioDevicePopulatableTableCellViewProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E357A196F422400C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMCellView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E357B196F422400C7C630</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMCellView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458E357C196F422400C7C630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458E357B196F422400C7C630</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458E95B9185B50E500A0EFE6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DA91687EF95007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>458FA5B3168A1006008C3F39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>458FA5B4168A1006008C3F39</string>
-				<string>4573702218898D8300C34775</string>
-				<string>457370291889950200C34775</string>
-				<string>4573702C1889954000C34775</string>
-				<string>457370321889956400C34775</string>
-				<string>1CEB160319853F52007B82EC</string>
-				<string>B8242DE5198C0EFE00D43D61</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>458FA5B4168A1006008C3F39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>AudioMate/en.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>458FA5B5168A1006008C3F39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>458FA5B3168A1006008C3F39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4591486C1688081300BE1A44</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>10</string>
-			<key>files</key>
-			<array>
-				<string>455404AE198499B500029F39</string>
-				<string>453289FA196C2F96003282F4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Copy Embedded Frameworks</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45915008196C31D200B104EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Codesign Embedded Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>./Scripts/codesign-frameworks.sh</string>
-		</dict>
-		<key>45915011196C333D00B104EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>path</key>
-			<string>AudioMate.entitlements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DA51687EF95007F2226</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>459D6DB31687EF95007F2226</string>
-				<string>459D6DBA1687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>459D6DA61687EF95007F2226</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>459D6DAA1687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>459D6DA71687EF95007F2226</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>459D6DB11687EF95007F2226</string>
-				<string>459D6DB71687EF95007F2226</string>
-				<string>459D6DBD1687EF96007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>459D6DA81687EF95007F2226</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>459D6DC01687EF96007F2226</string>
-			<key>buildPhases</key>
-			<array>
-				<string>459D6DA51687EF95007F2226</string>
-				<string>459D6DA61687EF95007F2226</string>
-				<string>459D6DA71687EF95007F2226</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AudioMateLauncher</string>
-			<key>productName</key>
-			<string>AudioMateLauncher</string>
-			<key>productReference</key>
-			<string>459D6DA91687EF95007F2226</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>459D6DA91687EF95007F2226</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AudioMateLauncher.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>459D6DAA1687EF95007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FA562A166BC8C500C1D92D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DAC1687EF95007F2226</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4567A0B21987987D00010AB6</string>
-				<string>459D6DB81687EF95007F2226</string>
-				<string>459D6DB91687EF95007F2226</string>
-				<string>459D6DBB1687EF96007F2226</string>
-				<string>459D6DAD1687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AudioMateLauncher</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DAD1687EF95007F2226</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>459D6DAE1687EF95007F2226</string>
-				<string>459D6DAF1687EF95007F2226</string>
-				<string>459D6DB21687EF95007F2226</string>
-				<string>459D6DB41687EF95007F2226</string>
-				<string>459D6DB51687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DAE1687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AudioMateLauncher-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DAF1687EF95007F2226</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>459D6DB01687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB01687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB11687EF95007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DAF1687EF95007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DB21687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB31687EF95007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DB21687EF95007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DB41687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AudioMateLauncher-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB51687EF95007F2226</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>459D6DB61687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB61687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.rtf</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB71687EF95007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DB51687EF95007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DB81687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DB91687EF95007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DBA1687EF95007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DB91687EF95007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DBB1687EF96007F2226</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>459D6DBC1687EF96007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DBC1687EF96007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6DBD1687EF96007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DBB1687EF96007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6DBE1687EF96007F2226</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>AudioMateLauncher/AudioMateLauncher.entitlements</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>Developer ID Application</string>
-				<key>CODE_SIGN_IDENTITY[sdk=macosx*]</key>
-				<string>Mac Developer</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AudioMateLauncher/AudioMateLauncher-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AudioMateLauncher/AudioMateLauncher-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>459D6DBF1687EF96007F2226</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>AudioMateLauncher/AudioMateLauncher.entitlements</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>Developer ID Application</string>
-				<key>CODE_SIGN_IDENTITY[sdk=macosx*]</key>
-				<string>Mac Developer</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AudioMateLauncher/AudioMateLauncher-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AudioMateLauncher/AudioMateLauncher-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>459D6DC01687EF96007F2226</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>459D6DBE1687EF96007F2226</string>
-				<string>459D6DBF1687EF96007F2226</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>459D6DC11687EFD3007F2226</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>Contents/Library/LoginItems</string>
-			<key>dstSubfolderSpec</key>
-			<string>1</string>
-			<key>files</key>
-			<array>
-				<string>458E95B9185B50E500A0EFE6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Copy AudioMateLauncher into Contents/Library/LoginItems</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>459D6DC31687F00D007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ServiceManagement.framework</string>
-			<key>path</key>
-			<string>/System/Library/Frameworks/ServiceManagement.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>459D6DC41687F00D007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6DC31687F00D007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6E291688006B007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Growl.framework</string>
-			<key>path</key>
-			<string>Frameworks/Growl.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>459D6E2A1688006B007F2226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>459D6E291688006B007F2226</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>459D6E6D16880482007F2226</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>45A36A8516BF027100A82041</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>45A36A8616BF027100A82041</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45A36A8516BF027100A82041</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45A36AD916BF098100A82041</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>45A36ADA16BF098100A82041</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45A36AD916BF098100A82041</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45A5B569188451A60052112B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AMButtonCellView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45A5B56A188451A60052112B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AMButtonCellView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45A5B56B188451A60052112B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45A5B56A188451A60052112B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45AB3A3B166E2BBA00B07220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45AB3A3D166E2BD900B07220</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Docs</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45AB3A3D166E2BD900B07220</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>README.md</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45B5E3CF1885B9D300F19354</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSPopoverFrame+LionFixes.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45B5E3D01885B9D300F19354</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSPopoverFrame+LionFixes.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45B5E3D11885B9D300F19354</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45B5E3D01885B9D300F19354</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45CB6ED018C279AE0050DD1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSTimer+EOCBlocksSupport.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45CB6ED118C279AE0050DD1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSTimer+EOCBlocksSupport.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45CB6ED218C279AE0050DD1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45CB6ED118C279AE0050DD1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45E048CC18816B31005FB110</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>es</string>
-			<key>path</key>
-			<string>es.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45E048D218817D79005FB110</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>es</string>
-			<key>path</key>
-			<string>es.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F62C291688C64800FE7692</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45B5E3CF1885B9D300F19354</string>
-				<string>45B5E3D01885B9D300F19354</string>
-				<string>4555210816DD2F1400FE7210</string>
-				<string>4555210916DD2F1400FE7210</string>
-				<string>45CB6ED018C279AE0050DD1E</string>
-				<string>45CB6ED118C279AE0050DD1E</string>
-				<string>457D09DB1885669C00A7FB4D</string>
-				<string>457D09DC1885669C00A7FB4D</string>
-				<string>458E3566196EBA9F00C7C630</string>
-				<string>458E3567196EBA9F00C7C630</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Categories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F62C2D1688CC5E00FE7692</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4509DF66188157C200881203</string>
-				<string>45FA30B4168F557800B3302C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Scripts</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F62C371688D11600FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMPreferences.h</string>
-			<key>path</key>
-			<string>AudioMate/AMPreferences.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C381688D11600FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMPreferences.m</string>
-			<key>path</key>
-			<string>AudioMate/AMPreferences.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C3A1688D11700FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C381688D11600FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C3B1688D12900FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMAppDelegate.h</string>
-			<key>path</key>
-			<string>AudioMate/AMAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C3C1688D12900FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMAppDelegate.m</string>
-			<key>path</key>
-			<string>AudioMate/AMAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C3F1688D12A00FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMPopoverController.h</string>
-			<key>path</key>
-			<string>AudioMate/AMPopoverController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C401688D12A00FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMPopoverController.m</string>
-			<key>path</key>
-			<string>AudioMate/AMPopoverController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C411688D12B00FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C3C1688D12900FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C431688D12B00FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C401688D12A00FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C501688D17900FE7692</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45F62C511688D17900FE7692</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F62C511688D17900FE7692</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.rtf</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>AudioMate/en.lproj/Credits.rtf</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C521688D17900FE7692</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45F62C531688D17900FE7692</string>
-				<string>1CEB160219853F52007B82EC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F62C531688D17900FE7692</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>AudioMate/en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C541688D17900FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C501688D17900FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C551688D17900FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C521688D17900FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C691688D1AF00FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>main.m</string>
-			<key>path</key>
-			<string>AudioMate/main.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C6A1688D1AF00FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C691688D1AF00FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C6B1688D1B800FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>name</key>
-			<string>Growl Registration Ticket.growlRegDict</string>
-			<key>path</key>
-			<string>AudioMate/Growl Registration Ticket.growlRegDict</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C6C1688D1B800FE7692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45F62C6B1688D1B800FE7692</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45F62C731688D1E500FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>AudioMate-Info.plist</string>
-			<key>path</key>
-			<string>AudioMate/AudioMate-Info.plist</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F62C741688D1E500FE7692</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AudioMate-Prefix.pch</string>
-			<key>path</key>
-			<string>AudioMate/AudioMate-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45F9FC6717B517B0005026F2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45F9FC6817B517C8005026F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Info Plist Templates</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45F9FC6817B517C8005026F2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>Tmpl-AudioMate-Info.plist</string>
-			<key>path</key>
-			<string>AudioMate/Tmpl-AudioMate-Info.plist</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45FA30B4168F557800B3302C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.ruby</string>
-			<key>name</key>
-			<string>generate-dmg.rb</string>
-			<key>path</key>
-			<string>Scripts/generate-dmg.rb</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA561B166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>455404961984999300029F39</string>
-				<string>451250DC1886D00100FC20F7</string>
-				<string>45F62C2D1688CC5E00FE7692</string>
-				<string>45AB3A3B166E2BBA00B07220</string>
-				<string>45FA5630166BC8C500C1D92D</string>
-				<string>459D6DAC1687EF95007F2226</string>
-				<string>45FA5629166BC8C500C1D92D</string>
-				<string>45FA5627166BC8C500C1D92D</string>
-				<string>29A7BA85406B0FE67AB36776</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA561D166BC8C500C1D92D</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ruben Nine</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>459D6DA81687EF95007F2226</key>
-					<dict>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.Sandbox</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>45FA5625166BC8C500C1D92D</key>
-					<dict>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.Sandbox</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>45FA5620166BC8C500C1D92D</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>ar</string>
-				<string>ca</string>
-				<string>cs</string>
-				<string>cy</string>
-				<string>da</string>
-				<string>de</string>
-				<string>el</string>
-				<string>es</string>
-				<string>fi</string>
-				<string>fr</string>
-				<string>he</string>
-				<string>hu</string>
-				<string>id</string>
-				<string>is</string>
-				<string>it</string>
-				<string>ja</string>
-				<string>ko</string>
-				<string>nl</string>
-				<string>no</string>
-				<string>pl</string>
-				<string>pt-BR</string>
-				<string>pt_BR</string>
-				<string>pt_PT</string>
-				<string>ro</string>
-				<string>ru</string>
-				<string>sk</string>
-				<string>sl</string>
-				<string>sv</string>
-				<string>English</string>
-				<string>th</string>
-				<string>tr</string>
-				<string>uk</string>
-				<string>zh_CN</string>
-				<string>zh_TW</string>
-				<string>zh-Hant</string>
-				<string>zh-Hans</string>
-			</array>
-			<key>mainGroup</key>
-			<string>45FA561B166BC8C500C1D92D</string>
-			<key>productRefGroup</key>
-			<string>45FA5627166BC8C500C1D92D</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array>
-				<dict>
-					<key>ProductGroup</key>
-					<string>455404971984999300029F39</string>
-					<key>ProjectRef</key>
-					<string>455404961984999300029F39</string>
-				</dict>
-			</array>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>45FA5625166BC8C500C1D92D</string>
-				<string>459D6DA81687EF95007F2226</string>
-			</array>
-		</dict>
-		<key>45FA5620166BC8C500C1D92D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>45FA5659166BC8C600C1D92D</string>
-				<string>45FA565A166BC8C600C1D92D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>45FA5622166BC8C500C1D92D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>45F62C3A1688D11700FE7692</string>
-				<string>458E356E196EDEC400C7C630</string>
-				<string>458E3572196EE08900C7C630</string>
-				<string>45F62C411688D12B00FE7692</string>
-				<string>45B5E3D11885B9D300F19354</string>
-				<string>45F62C431688D12B00FE7692</string>
-				<string>45F62C6A1688D1AF00FE7692</string>
-				<string>451C1FBE168F469300D06A74</string>
-				<string>45879E6C19716825004037D2</string>
-				<string>4584563F18843EC100809657</string>
-				<string>45131DF4195B683400FF4DFE</string>
-				<string>45879E6919716505004037D2</string>
-				<string>4555210A16DD2F1400FE7210</string>
-				<string>4555211116DD2F3D00FE7210</string>
-				<string>45A5B56B188451A60052112B</string>
-				<string>45879E6F19716B4C004037D2</string>
-				<string>458E356B196EC3C800C7C630</string>
-				<string>4555211216DD2F3D00FE7210</string>
-				<string>458E357C196F422400C7C630</string>
-				<string>4555211316DD2F3D00FE7210</string>
-				<string>451AD493185F136F00D59E64</string>
-				<string>454FF74F16E5235F0035BD6A</string>
-				<string>45CB6ED218C279AE0050DD1E</string>
-				<string>456BCA0917AAE52E008AF5C3</string>
-				<string>451E1C2A18460473009628DA</string>
-				<string>458E3568196EBA9F00C7C630</string>
-				<string>457257371885693C0066E978</string>
-				<string>456BCA0E17AAE5F8008AF5C3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45FA5623166BC8C500C1D92D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>455404AD198499AD00029F39</string>
-				<string>45A36ADA16BF098100A82041</string>
-				<string>45A36A8616BF027100A82041</string>
-				<string>459D6E2A1688006B007F2226</string>
-				<string>459D6DC41687F00D007F2226</string>
-				<string>45FA5669166BD3FF00C1D92D</string>
-				<string>45FA562B166BC8C500C1D92D</string>
-				<string>9F3701D496DB4662B44FEBB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45FA5624166BC8C500C1D92D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>45279A30188AA5700058FB69</string>
-				<string>45279A2A188AA5700058FB69</string>
-				<string>45279A2E188AA5700058FB69</string>
-				<string>45279A35188AA5B80058FB69</string>
-				<string>45F62C541688D17900FE7692</string>
-				<string>45F62C551688D17900FE7692</string>
-				<string>45279A28188AA5700058FB69</string>
-				<string>45F62C6C1688D1B800FE7692</string>
-				<string>45279A3E188AA60F0058FB69</string>
-				<string>45772C4E184690BE00D07EF6</string>
-				<string>458FA5B5168A1006008C3F39</string>
-				<string>45279A24188AA5700058FB69</string>
-				<string>45279A3B188AA60A0058FB69</string>
-				<string>45279A26188AA5700058FB69</string>
-				<string>458E355D196EB56000C7C630</string>
-				<string>4509DF7918816B0600881203</string>
-				<string>45279A32188AA5700058FB69</string>
-				<string>4509DF7418816AE500881203</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45FA5625166BC8C500C1D92D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>45FA565B166BC8C600C1D92D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2209D33E9EC64C538F3568E0</string>
-				<string>45FA5622166BC8C500C1D92D</string>
-				<string>45FA5623166BC8C500C1D92D</string>
-				<string>45633E4F17B512E40073D8DD</string>
-				<string>45FA5624166BC8C500C1D92D</string>
-				<string>4591486C1688081300BE1A44</string>
-				<string>45915008196C31D200B104EF</string>
-				<string>459D6DC11687EFD3007F2226</string>
-				<string>EB516B035F754E2182036CF4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>455404AC198499A400029F39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AudioMate</string>
-			<key>productName</key>
-			<string>AudioDeviceNotifier</string>
-			<key>productReference</key>
-			<string>45FA5626166BC8C500C1D92D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>45FA5626166BC8C500C1D92D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AudioMate.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>45FA5627166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45FA5626166BC8C500C1D92D</string>
-				<string>459D6DA91687EF95007F2226</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA5629166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>14CC9B69B62E41D0972482E8</string>
-				<string>451735011984964C003D4204</string>
-				<string>451735021984964C003D4204</string>
-				<string>451735031984964C003D4204</string>
-				<string>458317D218820D1E001F0BE4</string>
-				<string>45A36AD916BF098100A82041</string>
-				<string>45A36A8516BF027100A82041</string>
-				<string>459D6E291688006B007F2226</string>
-				<string>459D6DC31687F00D007F2226</string>
-				<string>45FA5668166BD3FF00C1D92D</string>
-				<string>45FA562A166BC8C500C1D92D</string>
-				<string>459D6E6D16880482007F2226</string>
-				<string>45FA562C166BC8C500C1D92D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA562A166BC8C500C1D92D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Cocoa.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Cocoa.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>45FA562B166BC8C500C1D92D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FA562A166BC8C500C1D92D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45FA562C166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45FA562D166BC8C500C1D92D</string>
-				<string>45FA562F166BC8C500C1D92D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Other Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA562D166BC8C500C1D92D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AppKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AppKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>45FA562F166BC8C500C1D92D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>45FA5630166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45879E5E197164E5004037D2</string>
-				<string>45915011196C333D00B104EF</string>
-				<string>451E1C2718460411009628DA</string>
-				<string>45F62C291688C64800FE7692</string>
-				<string>4555210416DCF94100FE7210</string>
-				<string>45F9FC6717B517B0005026F2</string>
-				<string>45FA5631166BC8C500C1D92D</string>
-				<string>451E5943166D00D600DEF91A</string>
-				<string>45F62C3B1688D12900FE7692</string>
-				<string>45F62C3C1688D12900FE7692</string>
-				<string>451C1FBC168F469300D06A74</string>
-				<string>451C1FBD168F469300D06A74</string>
-				<string>45131DF2195B683400FF4DFE</string>
-				<string>45131DF3195B683400FF4DFE</string>
-				<string>451AD491185F136F00D59E64</string>
-				<string>451AD492185F136F00D59E64</string>
-				<string>45F62C3F1688D12A00FE7692</string>
-				<string>45F62C401688D12A00FE7692</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AudioMate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA5631166BC8C500C1D92D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45279A19188AA5700058FB69</string>
-				<string>4509DF7718816B0600881203</string>
-				<string>4509DF7218816AE500881203</string>
-				<string>45F62C501688D17900FE7692</string>
-				<string>45F62C521688D17900FE7692</string>
-				<string>45F62C691688D1AF00FE7692</string>
-				<string>45F62C6B1688D1B800FE7692</string>
-				<string>45F62C731688D1E500FE7692</string>
-				<string>45F62C741688D1E500FE7692</string>
-				<string>458E355C196EB56000C7C630</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45FA5659166BC8C600C1D92D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.7</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string></string>
-				<key>VALID_ARCHS</key>
-				<string>x86_64</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>45FA565A166BC8C600C1D92D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.7</string>
-				<key>SDKROOT</key>
-				<string></string>
-				<key>VALID_ARCHS</key>
-				<string>x86_64</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>45FA565B166BC8C600C1D92D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>45FA565C166BC8C600C1D92D</string>
-				<string>45FA565D166BC8C600C1D92D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>45FA565C166BC8C600C1D92D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>79039B7A6E45542E7F47E018</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>AudioMate/AudioMate.entitlements</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>Developer ID Application</string>
-				<key>CODE_SIGN_IDENTITY[sdk=macosx*]</key>
-				<string>Mac Developer</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>"$(SRCROOT)/Frameworks"</string>
-					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AudioMate/AudioMate-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AudioMate/AudioMate-Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string></string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.7</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>45FA565D166BC8C600C1D92D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DC17B5B54AD871E44FD86ABC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>AudioMate/AudioMate.entitlements</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>Developer ID Application</string>
-				<key>CODE_SIGN_IDENTITY[sdk=macosx*]</key>
-				<string>Mac Developer</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>"$(SRCROOT)/Frameworks"</string>
-					<string>$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AudioMate/AudioMate-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AudioMate/AudioMate-Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string></string>
-				<key>LLVM_LTO</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.7</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>45FA5668166BD3FF00C1D92D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreAudio.framework</string>
-			<key>path</key>
-			<string>/System/Library/Frameworks/CoreAudio.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>45FA5669166BD3FF00C1D92D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FA5668166BD3FF00C1D92D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79039B7A6E45542E7F47E018</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-AudioMate.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9F3701D496DB4662B44FEBB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>14CC9B69B62E41D0972482E8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B8242DE3198C0EFE00D43D61</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ru</string>
-			<key>path</key>
-			<string>ru.lproj/MoveApplication.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B8242DE4198C0EFE00D43D61</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>ru</string>
-			<key>path</key>
-			<string>ru.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B8242DE5198C0EFE00D43D61</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>ru</string>
-			<key>path</key>
-			<string>ru.lproj/MainMenu.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC17B5B54AD871E44FD86ABC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-AudioMate.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB516B035F754E2182036CF4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>45FA561D166BC8C500C1D92D</string>
-</dict>
-</plist>
+/* Begin PBXBuildFile section */
+		4509DF7418816AE500881203 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4509DF7218816AE500881203 /* Localizable.strings */; };
+		4509DF7918816B0600881203 /* MoveApplication.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4509DF7718816B0600881203 /* MoveApplication.strings */; };
+		45131DF4195B683400FF4DFE /* AMAudioDeviceActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */; };
+		451AD493185F136F00D59E64 /* AMAudioEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */; };
+		451C1FBE168F469300D06A74 /* AMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C1FBD168F469300D06A74 /* AMApplication.m */; };
+		451E1C2A18460473009628DA /* AMStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E1C2918460473009628DA /* AMStatusBarView.m */; };
+		45279A24188AA5700058FB69 /* aqua_blue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1B188AA5700058FB69 /* aqua_blue.tiff */; };
+		45279A26188AA5700058FB69 /* Clock.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1C188AA5700058FB69 /* Clock.tiff */; };
+		45279A28188AA5700058FB69 /* DefaultInput.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1D188AA5700058FB69 /* DefaultInput.tiff */; };
+		45279A2A188AA5700058FB69 /* DefaultOutput.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1E188AA5700058FB69 /* DefaultOutput.tiff */; };
+		45279A2E188AA5700058FB69 /* graphite.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A20188AA5700058FB69 /* graphite.tiff */; };
+		45279A30188AA5700058FB69 /* SystemOutput.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A21188AA5700058FB69 /* SystemOutput.tiff */; };
+		45279A32188AA5700058FB69 /* Select.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A23188AA5700058FB69 /* Select.aiff */; };
+		45279A35188AA5B80058FB69 /* Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A34188AA5B80058FB69 /* Logo.pdf */; };
+		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
+		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
+		453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
+		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
+		455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
+		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
+		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
+		4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */; };
+		4555211216DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */; };
+		4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */; };
+		456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */; };
+		456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */; };
+		457257371885693C0066E978 /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */; };
+		45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45772C4D184690BE00D07EF6 /* Images.xcassets */; };
+		4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */; };
+		45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6819716505004037D2 /* AMGeneralPreferences.m */; };
+		45879E6C19716825004037D2 /* AMNotificationsPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6B19716825004037D2 /* AMNotificationsPreferences.m */; };
+		45879E6F19716B4C004037D2 /* AMDevicePreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6E19716B4C004037D2 /* AMDevicePreferences.m */; };
+		458E355D196EB56000C7C630 /* AMConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 458E355C196EB56000C7C630 /* AMConfig.plist */; };
+		458E3568196EBA9F00C7C630 /* NSImage+BWTinting.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */; };
+		458E356B196EC3C800C7C630 /* AMDeviceActionsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E356A196EC3C800C7C630 /* AMDeviceActionsPanel.m */; };
+		458E356E196EDEC400C7C630 /* AMPreferencesPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E356D196EDEC400C7C630 /* AMPreferencesPanel.m */; };
+		458E3572196EE08900C7C630 /* AMSheetPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E3571196EE08900C7C630 /* AMSheetPanel.m */; };
+		458E357C196F422400C7C630 /* AMCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E357B196F422400C7C630 /* AMCellView.m */; };
+		458E95B9185B50E500A0EFE6 /* AudioMateLauncher.app in Copy AudioMateLauncher into Contents/Library/LoginItems */ = {isa = PBXBuildFile; fileRef = 459D6DA91687EF95007F2226 /* AudioMateLauncher.app */; };
+		458FA5B5168A1006008C3F39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458FA5B3168A1006008C3F39 /* MainMenu.xib */; };
+		459D6DAA1687EF95007F2226 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA562A166BC8C500C1D92D /* Cocoa.framework */; };
+		459D6DB11687EF95007F2226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DAF1687EF95007F2226 /* InfoPlist.strings */; };
+		459D6DB31687EF95007F2226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DB21687EF95007F2226 /* main.m */; };
+		459D6DB71687EF95007F2226 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DB51687EF95007F2226 /* Credits.rtf */; };
+		459D6DBA1687EF95007F2226 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DB91687EF95007F2226 /* AMAppDelegate.m */; };
+		459D6DBD1687EF96007F2226 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DBB1687EF96007F2226 /* MainMenu.xib */; };
+		459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6DC31687F00D007F2226 /* ServiceManagement.framework */; };
+		459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
+		45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36A8516BF027100A82041 /* QuartzCore.framework */; };
+		45A36ADA16BF098100A82041 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36AD916BF098100A82041 /* Security.framework */; };
+		45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B56A188451A60052112B /* AMButtonCellView.m */; };
+		45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */; };
+		45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */; };
+		45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C381688D11600FE7692 /* AMPreferences.m */; };
+		45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C3C1688D12900FE7692 /* AMAppDelegate.m */; };
+		45F62C431688D12B00FE7692 /* AMPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C401688D12A00FE7692 /* AMPopoverController.m */; };
+		45F62C541688D17900FE7692 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C501688D17900FE7692 /* Credits.rtf */; };
+		45F62C551688D17900FE7692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C521688D17900FE7692 /* InfoPlist.strings */; };
+		45F62C6A1688D1AF00FE7692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C691688D1AF00FE7692 /* main.m */; };
+		45F62C6C1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */; };
+		45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA562A166BC8C500C1D92D /* Cocoa.framework */; };
+		45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA5668166BD3FF00C1D92D /* CoreAudio.framework */; };
+		9F3701D496DB4662B44FEBB9 /* libPods-AudioMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		455404A11984999300029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Sparkle;
+		};
+		455404A31984999300029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
+			remoteInfo = "Sparkle Test App";
+		};
+		455404A51984999300029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612279D90DB5470200AB99EA;
+			remoteInfo = "Sparkle Unit Tests";
+		};
+		455404A71984999300029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
+			remoteInfo = BinaryDelta;
+		};
+		455404A91984999300029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C14BB7136EEF1500649790;
+			remoteInfo = Autoupdate;
+		};
+		455404AB198499A400029F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Sparkle;
+		};
+		45FD7EC819FD7EAD00367053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B74D85819217A74006F9DCA;
+			remoteInfo = SandboxService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4591486C1688081300BE1A44 /* Copy Embedded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */,
+				453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */,
+			);
+			name = "Copy Embedded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459D6DC11687EFD3007F2226 /* Copy AudioMateLauncher into Contents/Library/LoginItems */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				458E95B9185B50E500A0EFE6 /* AudioMateLauncher.app in Copy AudioMateLauncher into Contents/Library/LoginItems */,
+			);
+			name = "Copy AudioMateLauncher into Contents/Library/LoginItems";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEB160019853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		1CEB160119853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1CEB160219853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CEB160319853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4509DF66188157C200881203 /* generate-xib-files.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-xib-files.rb"; path = "Scripts/generate-xib-files.rb"; sourceTree = "<group>"; };
+		4509DF7318816AE500881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4509DF7818816B0600881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = com.troikalabs.AudioMate.GNTPClientService.xpc; path = GrowlXPCClient/com.troikalabs.AudioMate.GNTPClientService.xpc; sourceTree = "<group>"; };
+		45131DF2195B683400FF4DFE /* AMAudioDeviceActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActions.h; sourceTree = "<group>"; };
+		45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActions.m; sourceTree = "<group>"; };
+		451735011984964C003D4204 /* libPods-AudioMate-LetsMove.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-LetsMove.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LetsMove.a"; sourceTree = "<group>"; };
+		451735021984964C003D4204 /* libPods-AudioMate-LVDebounce.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-LVDebounce.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LVDebounce.a"; sourceTree = "<group>"; };
+		451735031984964C003D4204 /* libPods-AudioMate-StartAtLoginController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-StartAtLoginController.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-StartAtLoginController.a"; sourceTree = "<group>"; };
+		451AD491185F136F00D59E64 /* AMAudioEventNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioEventNotifier.h; path = AudioMate/AMAudioEventNotifier.h; sourceTree = SOURCE_ROOT; };
+		451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioEventNotifier.m; path = AudioMate/AMAudioEventNotifier.m; sourceTree = SOURCE_ROOT; };
+		451C1FBC168F469300D06A74 /* AMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMApplication.h; path = AudioMate/AMApplication.h; sourceTree = SOURCE_ROOT; };
+		451C1FBD168F469300D06A74 /* AMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMApplication.m; path = AudioMate/AMApplication.m; sourceTree = SOURCE_ROOT; };
+		451E1C2818460473009628DA /* AMStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMStatusBarView.h; path = AudioMate/AMStatusBarView.h; sourceTree = SOURCE_ROOT; };
+		451E1C2918460473009628DA /* AMStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMStatusBarView.m; path = AudioMate/AMStatusBarView.m; sourceTree = SOURCE_ROOT; };
+		45279A1B188AA5700058FB69 /* aqua_blue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = aqua_blue.tiff; sourceTree = "<group>"; };
+		45279A1C188AA5700058FB69 /* Clock.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Clock.tiff; sourceTree = "<group>"; };
+		45279A1D188AA5700058FB69 /* DefaultInput.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DefaultInput.tiff; sourceTree = "<group>"; };
+		45279A1E188AA5700058FB69 /* DefaultOutput.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DefaultOutput.tiff; sourceTree = "<group>"; };
+		45279A20188AA5700058FB69 /* graphite.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = graphite.tiff; sourceTree = "<group>"; };
+		45279A21188AA5700058FB69 /* SystemOutput.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SystemOutput.tiff; sourceTree = "<group>"; };
+		45279A23188AA5700058FB69 /* Select.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Select.aiff; sourceTree = "<group>"; };
+		45279A34188AA5B80058FB69 /* Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Logo.pdf; sourceTree = "<group>"; };
+		45279A3A188AA60A0058FB69 /* Equalizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Equalizer.png; sourceTree = "<group>"; };
+		45279A3D188AA60F0058FB69 /* Volume-control.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Volume-control.pdf"; sourceTree = "<group>"; };
+		454FF74D16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMClockSourcePopUpButtonCellView.h; path = AudioMate/AMClockSourcePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
+		454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMClockSourcePopUpButtonCellView.m; path = AudioMate/AMClockSourcePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
+		455404961984999300029F39 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ExternalDeps/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
+		4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTableView+ContextMenu.h"; path = "AudioMate/NSTableView+ContextMenu.h"; sourceTree = SOURCE_ROOT; };
+		4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTableView+ContextMenu.m"; path = "AudioMate/NSTableView+ContextMenu.m"; sourceTree = SOURCE_ROOT; };
+		4555210B16DD2F3C00FE7210 /* AMAudioDeviceDefaultsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceDefaultsCellView.h; path = AudioMate/AMAudioDeviceDefaultsCellView.h; sourceTree = SOURCE_ROOT; };
+		4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceDefaultsCellView.m; path = AudioMate/AMAudioDeviceDefaultsCellView.m; sourceTree = SOURCE_ROOT; };
+		4555210D16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceNameCellView.h; path = AudioMate/AMAudioDeviceNameCellView.h; sourceTree = SOURCE_ROOT; };
+		4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceNameCellView.m; path = AudioMate/AMAudioDeviceNameCellView.m; sourceTree = SOURCE_ROOT; };
+		4555210F16DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSampleRatePopUpButtonCellView.h; path = AudioMate/AMSampleRatePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
+		4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSampleRatePopUpButtonCellView.m; path = AudioMate/AMSampleRatePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
+		4567A0B21987987D00010AB6 /* AudioMateLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AudioMateLauncher.entitlements; sourceTree = "<group>"; };
+		456BCA0717AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesCellView.h; sourceTree = SOURCE_ROOT; };
+		456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesCellView.m; sourceTree = SOURCE_ROOT; };
+		456BCA0C17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesExtrasCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.h; sourceTree = SOURCE_ROOT; };
+		456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesExtrasCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.m; sourceTree = SOURCE_ROOT; };
+		4573702218898D8300C34775 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45737024188994C200C34775 /* zh-Hant */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		45737027188994D700C34775 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MoveApplication.strings"; sourceTree = "<group>"; };
+		457370291889950200C34775 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		4573702A1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MoveApplication.strings"; sourceTree = "<group>"; };
+		4573702B1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4573702C1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		457370301889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		457370311889956400C34775 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		457370321889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45772C4D184690BE00D07EF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AudioMate/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		457D09DB1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
+		458317D218820D1E001F0BE4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4584563D18843EC100809657 /* AMAudioDeviceActionsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActionsCellView.h; sourceTree = "<group>"; };
+		4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActionsCellView.m; sourceTree = "<group>"; };
+		45879E6719716505004037D2 /* AMGeneralPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGeneralPreferences.h; sourceTree = "<group>"; };
+		45879E6819716505004037D2 /* AMGeneralPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGeneralPreferences.m; sourceTree = "<group>"; };
+		45879E6A19716825004037D2 /* AMNotificationsPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNotificationsPreferences.h; sourceTree = "<group>"; };
+		45879E6B19716825004037D2 /* AMNotificationsPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNotificationsPreferences.m; sourceTree = "<group>"; };
+		45879E6D19716B4C004037D2 /* AMDevicePreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDevicePreferences.h; sourceTree = "<group>"; };
+		45879E6E19716B4C004037D2 /* AMDevicePreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDevicePreferences.m; sourceTree = "<group>"; };
+		458E355C196EB56000C7C630 /* AMConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AMConfig.plist; sourceTree = "<group>"; };
+		458E3566196EBA9F00C7C630 /* NSImage+BWTinting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+BWTinting.h"; sourceTree = "<group>"; };
+		458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+BWTinting.m"; sourceTree = "<group>"; };
+		458E3569196EC3C800C7C630 /* AMDeviceActionsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDeviceActionsPanel.h; sourceTree = "<group>"; };
+		458E356A196EC3C800C7C630 /* AMDeviceActionsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDeviceActionsPanel.m; sourceTree = "<group>"; };
+		458E356C196EDEC400C7C630 /* AMPreferencesPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPreferencesPanel.h; sourceTree = "<group>"; };
+		458E356D196EDEC400C7C630 /* AMPreferencesPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPreferencesPanel.m; sourceTree = "<group>"; };
+		458E356F196EDF2500C7C630 /* AMCellViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMCellViews.h; sourceTree = "<group>"; };
+		458E3570196EE08900C7C630 /* AMSheetPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSheetPanel.h; sourceTree = "<group>"; };
+		458E3571196EE08900C7C630 /* AMSheetPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSheetPanel.m; sourceTree = "<group>"; };
+		458E3577196F2C2A00C7C630 /* AMAudioDevicePopulatableTableCellViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAudioDevicePopulatableTableCellViewProtocol.h; sourceTree = "<group>"; };
+		458E357A196F422400C7C630 /* AMCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCellView.h; sourceTree = "<group>"; };
+		458E357B196F422400C7C630 /* AMCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCellView.m; sourceTree = "<group>"; };
+		458FA5B4168A1006008C3F39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = AudioMate/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		45915011196C333D00B104EF /* AudioMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AudioMate.entitlements; sourceTree = "<group>"; };
+		459D6DA91687EF95007F2226 /* AudioMateLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMateLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		459D6DAE1687EF95007F2226 /* AudioMateLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioMateLauncher-Info.plist"; sourceTree = "<group>"; };
+		459D6DB01687EF95007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		459D6DB21687EF95007F2226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		459D6DB41687EF95007F2226 /* AudioMateLauncher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioMateLauncher-Prefix.pch"; sourceTree = "<group>"; };
+		459D6DB61687EF95007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		459D6DB81687EF95007F2226 /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		459D6DB91687EF95007F2226 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
+		459D6DBC1687EF96007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		459D6DC31687F00D007F2226 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = /System/Library/Frameworks/ServiceManagement.framework; sourceTree = "<absolute>"; };
+		459D6E291688006B007F2226 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Frameworks/Growl.framework; sourceTree = "<group>"; };
+		459D6E6D16880482007F2226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45A36A8516BF027100A82041 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		45A36AD916BF098100A82041 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		45A5B569188451A60052112B /* AMButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonCellView.h; sourceTree = "<group>"; };
+		45A5B56A188451A60052112B /* AMButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonCellView.m; sourceTree = "<group>"; };
+		45AB3A3D166E2BD900B07220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		45B5E3CF1885B9D300F19354 /* NSPopoverFrame+LionFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPopoverFrame+LionFixes.h"; sourceTree = "<group>"; };
+		45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPopoverFrame+LionFixes.m"; sourceTree = "<group>"; };
+		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
+		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
+		45E048CC18816B31005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		45E048D218817D79005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		45F62C371688D11600FE7692 /* AMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMPreferences.h; path = AudioMate/AMPreferences.h; sourceTree = SOURCE_ROOT; };
+		45F62C381688D11600FE7692 /* AMPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMPreferences.m; path = AudioMate/AMPreferences.m; sourceTree = SOURCE_ROOT; };
+		45F62C3B1688D12900FE7692 /* AMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAppDelegate.h; path = AudioMate/AMAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		45F62C3C1688D12900FE7692 /* AMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAppDelegate.m; path = AudioMate/AMAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		45F62C3F1688D12A00FE7692 /* AMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMPopoverController.h; path = AudioMate/AMPopoverController.h; sourceTree = SOURCE_ROOT; };
+		45F62C401688D12A00FE7692 /* AMPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMPopoverController.m; path = AudioMate/AMPopoverController.m; sourceTree = SOURCE_ROOT; };
+		45F62C511688D17900FE7692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = AudioMate/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+		45F62C531688D17900FE7692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = AudioMate/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		45F62C691688D1AF00FE7692 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AudioMate/main.m; sourceTree = SOURCE_ROOT; };
+		45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Growl Registration Ticket.growlRegDict"; path = "AudioMate/Growl Registration Ticket.growlRegDict"; sourceTree = SOURCE_ROOT; };
+		45F62C731688D1E500FE7692 /* AudioMate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudioMate-Info.plist"; path = "AudioMate/AudioMate-Info.plist"; sourceTree = SOURCE_ROOT; };
+		45F62C741688D1E500FE7692 /* AudioMate-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AudioMate-Prefix.pch"; path = "AudioMate/AudioMate-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		45F9FC6817B517C8005026F2 /* Tmpl-AudioMate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tmpl-AudioMate-Info.plist"; path = "AudioMate/Tmpl-AudioMate-Info.plist"; sourceTree = SOURCE_ROOT; };
+		45FA30B4168F557800B3302C /* generate-dmg.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-dmg.rb"; path = "Scripts/generate-dmg.rb"; sourceTree = "<group>"; };
+		45FA5626166BC8C500C1D92D /* AudioMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FA562A166BC8C500C1D92D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		45FA562D166BC8C500C1D92D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		45FA562F166BC8C500C1D92D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45FA5668166BD3FF00C1D92D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.debug.xcconfig"; sourceTree = "<group>"; };
+		B8242DE3198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MoveApplication.strings; sourceTree = "<group>"; };
+		B8242DE4198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8242DE5198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459D6DA61687EF95007F2226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459D6DAA1687EF95007F2226 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA5623166BC8C500C1D92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */,
+				45A36ADA16BF098100A82041 /* Security.framework in Frameworks */,
+				45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */,
+				459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */,
+				459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */,
+				45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */,
+				45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */,
+				9F3701D496DB4662B44FEBB9 /* libPods-AudioMate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29A7BA85406B0FE67AB36776 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */,
+				DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		451E1C2718460411009628DA /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				451E1C2818460473009628DA /* AMStatusBarView.h */,
+				451E1C2918460473009628DA /* AMStatusBarView.m */,
+				458E3569196EC3C800C7C630 /* AMDeviceActionsPanel.h */,
+				458E356A196EC3C800C7C630 /* AMDeviceActionsPanel.m */,
+				458E356C196EDEC400C7C630 /* AMPreferencesPanel.h */,
+				458E356D196EDEC400C7C630 /* AMPreferencesPanel.m */,
+				458E3570196EE08900C7C630 /* AMSheetPanel.h */,
+				458E3571196EE08900C7C630 /* AMSheetPanel.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		451E5943166D00D600DEF91A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				45772C4D184690BE00D07EF6 /* Images.xcassets */,
+				458FA5B3168A1006008C3F39 /* MainMenu.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		45279A19188AA5700058FB69 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				45279A1A188AA5700058FB69 /* Images */,
+				45279A22188AA5700058FB69 /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		45279A1A188AA5700058FB69 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				45279A1B188AA5700058FB69 /* aqua_blue.tiff */,
+				45279A1C188AA5700058FB69 /* Clock.tiff */,
+				45279A1D188AA5700058FB69 /* DefaultInput.tiff */,
+				45279A1E188AA5700058FB69 /* DefaultOutput.tiff */,
+				45279A20188AA5700058FB69 /* graphite.tiff */,
+				45279A21188AA5700058FB69 /* SystemOutput.tiff */,
+				45279A34188AA5B80058FB69 /* Logo.pdf */,
+				45279A3A188AA60A0058FB69 /* Equalizer.png */,
+				45279A3D188AA60F0058FB69 /* Volume-control.pdf */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		45279A22188AA5700058FB69 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				45279A23188AA5700058FB69 /* Select.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		455404971984999300029F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				455404A21984999300029F39 /* Sparkle.framework */,
+				455404A41984999300029F39 /* Sparkle Test App.app */,
+				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
+				455404A81984999300029F39 /* BinaryDelta */,
+				455404AA1984999300029F39 /* Autoupdate.app */,
+				45FD7EC919FD7EAD00367053 /* org.sparkle-project.Sparkle.SandboxService.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4555210416DCF94100FE7210 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				458E357A196F422400C7C630 /* AMCellView.h */,
+				458E357B196F422400C7C630 /* AMCellView.m */,
+				458E356F196EDF2500C7C630 /* AMCellViews.h */,
+				4555210B16DD2F3C00FE7210 /* AMAudioDeviceDefaultsCellView.h */,
+				4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */,
+				4555210D16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.h */,
+				4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */,
+				4555210F16DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.h */,
+				4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */,
+				454FF74D16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.h */,
+				454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */,
+				456BCA0717AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.h */,
+				456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */,
+				456BCA0C17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.h */,
+				456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */,
+				4584563D18843EC100809657 /* AMAudioDeviceActionsCellView.h */,
+				4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */,
+				45A5B569188451A60052112B /* AMButtonCellView.h */,
+				45A5B56A188451A60052112B /* AMButtonCellView.m */,
+				458E3577196F2C2A00C7C630 /* AMAudioDevicePopulatableTableCellViewProtocol.h */,
+			);
+			name = CellViews;
+			sourceTree = "<group>";
+		};
+		45879E5E197164E5004037D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45F62C371688D11600FE7692 /* AMPreferences.h */,
+				45F62C381688D11600FE7692 /* AMPreferences.m */,
+				45879E6719716505004037D2 /* AMGeneralPreferences.h */,
+				45879E6819716505004037D2 /* AMGeneralPreferences.m */,
+				45879E6A19716825004037D2 /* AMNotificationsPreferences.h */,
+				45879E6B19716825004037D2 /* AMNotificationsPreferences.m */,
+				45879E6D19716B4C004037D2 /* AMDevicePreferences.h */,
+				45879E6E19716B4C004037D2 /* AMDevicePreferences.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		459D6DAC1687EF95007F2226 /* AudioMateLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				4567A0B21987987D00010AB6 /* AudioMateLauncher.entitlements */,
+				459D6DB81687EF95007F2226 /* AMAppDelegate.h */,
+				459D6DB91687EF95007F2226 /* AMAppDelegate.m */,
+				459D6DBB1687EF96007F2226 /* MainMenu.xib */,
+				459D6DAD1687EF95007F2226 /* Supporting Files */,
+			);
+			path = AudioMateLauncher;
+			sourceTree = "<group>";
+		};
+		459D6DAD1687EF95007F2226 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				459D6DAE1687EF95007F2226 /* AudioMateLauncher-Info.plist */,
+				459D6DAF1687EF95007F2226 /* InfoPlist.strings */,
+				459D6DB21687EF95007F2226 /* main.m */,
+				459D6DB41687EF95007F2226 /* AudioMateLauncher-Prefix.pch */,
+				459D6DB51687EF95007F2226 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45AB3A3B166E2BBA00B07220 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				45AB3A3D166E2BD900B07220 /* README.md */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		45F62C291688C64800FE7692 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				45B5E3CF1885B9D300F19354 /* NSPopoverFrame+LionFixes.h */,
+				45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */,
+				4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */,
+				4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */,
+				45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */,
+				45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */,
+				457D09DB1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.h */,
+				457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */,
+				458E3566196EBA9F00C7C630 /* NSImage+BWTinting.h */,
+				458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		45F62C2D1688CC5E00FE7692 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4509DF66188157C200881203 /* generate-xib-files.rb */,
+				45FA30B4168F557800B3302C /* generate-dmg.rb */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		45F9FC6717B517B0005026F2 /* Info Plist Templates */ = {
+			isa = PBXGroup;
+			children = (
+				45F9FC6817B517C8005026F2 /* Tmpl-AudioMate-Info.plist */,
+			);
+			name = "Info Plist Templates";
+			sourceTree = "<group>";
+		};
+		45FA561B166BC8C500C1D92D = {
+			isa = PBXGroup;
+			children = (
+				455404961984999300029F39 /* Sparkle.xcodeproj */,
+				451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */,
+				45F62C2D1688CC5E00FE7692 /* Scripts */,
+				45AB3A3B166E2BBA00B07220 /* Docs */,
+				45FA5630166BC8C500C1D92D /* AudioMate */,
+				459D6DAC1687EF95007F2226 /* AudioMateLauncher */,
+				45FA5629166BC8C500C1D92D /* Frameworks */,
+				45FA5627166BC8C500C1D92D /* Products */,
+				29A7BA85406B0FE67AB36776 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		45FA5627166BC8C500C1D92D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45FA5626166BC8C500C1D92D /* AudioMate.app */,
+				459D6DA91687EF95007F2226 /* AudioMateLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45FA5629166BC8C500C1D92D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */,
+				451735011984964C003D4204 /* libPods-AudioMate-LetsMove.a */,
+				451735021984964C003D4204 /* libPods-AudioMate-LVDebounce.a */,
+				451735031984964C003D4204 /* libPods-AudioMate-StartAtLoginController.a */,
+				458317D218820D1E001F0BE4 /* AVFoundation.framework */,
+				45A36AD916BF098100A82041 /* Security.framework */,
+				45A36A8516BF027100A82041 /* QuartzCore.framework */,
+				459D6E291688006B007F2226 /* Growl.framework */,
+				459D6DC31687F00D007F2226 /* ServiceManagement.framework */,
+				45FA5668166BD3FF00C1D92D /* CoreAudio.framework */,
+				45FA562A166BC8C500C1D92D /* Cocoa.framework */,
+				459D6E6D16880482007F2226 /* Foundation.framework */,
+				45FA562C166BC8C500C1D92D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45FA562C166BC8C500C1D92D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45FA562D166BC8C500C1D92D /* AppKit.framework */,
+				45FA562F166BC8C500C1D92D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		45FA5630166BC8C500C1D92D /* AudioMate */ = {
+			isa = PBXGroup;
+			children = (
+				45879E5E197164E5004037D2 /* Models */,
+				45915011196C333D00B104EF /* AudioMate.entitlements */,
+				451E1C2718460411009628DA /* Custom Views */,
+				45F62C291688C64800FE7692 /* Categories */,
+				4555210416DCF94100FE7210 /* CellViews */,
+				45F9FC6717B517B0005026F2 /* Info Plist Templates */,
+				45FA5631166BC8C500C1D92D /* Supporting Files */,
+				451E5943166D00D600DEF91A /* UI */,
+				45F62C3B1688D12900FE7692 /* AMAppDelegate.h */,
+				45F62C3C1688D12900FE7692 /* AMAppDelegate.m */,
+				451C1FBC168F469300D06A74 /* AMApplication.h */,
+				451C1FBD168F469300D06A74 /* AMApplication.m */,
+				45131DF2195B683400FF4DFE /* AMAudioDeviceActions.h */,
+				45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */,
+				451AD491185F136F00D59E64 /* AMAudioEventNotifier.h */,
+				451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */,
+				45F62C3F1688D12A00FE7692 /* AMPopoverController.h */,
+				45F62C401688D12A00FE7692 /* AMPopoverController.m */,
+			);
+			path = AudioMate;
+			sourceTree = "<group>";
+		};
+		45FA5631166BC8C500C1D92D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45279A19188AA5700058FB69 /* Assets */,
+				4509DF7718816B0600881203 /* MoveApplication.strings */,
+				4509DF7218816AE500881203 /* Localizable.strings */,
+				45F62C501688D17900FE7692 /* Credits.rtf */,
+				45F62C521688D17900FE7692 /* InfoPlist.strings */,
+				45F62C691688D1AF00FE7692 /* main.m */,
+				45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */,
+				45F62C731688D1E500FE7692 /* AudioMate-Info.plist */,
+				45F62C741688D1E500FE7692 /* AudioMate-Prefix.pch */,
+				458E355C196EB56000C7C630 /* AMConfig.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		459D6DA81687EF95007F2226 /* AudioMateLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459D6DC01687EF96007F2226 /* Build configuration list for PBXNativeTarget "AudioMateLauncher" */;
+			buildPhases = (
+				459D6DA51687EF95007F2226 /* Sources */,
+				459D6DA61687EF95007F2226 /* Frameworks */,
+				459D6DA71687EF95007F2226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioMateLauncher;
+			productName = AudioMateLauncher;
+			productReference = 459D6DA91687EF95007F2226 /* AudioMateLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45FA5625166BC8C500C1D92D /* AudioMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FA565B166BC8C600C1D92D /* Build configuration list for PBXNativeTarget "AudioMate" */;
+			buildPhases = (
+				2209D33E9EC64C538F3568E0 /* Check Pods Manifest.lock */,
+				45FA5622166BC8C500C1D92D /* Sources */,
+				45FA5623166BC8C500C1D92D /* Frameworks */,
+				45633E4F17B512E40073D8DD /* Auto Increment Build Number */,
+				45FA5624166BC8C500C1D92D /* Resources */,
+				4591486C1688081300BE1A44 /* Copy Embedded Frameworks */,
+				459D6DC11687EFD3007F2226 /* Copy AudioMateLauncher into Contents/Library/LoginItems */,
+				EB516B035F754E2182036CF4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				455404AC198499A400029F39 /* PBXTargetDependency */,
+			);
+			name = AudioMate;
+			productName = AudioDeviceNotifier;
+			productReference = 45FA5626166BC8C500C1D92D /* AudioMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45FA561D166BC8C500C1D92D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ruben Nine";
+				TargetAttributes = {
+					459D6DA81687EF95007F2226 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					45FA5625166BC8C500C1D92D = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 45FA5620166BC8C500C1D92D /* Build configuration list for PBXProject "AudioMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ar,
+				ca,
+				cs,
+				cy,
+				da,
+				de,
+				el,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				id,
+				is,
+				it,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				"pt-BR",
+				pt_BR,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sl,
+				sv,
+				English,
+				th,
+				tr,
+				uk,
+				zh_CN,
+				zh_TW,
+				"zh-Hant",
+				"zh-Hans",
+			);
+			mainGroup = 45FA561B166BC8C500C1D92D;
+			productRefGroup = 45FA5627166BC8C500C1D92D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 455404971984999300029F39 /* Products */;
+					ProjectRef = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				45FA5625166BC8C500C1D92D /* AudioMate */,
+				459D6DA81687EF95007F2226 /* AudioMateLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		455404A21984999300029F39 /* Sparkle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sparkle.framework;
+			remoteRef = 455404A11984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		455404A41984999300029F39 /* Sparkle Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Sparkle Test App.app";
+			remoteRef = 455404A31984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		455404A61984999300029F39 /* Sparkle Unit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Sparkle Unit Tests.xctest";
+			remoteRef = 455404A51984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		455404A81984999300029F39 /* BinaryDelta */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = BinaryDelta;
+			remoteRef = 455404A71984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		455404AA1984999300029F39 /* Autoupdate.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Autoupdate.app;
+			remoteRef = 455404A91984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45FD7EC919FD7EAD00367053 /* org.sparkle-project.Sparkle.SandboxService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "org.sparkle-project.Sparkle.SandboxService.xpc";
+			remoteRef = 45FD7EC819FD7EAD00367053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		459D6DA71687EF95007F2226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459D6DB11687EF95007F2226 /* InfoPlist.strings in Resources */,
+				459D6DB71687EF95007F2226 /* Credits.rtf in Resources */,
+				459D6DBD1687EF96007F2226 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA5624166BC8C500C1D92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45279A30188AA5700058FB69 /* SystemOutput.tiff in Resources */,
+				45279A2A188AA5700058FB69 /* DefaultOutput.tiff in Resources */,
+				45279A2E188AA5700058FB69 /* graphite.tiff in Resources */,
+				45279A35188AA5B80058FB69 /* Logo.pdf in Resources */,
+				45F62C541688D17900FE7692 /* Credits.rtf in Resources */,
+				45F62C551688D17900FE7692 /* InfoPlist.strings in Resources */,
+				45279A28188AA5700058FB69 /* DefaultInput.tiff in Resources */,
+				45F62C6C1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict in Resources */,
+				45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */,
+				45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */,
+				458FA5B5168A1006008C3F39 /* MainMenu.xib in Resources */,
+				45279A24188AA5700058FB69 /* aqua_blue.tiff in Resources */,
+				45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */,
+				45279A26188AA5700058FB69 /* Clock.tiff in Resources */,
+				458E355D196EB56000C7C630 /* AMConfig.plist in Resources */,
+				4509DF7918816B0600881203 /* MoveApplication.strings in Resources */,
+				45279A32188AA5700058FB69 /* Select.aiff in Resources */,
+				4509DF7418816AE500881203 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2209D33E9EC64C538F3568E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45633E4F17B512E40073D8DD /* Auto Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Auto Increment Build Number\nbuildPlist=$SRCROOT/$INFOPLIST_FILE\nPlistBuddy=\"/usr/libexec/PlistBuddy\"\n\nCFBundleVersion=`$PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\"`\nCFBundleVersion=`git --git-dir=\"$SRCROOT/.git\" log --oneline | wc -l`\n$PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n";
+		};
+		EB516B035F754E2182036CF4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		459D6DA51687EF95007F2226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459D6DB31687EF95007F2226 /* main.m in Sources */,
+				459D6DBA1687EF95007F2226 /* AMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FA5622166BC8C500C1D92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */,
+				458E356E196EDEC400C7C630 /* AMPreferencesPanel.m in Sources */,
+				458E3572196EE08900C7C630 /* AMSheetPanel.m in Sources */,
+				45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */,
+				45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */,
+				45F62C431688D12B00FE7692 /* AMPopoverController.m in Sources */,
+				45F62C6A1688D1AF00FE7692 /* main.m in Sources */,
+				451C1FBE168F469300D06A74 /* AMApplication.m in Sources */,
+				45879E6C19716825004037D2 /* AMNotificationsPreferences.m in Sources */,
+				4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */,
+				45131DF4195B683400FF4DFE /* AMAudioDeviceActions.m in Sources */,
+				45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */,
+				4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */,
+				4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */,
+				45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */,
+				45879E6F19716B4C004037D2 /* AMDevicePreferences.m in Sources */,
+				458E356B196EC3C800C7C630 /* AMDeviceActionsPanel.m in Sources */,
+				4555211216DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m in Sources */,
+				458E357C196F422400C7C630 /* AMCellView.m in Sources */,
+				4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */,
+				451AD493185F136F00D59E64 /* AMAudioEventNotifier.m in Sources */,
+				454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */,
+				45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */,
+				456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */,
+				451E1C2A18460473009628DA /* AMStatusBarView.m in Sources */,
+				458E3568196EBA9F00C7C630 /* NSImage+BWTinting.m in Sources */,
+				457257371885693C0066E978 /* NSWindow+canBecomeKeyWindow.m in Sources */,
+				456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		455404AC198499A400029F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sparkle;
+			targetProxy = 455404AB198499A400029F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4509DF7218816AE500881203 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4509DF7318816AE500881203 /* en */,
+				45E048D218817D79005FB110 /* es */,
+				45737024188994C200C34775 /* zh-Hant */,
+				4573702B1889954000C34775 /* zh-Hans */,
+				457370311889956400C34775 /* ja */,
+				1CEB160119853F52007B82EC /* ko */,
+				B8242DE4198C0EFE00D43D61 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4509DF7718816B0600881203 /* MoveApplication.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4509DF7818816B0600881203 /* en */,
+				45E048CC18816B31005FB110 /* es */,
+				45737027188994D700C34775 /* zh-Hant */,
+				4573702A1889954000C34775 /* zh-Hans */,
+				457370301889956400C34775 /* ja */,
+				1CEB160019853F52007B82EC /* ko */,
+				B8242DE3198C0EFE00D43D61 /* ru */,
+			);
+			name = MoveApplication.strings;
+			sourceTree = "<group>";
+		};
+		458FA5B3168A1006008C3F39 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				458FA5B4168A1006008C3F39 /* en */,
+				4573702218898D8300C34775 /* es */,
+				457370291889950200C34775 /* zh-Hant */,
+				4573702C1889954000C34775 /* zh-Hans */,
+				457370321889956400C34775 /* ja */,
+				1CEB160319853F52007B82EC /* ko */,
+				B8242DE5198C0EFE00D43D61 /* ru */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		459D6DAF1687EF95007F2226 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				459D6DB01687EF95007F2226 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		459D6DB51687EF95007F2226 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				459D6DB61687EF95007F2226 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		459D6DBB1687EF96007F2226 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				459D6DBC1687EF96007F2226 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		45F62C501688D17900FE7692 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45F62C511688D17900FE7692 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		45F62C521688D17900FE7692 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45F62C531688D17900FE7692 /* en */,
+				1CEB160219853F52007B82EC /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		459D6DBE1687EF96007F2226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
+				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		459D6DBF1687EF96007F2226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
+				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		45FA5659166BC8C600C1D92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		45FA565A166BC8C600C1D92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		45FA565C166BC8C600C1D92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
+				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		45FA565D166BC8C600C1D92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
+				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459D6DC01687EF96007F2226 /* Build configuration list for PBXNativeTarget "AudioMateLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459D6DBE1687EF96007F2226 /* Debug */,
+				459D6DBF1687EF96007F2226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA5620166BC8C500C1D92D /* Build configuration list for PBXProject "AudioMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA5659166BC8C600C1D92D /* Debug */,
+				45FA565A166BC8C600C1D92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FA565B166BC8C600C1D92D /* Build configuration list for PBXNativeTarget "AudioMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FA565C166BC8C600C1D92D /* Debug */,
+				45FA565D166BC8C600C1D92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45FA561D166BC8C500C1D92D /* Project object */;
+}
