@@ -501,7 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				455404961984999300029F39 /* Sparkle.xcodeproj */,
-				451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */,
+				45FD7ECA19FD835C00367053 /* XPC */,
 				45F62C2D1688CC5E00FE7692 /* Scripts */,
 				45AB3A3B166E2BBA00B07220 /* Docs */,
 				45FA5630166BC8C500C1D92D /* AudioMate */,
@@ -553,8 +553,8 @@
 		45FA5630166BC8C500C1D92D /* AudioMate */ = {
 			isa = PBXGroup;
 			children = (
-				45879E5E197164E5004037D2 /* Models */,
 				45915011196C333D00B104EF /* AudioMate.entitlements */,
+				45879E5E197164E5004037D2 /* Models */,
 				451E1C2718460411009628DA /* Custom Views */,
 				45F62C291688C64800FE7692 /* Categories */,
 				4555210416DCF94100FE7210 /* CellViews */,
@@ -590,6 +590,14 @@
 				458E355C196EB56000C7C630 /* AMConfig.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45FD7ECA19FD835C00367053 /* XPC */ = {
+			isa = PBXGroup;
+			children = (
+				451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */,
+			);
+			name = XPC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
