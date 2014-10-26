@@ -12,8 +12,6 @@
 	<dict>
 		<key>1189CF5EA96C2B2EC6EF05493325A821575A3558</key>
 		<string>ssh://github.com/sonicbee9/AudioMate.git</string>
-		<key>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</key>
-		<string>https://github.com/rowanj/Sparkle.git</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>https://github.com/sparkle-project/Sparkle.git</string>
 	</dict>
@@ -23,8 +21,6 @@
 	<dict>
 		<key>1189CF5EA96C2B2EC6EF05493325A821575A3558</key>
 		<string>..</string>
-		<key>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</key>
-		<string>../../Sparkle</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>../ExternalDeps/Sparkle</string>
 	</dict>
@@ -56,7 +52,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AD8B1546-6A0D-4EDC-BB99-71E57AE93DA6</string>
+			<string>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sparkle</string>
 		</dict>
