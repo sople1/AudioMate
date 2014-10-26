@@ -12,7 +12,7 @@
 #import "AMPreferences.h"
 #import <AMCoreAudio/AMCoreAudio.h>
 
-@interface AMStatusBarView ();
+@interface AMStatusBarView ()
 
 @property (nonatomic, retain) NSImage *image;
 @property (nonatomic, retain) NSImage *alternateImage;
@@ -32,7 +32,7 @@
 @property (nonatomic, retain) NSDictionary *largeTextFontAttributes;
 @property (nonatomic, retain) NSDictionary *largeHighlightedTextFontAttributes;
 @property (nonatomic, retain) NSShadow *textShadow;
-@property (nonatomic, retain) NSAppearance *originalAppearance;
+@property (nonatomic, assign) BOOL useDarkTheme;
 
 @end
 
@@ -47,6 +47,7 @@
         NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
 
         sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
+        sharedInstance.useDarkTheme = NO;
     });
 
     return sharedInstance;
@@ -69,11 +70,7 @@
         // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
         // in that case, we want to force our UI to use the light theme.
 
-        if (self.originalAppearance &&
-            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
-        {
-            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
-        }
+        self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(controlTintChanged:)
@@ -117,16 +114,6 @@
     }
 }
 
-- (NSAppearance *)originalAppearance
-{
-    if (!_originalAppearance)
-    {
-        _originalAppearance = self.effectiveAppearance;
-    }
-
-    return _originalAppearance;
-}
-
 - (NSMutableParagraphStyle *)paragraphStyle
 {
     if (!_paragraphStyle)
@@ -144,8 +131,7 @@
     {
         NSColor *fontColor;
 
-        if (self.originalAppearance &&
-            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.useDarkTheme)
         {
             fontColor = [NSColor whiteColor];
         }
@@ -190,8 +176,7 @@
     {
         NSColor *fontColor;
 
-        if (self.originalAppearance &&
-            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.useDarkTheme)
         {
             fontColor = [NSColor whiteColor];
         }
@@ -234,8 +219,7 @@
     {
         NSColor *shadowColor;
 
-        if (self.originalAppearance &&
-            [self.originalAppearance.name isEqualTo:NSAppearanceNameVibrantDark])
+        if (self.useDarkTheme)
         {
             shadowColor = [NSColor blackColor];
         }
@@ -364,6 +348,19 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
+    if ([self.superview respondsToSelector:@selector(effectiveAppearance)])
+    {
+        BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
+
+        if (shouldUseDarkTheme != self.useDarkTheme)
+        {
+            self.useDarkTheme = shouldUseDarkTheme;
+            self.textShadow = nil;
+            self.largeTextFontAttributes = nil;
+            self.textFontAttributes = nil;
+        }
+    }
+
     if (NSEqualRects(dirtyRect, self.bounds))
     {
         [self setup];
