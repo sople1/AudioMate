@@ -47,7 +47,6 @@
         NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
 
         sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
-        sharedInstance.useDarkTheme = NO;
     });
 
     return sharedInstance;
@@ -60,20 +59,23 @@
     if (self)
     {
         // Initialization code here.
+
         self.statusItem = statusItem;
         self.statusItem.view = self;
+        self.useDarkTheme = NO;
 
         _isHighlighted = NO;
         _topLine = @"";
         _bottomLine = @"";
 
-        if ([self respondsToSelector:@selector(appearance)])
-        {
-            // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
-            // in that case, we want to force our UI to use the light theme.
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
-        }
+        // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
+        // in that case, we want to force our UI to use the light theme.
+
+        self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+
+#endif
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(controlTintChanged:)
@@ -149,8 +151,6 @@
             NSForegroundColorAttributeName:fontColor,
             NSParagraphStyleAttributeName:self.paragraphStyle
         };
-
-        DLog(@"textFontAttributes = %@", _textFontAttributes);
     }
 
     return _textFontAttributes;
@@ -351,18 +351,19 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    if ([self.superview respondsToSelector:@selector(effectiveAppearance)])
-    {
-        BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-        if (shouldUseDarkTheme != self.useDarkTheme)
-        {
-            self.useDarkTheme = shouldUseDarkTheme;
-            self.textShadow = nil;
-            self.largeTextFontAttributes = nil;
-            self.textFontAttributes = nil;
-        }
+    BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
+
+    if (shouldUseDarkTheme != self.useDarkTheme)
+    {
+        self.useDarkTheme = shouldUseDarkTheme;
+        self.textShadow = nil;
+        self.largeTextFontAttributes = nil;
+        self.textFontAttributes = nil;
     }
+
+#endif
 
     if (NSEqualRects(dirtyRect, self.bounds))
     {
