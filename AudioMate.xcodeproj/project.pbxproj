@@ -25,7 +25,6 @@
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
 		453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
-		455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
 		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
 		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
 		4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */; };
@@ -69,6 +68,7 @@
 		45F62C6C1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */; };
 		45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA562A166BC8C500C1D92D /* Cocoa.framework */; };
 		45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA5668166BD3FF00C1D92D /* CoreAudio.framework */; };
+		45FD7ECE19FD988000367053 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
 		9F3701D496DB4662B44FEBB9 /* libPods-AudioMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CC9B69B62E41D0972482E8 /* libPods-AudioMate.a */; };
 /* End PBXBuildFile section */
 
@@ -296,7 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455404AD198499AD00029F39 /* Sparkle.framework in Frameworks */,
+				45FD7ECE19FD988000367053 /* Sparkle.framework in Frameworks */,
 				45A36ADA16BF098100A82041 /* Security.framework in Frameworks */,
 				45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */,
 				459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */,
@@ -500,7 +500,6 @@
 		45FA561B166BC8C500C1D92D = {
 			isa = PBXGroup;
 			children = (
-				455404961984999300029F39 /* Sparkle.xcodeproj */,
 				45FD7ECA19FD835C00367053 /* XPC */,
 				45F62C2D1688CC5E00FE7692 /* Scripts */,
 				45AB3A3B166E2BBA00B07220 /* Docs */,
@@ -509,6 +508,7 @@
 				45FA5629166BC8C500C1D92D /* Frameworks */,
 				45FA5627166BC8C500C1D92D /* Products */,
 				29A7BA85406B0FE67AB36776 /* Pods */,
+				455404961984999300029F39 /* Sparkle.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1117,6 +1117,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1145,6 +1149,10 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
