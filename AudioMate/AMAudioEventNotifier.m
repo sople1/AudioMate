@@ -57,13 +57,19 @@
                    audioDevice.deviceName,
                    formattedVolume];
 
-    [LVDebounce fireAfter:[self currentEventDelay]
-                   target:self
-                 selector:@selector(tryToGenerateDelayedNotification:)
-                 userInfo:@{ @"name":name,
-                             @"title":title,
-                             @"description":description,
-                             @"audioDevice":audioDevice }];
+    NSDictionary *userInfo = @{
+        @"name":name,
+        @"title":title,
+        @"description":description,
+        @"audioDevice":audioDevice
+    };
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [LVDebounce fireAfter:[self currentEventDelay]
+                       target:self
+                     selector:@selector(tryToGenerateDelayedNotification:)
+                     userInfo:userInfo];
+    });
 }
 
 - (void)muteChangeNotificationWithAudioDevice:(AMCoreAudioDevice *)audioDevice
@@ -95,10 +101,12 @@
         @"audioDevice":audioDevice
     };
 
-    [LVDebounce fireAfter:[self currentEventDelay]
-                   target:self
-                 selector:@selector(tryToGenerateDelayedNotification2:)
-                 userInfo:userInfo];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [LVDebounce fireAfter:[self currentEventDelay]
+                       target:self
+                     selector:@selector(tryToGenerateDelayedNotification2:)
+                     userInfo:userInfo];
+    });
 }
 
 - (void)clockSourceChangeNotificationWithAudioDevice:(AMCoreAudioDevice *)audioDevice

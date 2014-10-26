@@ -211,19 +211,21 @@ typedef enum : NSUInteger
     popoverWindow = self.popover.contentViewController.view.window;
     currentResponder = popoverWindow.firstResponder;
 
-    // Update tableView
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // Update tableView
 
-    [self.tableView reloadData];
+        [self.tableView reloadData];
 
-    [popoverWindow recalculateKeyViewLoop];
-    [popoverWindow makeFirstResponder:currentResponder];
+        [popoverWindow recalculateKeyViewLoop];
+        [popoverWindow makeFirstResponder:currentResponder];
 
-    // Recalculate popover bounds based on tableView's size
+        // Recalculate popover bounds based on tableView's size
 
-    if ([self.popover isShown])
-    {
-        [self recalculatePopoverContentSize];
-    }
+        if ([self.popover isShown])
+        {
+            [self recalculatePopoverContentSize];
+        }
+    });
 }
 
 - (void)refreshTableColumnWithIdentifier:(NSString *)identifier
@@ -267,10 +269,12 @@ typedef enum : NSUInteger
 
         currentResponder = self.popover.contentViewController.view.window.firstResponder;
 
-        [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
 
-        [self.popover.contentViewController.view.window recalculateKeyViewLoop];
-        [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
+            [self.popover.contentViewController.view.window recalculateKeyViewLoop];
+            [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
+        });
     }
 
     return rowAndColumnFound;
