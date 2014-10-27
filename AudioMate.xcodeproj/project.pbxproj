@@ -115,13 +115,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Sparkle;
 		};
-		45FD7EC819FD7EAD00367053 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6B74D85819217A74006F9DCA;
-			remoteInfo = SandboxService;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -384,7 +377,6 @@
 				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
 				455404A81984999300029F39 /* BinaryDelta */,
 				455404AA1984999300029F39 /* Autoupdate.app */,
-				45FD7EC919FD7EAD00367053 /* org.sparkle-project.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -655,14 +647,14 @@
 					459D6DA81687EF95007F2226 = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
 					45FA5625166BC8C500C1D92D = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -762,13 +754,6 @@
 			fileType = wrapper.application;
 			path = Autoupdate.app;
 			remoteRef = 455404A91984999300029F39 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		45FD7EC919FD7EAD00367053 /* org.sparkle-project.Sparkle.SandboxService.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "org.sparkle-project.Sparkle.SandboxService.xpc";
-			remoteRef = 45FD7EC819FD7EAD00367053 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1006,7 +991,6 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1025,7 +1009,6 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_ENTITLEMENTS = AudioMateLauncher/AudioMateLauncher.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1100,7 +1083,6 @@
 			baseConfigurationReference = 79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1129,7 +1111,6 @@
 			baseConfigurationReference = DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioMate/AudioMate.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
