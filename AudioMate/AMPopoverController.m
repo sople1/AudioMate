@@ -418,7 +418,7 @@ typedef enum : NSUInteger
 
 - (void)popoverWillShow:(NSNotification *)notification
 {
-    self.popover.behavior = ![AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorSemitransient : NSPopoverBehaviorTransient;
+    self.popover.behavior = [AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorTransient : NSPopoverBehaviorSemitransient;
 
     [self toggleShowMasterVolumes:self.showMasterVolumesButton];
 }
@@ -743,7 +743,7 @@ typedef enum : NSUInteger
          returnCode:(NSInteger)returnCode
         contextInfo:(void *)contextInfo
 {
-    self.popover.behavior = ![AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorSemitransient : NSPopoverBehaviorTransient;
+    self.popover.behavior = [AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorTransient : NSPopoverBehaviorSemitransient;
 }
 
 #pragma mark - Private Methods
