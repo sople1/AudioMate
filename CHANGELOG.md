@@ -2,6 +2,9 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
+| 2.1.2         | Restoring 10.9 support.| October 29th, 2014|
+| 2.1.1         | Fixing some conditions that would cause the app to become unresponsive.| October 27th, 2014|
+| 2.1           | Added OS X Yosemite (10.10) support.| October 27th, 2014|
 | 2.0.6         | Fixed high CPU load on app startup. | September 6th, 2014|
 | 2.0.5         | Added Russian (ru) localization (thanks to [@BasicXP](https://github.com/BasicXP)!). | August 10th, 2014|
 |               | More improvements in Japanese (ja) localization ([@shaolin405mi16](https://github.com/shaolin405mi16)). ||

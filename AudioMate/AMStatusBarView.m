@@ -70,7 +70,7 @@
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-        if ([self respondsToSelector:@selector(appearance)])
+        if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
         {
             // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
             // in that case, we want to force our UI to use the light theme.
@@ -356,7 +356,7 @@
 {
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-    if ([self.superview respondsToSelector:@selector(effectiveAppearance)])
+    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
     {
         BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
 
