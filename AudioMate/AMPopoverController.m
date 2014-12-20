@@ -159,6 +159,14 @@ typedef enum : NSUInteger
         menuItem.representedObject = audioDevice;
         menuItem.tag = audioDevice.deviceID;
 
+        // An aggregate / multi-output audio device may return a null deviceName
+        // at a certain point while it is in a transitory state
+
+        if (!audioDevice.deviceName)
+        {
+            continue;
+        }
+
         if ([self.featuredAudioDevicePopupButton itemWithTitle:audioDevice.deviceName])
         {
             // If item by this title already exist, also display the deviceID
@@ -282,9 +290,9 @@ typedef enum : NSUInteger
 
 #pragma mark - NSTableViewDelegate Methods
 
-- (NSView *) tableView:(NSTableView *)tableView
-    viewForTableColumn:(NSTableColumn *)tableColumn
-                   row:(NSInteger)row
+- (NSView *)tableView:(NSTableView *)tableView
+   viewForTableColumn:(NSTableColumn *)tableColumn
+                  row:(NSInteger)row
 {
     NSString *identifier = tableColumn.identifier;
 
@@ -382,7 +390,7 @@ typedef enum : NSUInteger
     soundOutputMenuItem = [NSMenuItem new];
 
     soundOutputMenuItem.title = [NSString stringWithFormat:NSLocalizedString(@"Use %@ for sound output", nil),
-                                 selectedAudioDevice.deviceName];
+                                                           selectedAudioDevice.deviceName];
 
     soundOutputMenuItem.image = [NSImage imageNamed:@"DefaultOutput"];
 
