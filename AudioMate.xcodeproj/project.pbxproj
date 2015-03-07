@@ -61,7 +61,6 @@
 		45F62C541688D17900FE7692 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C501688D17900FE7692 /* Credits.rtf */; };
 		45F62C551688D17900FE7692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C521688D17900FE7692 /* InfoPlist.strings */; };
 		45F62C6A1688D1AF00FE7692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C691688D1AF00FE7692 /* main.m */; };
-		45F62C6C1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */; };
 		45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA562A166BC8C500C1D92D /* Cocoa.framework */; };
 		45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA5668166BD3FF00C1D92D /* CoreAudio.framework */; };
 		45FD7ECE19FD988000367053 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
@@ -236,7 +235,6 @@
 		459D6DB91687EF95007F2226 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
 		459D6DBC1687EF96007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		459D6DC31687F00D007F2226 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = /System/Library/Frameworks/ServiceManagement.framework; sourceTree = "<absolute>"; };
-		459D6E291688006B007F2226 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Frameworks/Growl.framework; sourceTree = "<group>"; };
 		459D6E6D16880482007F2226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45A36A8516BF027100A82041 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		45A36AD916BF098100A82041 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
@@ -256,7 +254,6 @@
 		45F62C511688D17900FE7692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = AudioMate/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
 		45F62C531688D17900FE7692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = AudioMate/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		45F62C691688D1AF00FE7692 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AudioMate/main.m; sourceTree = SOURCE_ROOT; };
-		45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Growl Registration Ticket.growlRegDict"; path = "AudioMate/Growl Registration Ticket.growlRegDict"; sourceTree = SOURCE_ROOT; };
 		45F62C731688D1E500FE7692 /* AudioMate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudioMate-Info.plist"; path = "AudioMate/AudioMate-Info.plist"; sourceTree = SOURCE_ROOT; };
 		45F62C741688D1E500FE7692 /* AudioMate-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AudioMate-Prefix.pch"; path = "AudioMate/AudioMate-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		45F9FC6817B517C8005026F2 /* Tmpl-AudioMate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tmpl-AudioMate-Info.plist"; path = "AudioMate/Tmpl-AudioMate-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -515,7 +512,6 @@
 				458317D218820D1E001F0BE4 /* AVFoundation.framework */,
 				45A36AD916BF098100A82041 /* Security.framework */,
 				45A36A8516BF027100A82041 /* QuartzCore.framework */,
-				459D6E291688006B007F2226 /* Growl.framework */,
 				459D6DC31687F00D007F2226 /* ServiceManagement.framework */,
 				45FA5668166BD3FF00C1D92D /* CoreAudio.framework */,
 				45FA562A166BC8C500C1D92D /* Cocoa.framework */,
@@ -568,7 +564,6 @@
 				45F62C501688D17900FE7692 /* Credits.rtf */,
 				45F62C521688D17900FE7692 /* InfoPlist.strings */,
 				45F62C691688D1AF00FE7692 /* main.m */,
-				45F62C6B1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict */,
 				45F62C731688D1E500FE7692 /* AudioMate-Info.plist */,
 				45F62C741688D1E500FE7692 /* AudioMate-Prefix.pch */,
 				458E355C196EB56000C7C630 /* AMConfig.plist */,
@@ -771,7 +766,6 @@
 				45F62C541688D17900FE7692 /* Credits.rtf in Resources */,
 				45F62C551688D17900FE7692 /* InfoPlist.strings in Resources */,
 				45279A28188AA5700058FB69 /* DefaultInput.tiff in Resources */,
-				45F62C6C1688D1B800FE7692 /* Growl Registration Ticket.growlRegDict in Resources */,
 				45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */,
 				45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */,
 				458FA5B5168A1006008C3F39 /* MainMenu.xib in Resources */,
