@@ -7,11 +7,11 @@
 		<key>WebsiteURL</key>
 		<string>http://9labs.io</string>
 		<key>ProductURL</key>
-		<string>http://www.audiomateapp.com</string>
+		<string>http://audiomateapp.com</string>
 		<key>ContactURL</key>
-		<string>http://www.audiomateapp.com/contact</string>
+		<string>http://audiomateapp.com/contact</string>
 		<key>TwitterURL</key>
-		<string>http://www.twitter.com/The9Labs</string>
+		<string>https://twitter.com/The9Labs</string>
 	</dict>
 </dict>
 </plist>
