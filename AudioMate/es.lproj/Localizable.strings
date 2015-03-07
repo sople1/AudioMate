@@ -131,15 +131,6 @@
 "Show Sample Rates" = "Mostrar frecuencias de muestreo";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "¡Gracias por registrarse!";
-
-/* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "¡Gracias por probar AudioMate!";
-
-/* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "El tiempo de prueba se ha terminado. Si desea continuar usando AudioMate sin interrupciones, por favor registre su copia.";
-
-/* No comment provided by engineer. */
 "Unmuted" = "Activado";
 
 /* No comment provided by engineer. */
@@ -156,3 +147,9 @@
 
 /* No comment provided by engineer. */
 "Match system's default audio output device" = "Dispositivo de salida de audio predeterminado del sistema";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f kHz";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f kHz";

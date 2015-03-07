@@ -14,6 +14,8 @@
 		<string>ssh://github.com/sonicbee9/AudioMate.git</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>https://github.com/sparkle-project/Sparkle.git</string>
+		<key>F217767BC69EF95E83C928671A4DAD7921807B2A</key>
+		<string>github.com:sonicbee9/AMCoreAudio.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AudioMate.xcworkspace</string>
@@ -23,6 +25,8 @@
 		<string>..</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>../ExternalDeps/Sparkle</string>
+		<key>F217767BC69EF95E83C928671A4DAD7921807B2A</key>
+		<string>../../Frameworks/AMCoreAudio</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/sonicbee9/AudioMate.git</string>
@@ -32,6 +36,14 @@
 	<string>1189CF5EA96C2B2EC6EF05493325A821575A3558</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F217767BC69EF95E83C928671A4DAD7921807B2A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AMCoreAudio</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

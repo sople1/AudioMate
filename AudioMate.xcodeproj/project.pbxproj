@@ -261,7 +261,7 @@
 		45FA5668166BD3FF00C1D92D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
 		79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.debug.xcconfig"; sourceTree = "<group>"; };
 		B8242DE3198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MoveApplication.strings; sourceTree = "<group>"; };
-		B8242DE4198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8242DE4198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8242DE5198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */

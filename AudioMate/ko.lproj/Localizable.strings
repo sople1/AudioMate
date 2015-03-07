@@ -131,15 +131,6 @@
 "Show Sample Rates" = "샘플링 레이트 보기";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "등록해 주셔서 고맙습니다!";
-
-/* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "AudioMate를 이용해 주셔서 고맙습니다!";
-
-/* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "시험 사용 기간이 지났습니다. AudioMate를 방해 없이 편하게 사용하려면 이 제품을 등록하세요.";
-
-/* No comment provided by engineer. */
 "Unmuted" = "음소거에서 해제함";
 
 /* No comment provided by engineer. */
@@ -156,3 +147,9 @@
 
 /* No comment provided by engineer. */
 "Match system's default audio output device" = "시스템 기본 오디오 출력 디바이스를 이용";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f kHz";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f kHz";

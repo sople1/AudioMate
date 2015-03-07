@@ -131,15 +131,6 @@
 "Show Sample Rates" = "サンプルレートを表示";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "ユーザー登録ありがとうございます！";
-
-/* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "AudioMate をお試しいただきありがとう！";
-
-/* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "トライアル期間が終了しました。AudioMate を継続して使用する場合は、ユーザー登録をお願いします。";
-
-/* No comment provided by engineer. */
 "Unmuted" = "ミュート解除";
 
 /* No comment provided by engineer. */
@@ -156,3 +147,9 @@
 
 /* No comment provided by engineer. */
 "Match system's default audio output device" = "システムのデフォルト出力デバイスに合わせる";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f kHz";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f kHz";

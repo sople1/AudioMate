@@ -131,15 +131,6 @@
 "Show Sample Rates" = "Показывать частоты дискретизации";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "Благодарим за регистрацию!";
-
-/* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "Благодарим за то, что попробовали AudioMate!";
-
-/* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "Период пробного использования истёк. Если вы хотите продолжить использование AudioMate без ограничений, пожалуйста, зарегистрируйте свою копию.";
-
-/* No comment provided by engineer. */
 "Unmuted" = "Звук включен";
 
 /* No comment provided by engineer. */
@@ -156,3 +147,9 @@
 
 /* No comment provided by engineer. */
 "Match system's default audio output device" = "В соответствии с системным устройством вывода по умолчанию";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f кГц";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f кГц";
