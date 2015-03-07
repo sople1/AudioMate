@@ -713,6 +713,8 @@ typedef enum : NSUInteger
 
 - (IBAction)displayDeviceActionsSheet:(id)sender
 {
+    ((NSButton *)sender).state = NSOffState;
+
     NSWindow *popoverWindow;
     AMCoreAudioDevice *audioDevice;
     AudioObjectID audioObjectID;
