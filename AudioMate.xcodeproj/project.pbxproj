@@ -143,7 +143,6 @@
 		1CEB160019853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		1CEB160119853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1CEB160219853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1CEB160319853F52007B82EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4509DF66188157C200881203 /* generate-xib-files.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-xib-files.rb"; path = "Scripts/generate-xib-files.rb"; sourceTree = "<group>"; };
 		4509DF7318816AE500881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4509DF7818816B0600881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MoveApplication.strings; sourceTree = "<group>"; };
@@ -184,16 +183,12 @@
 		456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesCellView.m; sourceTree = SOURCE_ROOT; };
 		456BCA0C17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMAudioDeviceMasterVolumesExtrasCellView.h; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.h; sourceTree = SOURCE_ROOT; };
 		456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMAudioDeviceMasterVolumesExtrasCellView.m; path = AudioMate/AMAudioDeviceMasterVolumesExtrasCellView.m; sourceTree = SOURCE_ROOT; };
-		4573702218898D8300C34775 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45737024188994C200C34775 /* zh-Hant */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		45737027188994D700C34775 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MoveApplication.strings"; sourceTree = "<group>"; };
-		457370291889950200C34775 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		4573702A1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MoveApplication.strings"; sourceTree = "<group>"; };
 		4573702B1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		4573702C1889954000C34775 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		457370301889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		457370311889956400C34775 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		457370321889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45772C4D184690BE00D07EF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AudioMate/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		45776B3E1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
 		45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
@@ -219,7 +214,6 @@
 		458E3577196F2C2A00C7C630 /* AMAudioDevicePopulatableTableCellViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAudioDevicePopulatableTableCellViewProtocol.h; sourceTree = "<group>"; };
 		458E357A196F422400C7C630 /* AMCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCellView.h; sourceTree = "<group>"; };
 		458E357B196F422400C7C630 /* AMCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCellView.m; sourceTree = "<group>"; };
-		458FA5B4168A1006008C3F39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = AudioMate/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
 		45915011196C333D00B104EF /* AudioMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AudioMate.entitlements; sourceTree = "<group>"; };
 		459D6DA91687EF95007F2226 /* AudioMateLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMateLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459D6DAE1687EF95007F2226 /* AudioMateLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioMateLauncher-Info.plist"; sourceTree = "<group>"; };
@@ -239,6 +233,13 @@
 		45AB3A3D166E2BD900B07220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
+		45D379EF1AABA5D90072D7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45D379F01AABA6F60072D7C6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		45D379F11AABA6FE0072D7C6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		45D379F21AABA7060072D7C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		45D379F31AABA70F0072D7C6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		45D379F41AABA71B0072D7C6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		45D379F51AABA7240072D7C6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		45E048CC18816B31005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		45E048D218817D79005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45F62C371688D11600FE7692 /* AMPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMPreferences.h; path = AudioMate/AMPreferences.h; sourceTree = SOURCE_ROOT; };
@@ -262,7 +263,6 @@
 		79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.debug.xcconfig"; sourceTree = "<group>"; };
 		B8242DE3198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		B8242DE4198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B8242DE5198C0EFE00D43D61 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -678,6 +678,7 @@
 				zh_TW,
 				"zh-Hant",
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = 45FA561B166BC8C500C1D92D;
 			productRefGroup = 45FA5627166BC8C500C1D92D /* Products */;
@@ -904,13 +905,13 @@
 		458FA5B3168A1006008C3F39 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				458FA5B4168A1006008C3F39 /* en */,
-				4573702218898D8300C34775 /* es */,
-				457370291889950200C34775 /* zh-Hant */,
-				4573702C1889954000C34775 /* zh-Hans */,
-				457370321889956400C34775 /* ja */,
-				1CEB160319853F52007B82EC /* ko */,
-				B8242DE5198C0EFE00D43D61 /* ru */,
+				45D379EF1AABA5D90072D7C6 /* Base */,
+				45D379F01AABA6F60072D7C6 /* es */,
+				45D379F11AABA6FE0072D7C6 /* ru */,
+				45D379F21AABA7060072D7C6 /* zh-Hans */,
+				45D379F31AABA70F0072D7C6 /* zh-Hant */,
+				45D379F41AABA71B0072D7C6 /* ko */,
+				45D379F51AABA7240072D7C6 /* ja */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1020,7 +1021,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
 				VALID_ARCHS = x86_64;
@@ -1046,7 +1047,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = "";
 				VALID_ARCHS = x86_64;
 			};
@@ -1063,7 +1064,6 @@
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1088,7 +1088,6 @@
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
