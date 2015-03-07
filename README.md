@@ -1,15 +1,15 @@
-# Easy audio control for your Mac.
+# Easy audio control for Mac.
 
 Control all your audio devices from the status bar, receive system notifications when relevant events happen on your audio devices and more. For more information, please visit [AudioMate's website](http://audiomateapp.com).
 
-<img src="https://github.com/sonicbee9/AudioMate/raw/develop/Docs/AudioMate.png" class="center">
+<img src="https://github.com/The9Labs/AudioMate/raw/develop/Docs/AudioMate.png" class="center">
 
 ### Getting Started
 
 (Make sure [CocoaPods](http://cocoapods.org) is installed)
 
 ```bash
-$ git clone --recursive git@github.com:sonicbee9/AudioMate.git
+$ git clone --recursive git@github.com:The9Labs/AudioMate.git
 $ pod install
 ```
 
@@ -23,14 +23,14 @@ $ pod update
 
 ### Build & Run
 
-1. Open `AMCoreAudio.xcworkspace` in Xcode 5.x (or later)
+1. Open `AMCoreAudio.xcworkspace` in Xcode 6.x (or later)
 2. Hit Run (Cmd + R)
 
 ### Requirements
 
-* Xcode 5.x (for development)
-* Mac OS X 10.7 or later
-* 64-bit
+* Xcode 6.x (for development)
+* Mac OS X 10.8 or later
+* 64-bit processor
 
 ### External Dependencies
 
@@ -49,4 +49,4 @@ Do you want to contribute to the project? Please fork, patch, and then submit a 
 
 ### License
 
-AudioMate was written by Ruben Nine ([@sonicbee9](https://twitter.com/sonicbee9)) in 2012, 2013, 2014 (open-sourced in July 2014) and is licensed under the [MIT](http://opensource.org/licenses/MIT) license. See [LICENSE.md](LICENSE.md).
+AudioMate was written by Ruben Nine ([@sonicbee9](https://twitter.com/sonicbee9)) in 2012-2015 (open-sourced in July 2014) and is licensed under the [MIT](http://opensource.org/licenses/MIT) license. See [LICENSE.md](LICENSE.md).
