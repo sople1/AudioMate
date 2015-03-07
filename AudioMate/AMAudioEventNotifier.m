@@ -7,7 +7,6 @@
 //
 
 #import "AMAudioEventNotifier.h"
-#import <Growl/Growl.h>
 #import <AMCoreAudio/AMCoreAudio.h>
 #import "AMCoreAudioDevice+Formatters.h"
 #import "AMPreferences.h"
@@ -35,9 +34,8 @@
                    audioDevice.deviceName,
                    [audioDevice actualSampleRateFormattedWithShortFormat:YES]];
 
-    [self generateGrowlNotificationWithName:@"Sample Rate Changed"
-                                   andTitle:NSLocalizedString(@"Sample Rate Changed", nil)
-                             andDescription:description];
+    [self generateNotificationwithTitle:NSLocalizedString(@"Sample Rate Changed", nil)
+                         andDescription:description];
 }
 
 - (void)volumeChangeNotificationWithAudioDevice:(AMCoreAudioDevice *)audioDevice
@@ -123,9 +121,8 @@
                    audioDevice.deviceName,
                    clockSourceName];
 
-    [self generateGrowlNotificationWithName:@"Clock Source Changed"
-                                   andTitle:NSLocalizedString(@"Clock Source Changed", nil)
-                             andDescription:description];
+    [self generateNotificationwithTitle:NSLocalizedString(@"Clock Source Changed", nil)
+                         andDescription:description];
 }
 
 - (void)deviceListChangeNotificationWithAddedDevices:(NSSet *)addedDevices
@@ -136,9 +133,8 @@
         NSString *description = [NSString stringWithFormat:NSLocalizedString(@"%@ appeared", nil),
                                  audioDevice.deviceName];
 
-        [self generateGrowlNotificationWithName:@"Audio Device Appeared"
-                                       andTitle:NSLocalizedString(@"Audio Device Appeared", nil)
-                                 andDescription:description];
+        [self generateNotificationwithTitle:NSLocalizedString(@"Audio Device Appeared", nil)
+                             andDescription:description];
     }
 
     for (AMCoreAudioDevice *audioDevice in removedDevices)
@@ -146,13 +142,12 @@
         NSString *description = [NSString stringWithFormat:NSLocalizedString(@"%@ disappeared", nil),
                                  audioDevice.cachedDeviceName];
 
-        [self generateGrowlNotificationWithName:@"Audio Device Disappeared"
-                                       andTitle:NSLocalizedString(@"Audio Device Disappeared", nil)
-                                 andDescription:description];
+        [self generateNotificationwithTitle:NSLocalizedString(@"Audio Device Disappeared", nil)
+                             andDescription:description];
     }
 }
 
-#pragma mark - Private
+#pragma mark - Private Methods
 
 - (NSTimeInterval)currentEventDelay
 {
@@ -165,17 +160,14 @@
     return eventTriggeredInOurApp ? 0.05 : 1.00;
 }
 
-- (void)generateGrowlNotificationWithName:(NSString *)name
-                                 andTitle:(NSString *)title
-                           andDescription:(NSString *)description
+- (void)generateNotificationwithTitle:(NSString *)title
+                       andDescription:(NSString *)description
 {
-    [GrowlApplicationBridge notifyWithTitle:title
-                                description:description
-                           notificationName:name
-                                   iconData:nil
-                                   priority:1
-                                   isSticky:NO
-                               clickContext:nil];
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = title;
+    notification.informativeText = description;
+    
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
 }
 
 - (void)tryToGenerateDelayedNotification:(NSTimer *)timer
@@ -188,9 +180,8 @@
     title = [timer.userInfo objectForKey:@"title"];
     description = [timer.userInfo objectForKey:@"description"];
 
-    [self generateGrowlNotificationWithName:name
-                                   andTitle:title
-                             andDescription:description];
+    [self generateNotificationwithTitle:title
+                         andDescription:description];
 }
 
 // This is merely a proxy for tryToGenerateDelayedNotification:

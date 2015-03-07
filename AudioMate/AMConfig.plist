@@ -5,13 +5,13 @@
 	<key>URLs</key>
 	<dict>
 		<key>WebsiteURL</key>
-		<string>http://www.troikalabs.com</string>
+		<string>http://9labs.io</string>
 		<key>ProductURL</key>
 		<string>http://www.audiomateapp.com</string>
 		<key>ContactURL</key>
 		<string>http://www.audiomateapp.com/contact</string>
 		<key>TwitterURL</key>
-		<string>http://www.twitter.com/troikalabs</string>
+		<string>http://www.twitter.com/The9Labs</string>
 	</dict>
 </dict>
 </plist>

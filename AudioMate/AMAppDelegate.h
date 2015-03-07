@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Growl/Growl.h>
 #import "AMPopoverController.h"
 
 @interface AMAppDelegate : NSObject <NSApplicationDelegate,
-                                     AMPopoverControllerDelegate,
-                                     GrowlApplicationBridgeDelegate>
+                                     AMPopoverControllerDelegate>
 
 @property (assign) IBOutlet AMPopoverController *popoverController;
 

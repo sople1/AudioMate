@@ -7,7 +7,6 @@
 //
 
 #import "AMAppDelegate.h"
-#import <Growl/Growl.h>
 #import <AMCoreAudio/AMCoreAudio.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
 #import "PFMoveApplication.h"
@@ -16,7 +15,7 @@
 #import "AMAudioEventNotifier.h"
 #import "AMStatusBarView.h"
 
-@interface AMAppDelegate () <AMCoreAudioManagerDelegate>
+@interface AMAppDelegate () <AMCoreAudioManagerDelegate, NSUserNotificationCenterDelegate>
 
 @property (nonatomic, strong) AMCoreAudioManager *audioManager;
 @property (nonatomic, strong) NSRunningApplication *previousActiveApplication;
@@ -25,7 +24,7 @@
 
 @implementation AMAppDelegate
 
-#pragma mark - Access
+#pragma mark - Access Methods
 
 - (AMCoreAudioManager *)audioManager
 {
@@ -213,9 +212,9 @@
     PFMoveToApplicationsFolderIfNecessary();
 #endif
 
-    // Set GrowlApplicationBridge delegate to self
+    // Set NSUserNotificationCenter delegate to self
 
-    [GrowlApplicationBridge setGrowlDelegate:self];
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
 
     // Set CoreAudioManager delegate to self
 
@@ -285,14 +284,14 @@
     [AMStatusBarView sharedInstance].isHighlighted = NO;
 }
 
-#pragma mark - GrowlApplicationBridgeDelegate
+#pragma mark - NSUserNotificationCenterDelegate Methods
 
-- (BOOL)hasNetworkClientEntitlement
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
 {
-    return NO;
+    return YES;
 }
 
-#pragma mark - Private
+#pragma mark - Private Methods
 
 - (void)runDeviceActionsOnDevices:(NSSet *)devices
 {

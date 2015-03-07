@@ -91,7 +91,7 @@ typedef enum : NSUInteger
 {
     if (!_startAtLoginController)
     {
-        _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.troikalabs.AudioMateLauncher"];
+        _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"io.9labs.AudioMateLauncher"];
     }
 
     return _startAtLoginController;

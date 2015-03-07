@@ -23,7 +23,6 @@
 		45279A35188AA5B80058FB69 /* Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A34188AA5B80058FB69 /* Logo.pdf */; };
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
-		453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
 		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
 		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
@@ -32,7 +31,6 @@
 		4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */; };
 		456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */; };
 		456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */; };
-		457257371885693C0066E978 /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */; };
 		45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45772C4D184690BE00D07EF6 /* Images.xcassets */; };
 		4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */; };
 		45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6819716505004037D2 /* AMGeneralPreferences.m */; };
@@ -53,11 +51,9 @@
 		459D6DBA1687EF95007F2226 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DB91687EF95007F2226 /* AMAppDelegate.m */; };
 		459D6DBD1687EF96007F2226 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DBB1687EF96007F2226 /* MainMenu.xib */; };
 		459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6DC31687F00D007F2226 /* ServiceManagement.framework */; };
-		459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D6E291688006B007F2226 /* Growl.framework */; };
 		45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36A8516BF027100A82041 /* QuartzCore.framework */; };
 		45A36ADA16BF098100A82041 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36AD916BF098100A82041 /* Security.framework */; };
 		45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B56A188451A60052112B /* AMButtonCellView.m */; };
-		45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */; };
 		45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */; };
 		45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C381688D11600FE7692 /* AMPreferences.m */; };
 		45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C3C1688D12900FE7692 /* AMAppDelegate.m */; };
@@ -73,6 +69,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		453CE9D01AAB668E002E3BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B74D85819217A74006F9DCA;
+			remoteInfo = SandboxService;
+		};
 		455404A11984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
@@ -125,7 +128,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */,
-				453289FA196C2F96003282F4 /* Growl.framework in Copy Embedded Frameworks */,
 			);
 			name = "Copy Embedded Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +154,6 @@
 		4509DF66188157C200881203 /* generate-xib-files.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = "generate-xib-files.rb"; path = "Scripts/generate-xib-files.rb"; sourceTree = "<group>"; };
 		4509DF7318816AE500881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4509DF7818816B0600881203 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MoveApplication.strings; sourceTree = "<group>"; };
-		451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = com.troikalabs.AudioMate.GNTPClientService.xpc; path = GrowlXPCClient/com.troikalabs.AudioMate.GNTPClientService.xpc; sourceTree = "<group>"; };
 		45131DF2195B683400FF4DFE /* AMAudioDeviceActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActions.h; sourceTree = "<group>"; };
 		45131DF3195B683400FF4DFE /* AMAudioDeviceActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActions.m; sourceTree = "<group>"; };
 		451735011984964C003D4204 /* libPods-AudioMate-LetsMove.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AudioMate-LetsMove.a"; path = "../../../Library/Developer/Xcode/DerivedData/AudioMate-affysllxudigvmbslgcoipjivhsa/Build/Products/Debug/libPods-AudioMate-LetsMove.a"; sourceTree = "<group>"; };
@@ -201,8 +202,6 @@
 		457370311889956400C34775 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		457370321889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45772C4D184690BE00D07EF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AudioMate/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		457D09DB1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
-		457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 		458317D218820D1E001F0BE4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4584563D18843EC100809657 /* AMAudioDeviceActionsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActionsCellView.h; sourceTree = "<group>"; };
 		4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActionsCellView.m; sourceTree = "<group>"; };
@@ -244,8 +243,6 @@
 		45A5B569188451A60052112B /* AMButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonCellView.h; sourceTree = "<group>"; };
 		45A5B56A188451A60052112B /* AMButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonCellView.m; sourceTree = "<group>"; };
 		45AB3A3D166E2BD900B07220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		45B5E3CF1885B9D300F19354 /* NSPopoverFrame+LionFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPopoverFrame+LionFixes.h"; sourceTree = "<group>"; };
-		45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPopoverFrame+LionFixes.m"; sourceTree = "<group>"; };
 		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
 		45E048CC18816B31005FB110 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MoveApplication.strings; sourceTree = "<group>"; };
@@ -292,7 +289,6 @@
 				45FD7ECE19FD988000367053 /* Sparkle.framework in Frameworks */,
 				45A36ADA16BF098100A82041 /* Security.framework in Frameworks */,
 				45A36A8616BF027100A82041 /* QuartzCore.framework in Frameworks */,
-				459D6E2A1688006B007F2226 /* Growl.framework in Frameworks */,
 				459D6DC41687F00D007F2226 /* ServiceManagement.framework in Frameworks */,
 				45FA5669166BD3FF00C1D92D /* CoreAudio.framework in Frameworks */,
 				45FA562B166BC8C500C1D92D /* Cocoa.framework in Frameworks */,
@@ -377,6 +373,7 @@
 				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
 				455404A81984999300029F39 /* BinaryDelta */,
 				455404AA1984999300029F39 /* Autoupdate.app */,
+				453CE9D11AAB668E002E3BEE /* org.sparkle-project.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -458,14 +455,10 @@
 		45F62C291688C64800FE7692 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				45B5E3CF1885B9D300F19354 /* NSPopoverFrame+LionFixes.h */,
-				45B5E3D01885B9D300F19354 /* NSPopoverFrame+LionFixes.m */,
 				4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */,
 				4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */,
 				45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */,
 				45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */,
-				457D09DB1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.h */,
-				457D09DC1885669C00A7FB4D /* NSWindow+canBecomeKeyWindow.m */,
 				458E3566196EBA9F00C7C630 /* NSImage+BWTinting.h */,
 				458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */,
 			);
@@ -492,7 +485,6 @@
 		45FA561B166BC8C500C1D92D = {
 			isa = PBXGroup;
 			children = (
-				45FD7ECA19FD835C00367053 /* XPC */,
 				45F62C2D1688CC5E00FE7692 /* Scripts */,
 				45AB3A3B166E2BBA00B07220 /* Docs */,
 				45FA5630166BC8C500C1D92D /* AudioMate */,
@@ -584,14 +576,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		45FD7ECA19FD835C00367053 /* XPC */ = {
-			isa = PBXGroup;
-			children = (
-				451250DC1886D00100FC20F7 /* com.troikalabs.AudioMate.GNTPClientService.xpc */,
-			);
-			name = XPC;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -641,7 +625,7 @@
 		45FA561D166BC8C500C1D92D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Ruben Nine";
 				TargetAttributes = {
 					459D6DA81687EF95007F2226 = {
@@ -721,6 +705,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		453CE9D11AAB668E002E3BEE /* org.sparkle-project.Sparkle.SandboxService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "org.sparkle-project.Sparkle.SandboxService.xpc";
+			remoteRef = 453CE9D01AAB668E002E3BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		455404A21984999300029F39 /* Sparkle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -861,7 +852,6 @@
 				458E356E196EDEC400C7C630 /* AMPreferencesPanel.m in Sources */,
 				458E3572196EE08900C7C630 /* AMSheetPanel.m in Sources */,
 				45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */,
-				45B5E3D11885B9D300F19354 /* NSPopoverFrame+LionFixes.m in Sources */,
 				45F62C431688D12B00FE7692 /* AMPopoverController.m in Sources */,
 				45F62C6A1688D1AF00FE7692 /* main.m in Sources */,
 				451C1FBE168F469300D06A74 /* AMApplication.m in Sources */,
@@ -883,7 +873,6 @@
 				456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */,
 				451E1C2A18460473009628DA /* AMStatusBarView.m in Sources */,
 				458E3568196EBA9F00C7C630 /* NSImage+BWTinting.m in Sources */,
-				457257371885693C0066E978 /* NSWindow+canBecomeKeyWindow.m in Sources */,
 				456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,16 +1074,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1114,17 +1098,12 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioMate-anfpekqegskchhbpfxxalanoxovc/Build/Products/Debug",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
