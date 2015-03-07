@@ -2,6 +2,13 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
+| 2.2           | Improving Russian localization.| ?|
+|               | Removing dependency on Growl.||
+|               | Using Sparkle master branch.||
+|               | Minor bugfixes.||
+|               | IMPORTANT: AudioMate now requires OS X 10.8 or greater.||
+| 2.1.4         | Fixed a a crash when an aggregate or multi-output audio device in a transitory state returned a null device name.| December 20th, 2014|
+| 2.1.3         | Updated appcast URL | December 3rd, 2014|
 | 2.1.2         | Restoring 10.9 support.| October 29th, 2014|
 | 2.1.1         | Fixing some conditions that would cause the app to become unresponsive.| October 27th, 2014|
 | 2.1           | Added OS X Yosemite (10.10) support.| October 27th, 2014|
