@@ -17,7 +17,6 @@
 #import "AMDeviceActionsPanel.h"
 #import "AMPreferencesPanel.h"
 #import "NSImage+BWTinting.h"
-#import "NSPopoverFrame+LionFixes.h"
 #import "NSTableView+ContextMenu.h"
 #import "NSWindow+canBecomeKeyWindow.h"
 

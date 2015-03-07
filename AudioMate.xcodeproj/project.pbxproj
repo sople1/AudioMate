@@ -32,6 +32,7 @@
 		456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */; };
 		456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */; };
 		45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45772C4D184690BE00D07EF6 /* Images.xcassets */; };
+		45776B401AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */; };
 		4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */; };
 		45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6819716505004037D2 /* AMGeneralPreferences.m */; };
 		45879E6C19716825004037D2 /* AMNotificationsPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879E6B19716825004037D2 /* AMNotificationsPreferences.m */; };
@@ -194,6 +195,8 @@
 		457370311889956400C34775 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		457370321889956400C34775 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45772C4D184690BE00D07EF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AudioMate/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		45776B3E1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 		458317D218820D1E001F0BE4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4584563D18843EC100809657 /* AMAudioDeviceActionsCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAudioDeviceActionsCellView.h; sourceTree = "<group>"; };
 		4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAudioDeviceActionsCellView.m; sourceTree = "<group>"; };
@@ -444,6 +447,8 @@
 		45F62C291688C64800FE7692 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				45776B3E1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.h */,
+				45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */,
 				4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */,
 				4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */,
 				45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */,
@@ -836,6 +841,7 @@
 				451C1FBE168F469300D06A74 /* AMApplication.m in Sources */,
 				45879E6C19716825004037D2 /* AMNotificationsPreferences.m in Sources */,
 				4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */,
+				45776B401AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m in Sources */,
 				45131DF4195B683400FF4DFE /* AMAudioDeviceActions.m in Sources */,
 				45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */,
 				4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */,
