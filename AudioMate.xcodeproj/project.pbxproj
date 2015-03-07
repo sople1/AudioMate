@@ -24,7 +24,7 @@
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
-		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; };
+		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
 		4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210C16DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m */; };
 		4555211216DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210E16DD2F3D00FE7210 /* AMAudioDeviceNameCellView.m */; };
@@ -68,13 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		453CE9D01AAB668E002E3BEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6B74D85819217A74006F9DCA;
-			remoteInfo = SandboxService;
-		};
 		455404A11984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
@@ -370,7 +363,6 @@
 				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
 				455404A81984999300029F39 /* BinaryDelta */,
 				455404AA1984999300029F39 /* Autoupdate.app */,
-				453CE9D11AAB668E002E3BEE /* org.sparkle-project.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -700,13 +692,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		453CE9D11AAB668E002E3BEE /* org.sparkle-project.Sparkle.SandboxService.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "org.sparkle-project.Sparkle.SandboxService.xpc";
-			remoteRef = 453CE9D01AAB668E002E3BEE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		455404A21984999300029F39 /* Sparkle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
