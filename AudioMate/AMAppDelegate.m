@@ -7,9 +7,13 @@
 //
 
 #import "AMAppDelegate.h"
+
+#ifndef APPSTORE
+#import "PFMoveApplication.h"
+#endif
+
 #import <AMCoreAudio/AMCoreAudio.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
-#import "PFMoveApplication.h"
 #import "AMPreferences.h"
 #import "AMAudioDeviceActions.h"
 #import "AMAudioEventNotifier.h"
@@ -209,7 +213,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 #ifndef DEBUG
+#ifndef APPSTORE
     PFMoveToApplicationsFolderIfNecessary();
+#endif
 #endif
 
     // Set NSUserNotificationCenter delegate to self

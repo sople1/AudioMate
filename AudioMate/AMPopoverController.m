@@ -7,7 +7,11 @@
 //
 
 #import "AMPopoverController.h"
+
+#ifndef APPSTORE
 #import <Sparkle/SUUpdater.h>
+#endif
+
 #import <AMCoreAudio/AMCoreAudioDevice+Formatters.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
 #import "AMPreferences.h"
@@ -55,6 +59,10 @@ typedef enum : NSUInteger
 
 - (void)awakeFromNib
 {
+#ifdef APPSTORE
+    self.checkForUpdatesButton.hidden = YES;
+#endif
+    
     [self.showMasterVolumesButton bind:@"value"
                               toObject:[AMPreferences sharedPreferences].general
                            withKeyPath:@"shouldShowMasterVolumes"
@@ -493,8 +501,9 @@ typedef enum : NSUInteger
     [self.popover close];
 
     // And now check for updates
-
+#ifndef APPSTORE
     [[SUUpdater sharedUpdater] checkForUpdates:self];
+#endif
 }
 
 - (IBAction)openBrowserURL:(id)sender
