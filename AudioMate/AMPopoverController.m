@@ -63,6 +63,13 @@ typedef enum : NSUInteger
     self.checkForUpdatesButton.hidden = YES;
 #endif
     
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
+    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+    {
+        self.popover.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+    }
+#endif
+    
     [self.showMasterVolumesButton bind:@"value"
                               toObject:[AMPreferences sharedPreferences].general
                            withKeyPath:@"shouldShowMasterVolumes"
