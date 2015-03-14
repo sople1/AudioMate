@@ -377,7 +377,7 @@
     }
 
     NSDictionary *attributes;
-
+    
     [self.statusItem drawStatusBarBackgroundInRect:dirtyRect
                                      withHighlight:self.isHighlighted];
 
@@ -505,11 +505,11 @@
                                            0,
                                            1 + [self scalarVolume] * imageSize.width,
                                            imageSize.height);
-
+    
     [self.scaledAndTintedVolumeImage drawAtPoint:imagePoint
                                         fromRect:NSZeroRect
-                                       operation:(self.isHighlighted ? NSCompositePlusLighter : NSCompositeSourceOut)
-                                        fraction:0.3];
+                                       operation:NSCompositeSourceOver
+                                        fraction:self.isHighlighted ? 1.0 : 0.2];
 
     [self.scaledAndTintedVolumeImage drawAtPoint:imagePoint
                                         fromRect:volumeClippingRect
