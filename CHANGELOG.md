@@ -2,9 +2,11 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
-| 2.2           | Improving Russian localization.| ?|
-|               | Removing dependency on Growl.||
-|               | Using Sparkle master branch.||
+| 2.2.1         | Disabled popover transparency in Yosemite.| March 14th, 2015|
+|               | Fixed volume control drawing in highlighted state in Yosemite||
+| 2.2           | Improved Russian localization.| March 7th, 2015|
+|               | Removed dependency on Growl.||
+|               | Updated copyright, web/social links, and internal namespace to reference 9Labs. ||
 |               | Minor bugfixes.||
 |               | IMPORTANT: AudioMate now requires OS X 10.8 or greater.||
 | 2.1.4         | Fixed a a crash when an aggregate or multi-output audio device in a transitory state returned a null device name.| December 20th, 2014|
