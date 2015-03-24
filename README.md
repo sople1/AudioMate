@@ -29,7 +29,7 @@ $ pod update
 ### Requirements
 
 * Xcode 6.x (for development)
-* Mac OS X 10.8 or later
+* OS X 10.8 or later
 * 64-bit processor
 
 ### External Dependencies
