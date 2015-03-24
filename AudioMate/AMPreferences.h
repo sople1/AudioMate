@@ -12,6 +12,7 @@
 #import "AMDevicePreferences.h"
 
 extern const NSString *kAMNoAudioDevice;
+extern const NSString *kAMDefaultAudioDevice;
 
 @interface AMPreferences : NSObject
 

@@ -645,6 +645,10 @@ typedef enum : NSUInteger
 
         audioDevice = [AMCoreAudioDevice defaultOutputDevice];
 
+        [AMPreferences sharedPreferences].device.featuredDeviceUID = (NSString *)kAMDefaultAudioDevice;
+    }
+    else if ([sender selectedItem].tag == kNoSelection)
+    {
         [AMPreferences sharedPreferences].device.featuredDeviceUID = (NSString *)kAMNoAudioDevice;
     }
     else
@@ -832,10 +836,14 @@ typedef enum : NSUInteger
     // Find selected menu item
 
     NSString *featuredDeviceUID = [AMPreferences sharedPreferences].device.featuredDeviceUID;
-
+    
     if (featuredDeviceUID)
     {
         if ([kAMNoAudioDevice isEqualToString:featuredDeviceUID])
+        {
+            selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:kNoSelection];
+        }
+        else if ([kAMDefaultAudioDevice isEqualToString:featuredDeviceUID])
         {
             selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:kDefaultOuputDevice];
         }
