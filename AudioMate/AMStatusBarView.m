@@ -98,7 +98,7 @@
     {
         _appIconImage = [[NSImage imageNamed:@"Speaker"] copy];
         
-        _appIconImage.size = NSMakeSize(20, 15);
+        _appIconImage.size = NSMakeSize(16, 12);
     }
 
     return _appIconImage;
@@ -421,16 +421,14 @@
 
     if (self.icon)
     {
-        NSRect bounds;
         NSSize iconSize;
         CGFloat iconX;
         CGFloat iconY;
         NSPoint iconPoint;
 
-        bounds = [self fullFrameRect];
         iconSize = self.icon.size;
-        iconX = roundf((NSWidth(bounds) - iconSize.width) / 2);
-        iconY = roundf((NSHeight(bounds) - iconSize.height) / 2);
+        iconX = roundf((NSWidth(self.frame) - iconSize.width) / 2);
+        iconY = roundf((NSHeight(self.frame) - iconSize.height) / 2);
         iconPoint = NSMakePoint(iconX, iconY);
 
         [self.icon drawAtPoint:iconPoint
@@ -447,7 +445,7 @@
 
         if (self.displayMode == AMSampleRateOnly)
         {
-            [self.topLine drawInRect:self.fullFrameRect
+            [self.topLine drawInRect:self.frame
                       withAttributes:attributes];
         }
         else
@@ -588,14 +586,6 @@
                       [NSStatusBar systemStatusBar].thickness);
 
     return rect;
-}
-
-- (NSRect)fullFrameRect
-{
-    return NSMakeRect(0.0,
-                      0.0,
-                      NSWidth(self.frame),
-                      NSHeight(self.frame) - 2);
 }
 
 - (NSRect)bottomHalfRect
