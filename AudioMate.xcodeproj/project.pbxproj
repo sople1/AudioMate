@@ -23,6 +23,8 @@
 		45279A35188AA5B80058FB69 /* Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A34188AA5B80058FB69 /* Logo.pdf */; };
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
+		454F243B1AC4341C008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
+		454F243C1AC4341D008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
 		455404AE198499B500029F39 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 455404A21984999300029F39 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */; };
@@ -228,6 +230,7 @@
 		45279A34188AA5B80058FB69 /* Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Logo.pdf; sourceTree = "<group>"; };
 		45279A3A188AA60A0058FB69 /* Equalizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Equalizer.png; sourceTree = "<group>"; };
 		45279A3D188AA60F0058FB69 /* Volume-control.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Volume-control.pdf"; sourceTree = "<group>"; };
+		454F243A1AC4341C008D9B37 /* Speaker.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Speaker.pdf; sourceTree = "<group>"; };
 		454FF74D16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMClockSourcePopUpButtonCellView.h; path = AudioMate/AMClockSourcePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
 		454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMClockSourcePopUpButtonCellView.m; path = AudioMate/AMClockSourcePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
 		455404961984999300029F39 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ExternalDeps/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
@@ -424,6 +427,7 @@
 				45279A1E188AA5700058FB69 /* DefaultOutput.tiff */,
 				45279A20188AA5700058FB69 /* graphite.tiff */,
 				45279A21188AA5700058FB69 /* SystemOutput.tiff */,
+				454F243A1AC4341C008D9B37 /* Speaker.pdf */,
 				45279A34188AA5B80058FB69 /* Logo.pdf */,
 				45279A3A188AA60A0058FB69 /* Equalizer.png */,
 				45279A3D188AA60F0058FB69 /* Volume-control.pdf */,
@@ -873,6 +877,7 @@
 				45A336E91AACA48200ED7823 /* Volume-control.pdf in Resources */,
 				45A336EA1AACA48200ED7823 /* Images.xcassets in Resources */,
 				45A336EB1AACA48200ED7823 /* MainMenu.xib in Resources */,
+				454F243C1AC4341D008D9B37 /* Speaker.pdf in Resources */,
 				45A336EC1AACA48200ED7823 /* aqua_blue.tiff in Resources */,
 				45A336ED1AACA48200ED7823 /* Equalizer.png in Resources */,
 				45A336EE1AACA48200ED7823 /* Clock.tiff in Resources */,
@@ -902,6 +907,7 @@
 				458E355D196EB56000C7C630 /* AMConfig.plist in Resources */,
 				4509DF7918816B0600881203 /* MoveApplication.strings in Resources */,
 				45279A32188AA5700058FB69 /* Select.aiff in Resources */,
+				454F243B1AC4341C008D9B37 /* Speaker.pdf in Resources */,
 				4509DF7418816AE500881203 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,6 +5,7 @@
 //  Created by Ruben Nine on 27/11/13.
 //  Copyright (c) 2013 Ruben Nine. All rights reserved.
 //
+// TODO: Completely refactor this POS.
 
 #import "AMStatusBarView.h"
 #import <AMCoreAudio/AMCoreAudioDevice+Formatters.h>
@@ -95,11 +96,39 @@
 {
     if (!_appIconImage)
     {
-        _appIconImage = [[NSImage imageNamed:@"AppIcon"] copy];
-        _appIconImage.size = NSMakeSize(19, 19);
+        _appIconImage = [[NSImage imageNamed:@"Speaker"] copy];
+        
+        _appIconImage.size = NSMakeSize(20, 15);
     }
 
     return _appIconImage;
+}
+
+- (void)setImage:(NSImage *)image
+{
+    _image = image;
+    
+    if (!_image)
+    {
+        _alternateImage = nil;
+
+        return;
+    }
+    
+    _alternateImage = [_image copy];
+    
+    [_alternateImage lockFocus];
+    {
+        [[NSGraphicsContext currentContext] setCompositingOperation:NSCompositeSourceAtop];
+        
+        NSRect rect = NSMakeRect(0, 0, _appIconImage.size.width, _appIconImage.size.height);
+        
+        NSBezierPath *rectanglePath = [NSBezierPath bezierPathWithRect:rect];
+        
+        [[NSColor whiteColor] setFill];
+        [rectanglePath fill];
+    }
+    [_alternateImage unlockFocus];
 }
 
 - (NSImage *)volumeImage
@@ -343,11 +372,9 @@
 
 - (NSImage *)icon
 {
-    NSImage *theIcon;
-
-    theIcon = (self.isHighlighted && self.alternateImage) ? self.alternateImage : self.image;
-
-    return theIcon;
+    // Return a dark or light version of the icon
+    
+    return (self.useDarkTheme || self.isHighlighted) && self.alternateImage ? self.alternateImage : self.image;
 }
 
 #pragma mark Drawing
@@ -376,10 +403,10 @@
         [self setup];
     }
 
-    NSDictionary *attributes;
-    
     [self.statusItem drawStatusBarBackgroundInRect:dirtyRect
                                      withHighlight:self.isHighlighted];
+
+    NSDictionary *attributes;
 
     if (self.displayMode == AMSampleRateOnly)
     {
@@ -389,8 +416,6 @@
     {
         attributes = self.isHighlighted ? self.highlightedTextFontAttributes : self.textFontAttributes;
     }
-
-    self.frame = self.calculatedStatusBarRect;
 
     [NSGraphicsContext saveGraphicsState];
 
@@ -402,7 +427,7 @@
         CGFloat iconY;
         NSPoint iconPoint;
 
-        bounds = self.bounds;
+        bounds = [self fullFrameRect];
         iconSize = self.icon.size;
         iconX = roundf((NSWidth(bounds) - iconSize.width) / 2);
         iconY = roundf((NSHeight(bounds) - iconSize.height) / 2);
@@ -477,8 +502,8 @@
             }
             else
             {
-                [@"N/A" drawInRect : self.bottomHalfRect
-                 withAttributes : attributes];
+                [@"N/A" drawInRect:self.bottomHalfRect
+                    withAttributes:attributes];
             }
         }
     }
@@ -541,15 +566,12 @@
 
 - (NSRect)calculatedStatusBarRect
 {
-    NSImage *icon;
     NSRect rect;
     CGFloat width;
 
-    icon = self.icon;
-
-    if (icon)
+    if (!self.audioDevice)
     {
-        width = icon.size.width + 8;
+        width = self.appIconImage.size.width + 8;
     }
     else if (self.displayMode == AMSampleRateOnly)
     {
@@ -653,6 +675,8 @@
         default:
             break;
     }
+
+    self.frame = self.calculatedStatusBarRect;
 }
 
 - (Float32)scalarVolume
