@@ -2,6 +2,8 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
+| 2.2.2         | Fixed that information to show on status bar set to none was not persisted upon relaunch.| March 26th, 2015|
+|               | Updated default status bar icon to be monocrome.||
 | 2.2.1         | Disabled popover transparency in Yosemite.| March 14th, 2015|
 |               | Fixed volume control drawing in highlighted state in Yosemite||
 | 2.2           | Improved Russian localization.| March 7th, 2015|
