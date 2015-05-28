@@ -757,7 +757,6 @@
 						};
 					};
 					45FA5625166BC8C500C1D92D = {
-						DevelopmentTeam = ZBJR46PSPF;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
