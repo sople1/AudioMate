@@ -1,5 +1,5 @@
 PODS:
-  - AMCoreAudio (1.4.2)
+  - AMCoreAudio (1.4.3)
   - LetsMove (1.18)
   - LVDebounce (0.0.4)
   - StartAtLoginController (0.0.1)
@@ -11,9 +11,9 @@ DEPENDENCIES:
   - StartAtLoginController (~> 0.0.1)
 
 SPEC CHECKSUMS:
-  AMCoreAudio: d90980c6f364bc156e83a8005429222a907f443b
-  LetsMove: 0ab0d5d97180649c220a8eb12f9339a3f2b06e87
-  LVDebounce: 697df869ab4b11a543844acab021def0e1364d83
-  StartAtLoginController: 9b9f8153f5e38f67a2ebbc4a2ec2975d8ebd11c6
+  AMCoreAudio: 941bf9061cf1b728350d33d1c4a9a120c19c59d5
+  LetsMove: 218a0ce5c6cc1581c06efb8777f7f44dfadc4b73
+  LVDebounce: 166cf3e2215e74a1aae42902df15701f9c31d34f
+  StartAtLoginController: 9ff14295bab38f7cba164a838349f6c0a2d83020
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.1

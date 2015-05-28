@@ -22,6 +22,7 @@
 #import "AMPreferencesPanel.h"
 #import "NSImage+BWTinting.h"
 #import "NSTableView+ContextMenu.h"
+#import "NSTableView+Calculations.h"
 #import "NSWindow+canBecomeKeyWindow.h"
 
 typedef enum : NSInteger
@@ -65,7 +66,7 @@ typedef enum : NSUInteger
 #endif
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
-    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+    if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
     {
         self.popover.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
     }
@@ -317,6 +318,11 @@ typedef enum : NSUInteger
    viewForTableColumn:(NSTableColumn *)tableColumn
                   row:(NSInteger)row
 {
+    if (self.audioDevices.count <= row)
+    {
+        return nil;
+    }
+
     NSString *identifier = tableColumn.identifier;
 
     if ([identifier isEqualToString:@"AudioDeviceName"] ||
@@ -798,30 +804,7 @@ typedef enum : NSUInteger
         _originalPopoverContentHeight = self.popover.contentSize.height;
     }
 
-    // We calculate the table view height by summing all the cell heights
-    // and taking intercell padding into account
-
-    CGFloat tableViewContentHeight = 0;
-
-    for (int i = 0; i < self.tableView.numberOfRows; i++)
-    {
-        // Note that this is for view-based tableviews
-
-        NSView *v = [self.tableView viewAtColumn:0
-                                             row:i
-                                 makeIfNecessary:YES];
-
-        if (v)
-        {
-            tableViewContentHeight += v.frame.size.height;
-
-            // take intercell padding into account
-
-            tableViewContentHeight += self.tableView.intercellSpacing.height;
-        }
-    }
-
-    CGFloat deltaY = tableViewContentHeight - _originalTableViewHeight;
+    CGFloat deltaY = [self.tableView contentHeight] - _originalTableViewHeight;
 
     // Resize popover, but only if it is visible
     // but ensuring that the content height is never

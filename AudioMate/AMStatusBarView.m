@@ -12,6 +12,7 @@
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
 #import "AMPreferences.h"
 #import <AMCoreAudio/AMCoreAudio.h>
+#import "NSString+Calculations.h"
 
 @interface AMStatusBarView ()
 
@@ -71,7 +72,7 @@
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-        if (&NSAppearanceNameVibrantLight != 0)
+        if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
         {
             // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
             // in that case, we want to force our UI to use the light theme.
@@ -219,7 +220,7 @@
         }
 
         _largeTextFontAttributes = @{
-            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSSmallControlSize]],
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
             NSForegroundColorAttributeName: fontColor,
             NSParagraphStyleAttributeName: self.paragraphStyle
         };
@@ -235,7 +236,7 @@
         NSColor *fontColor = [NSColor whiteColor];
 
         _largeHighlightedTextFontAttributes = @{
-            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSSmallControlSize]],
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
             NSForegroundColorAttributeName: fontColor,
             NSParagraphStyleAttributeName: self.paragraphStyle
         };
@@ -375,11 +376,18 @@
 
 #pragma mark Drawing
 
+- (void)viewDidChangeBackingProperties
+{
+    DLog(@"it happened");
+
+    [super viewDidChangeBackingProperties];
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-    if (&NSAppearanceNameVibrantDark != 0)
+    if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
     {
         BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
 
@@ -441,7 +449,12 @@
 
         if (self.displayMode == AMSampleRateOnly)
         {
-            [self.topLine drawInRect:NSInsetRect(self.frame, 0, 4)
+            NSAttributedString *asp = [[NSAttributedString alloc] initWithString:self.topLine attributes:attributes];
+
+            CGRect stringRect = [self.topLine dimensionsForAttributedString:asp];
+            CGFloat dY = round(fabs(self.frame.size.height - stringRect.size.height) / 2) - 1;
+
+            [self.topLine drawInRect:NSInsetRect(self.frame, 0, dY)
                       withAttributes:attributes];
         }
         else

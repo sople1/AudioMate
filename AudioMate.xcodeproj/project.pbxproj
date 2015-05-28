@@ -13,6 +13,7 @@
 		451AD493185F136F00D59E64 /* AMAudioEventNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */; };
 		451C1FBE168F469300D06A74 /* AMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 451C1FBD168F469300D06A74 /* AMApplication.m */; };
 		451E1C2A18460473009628DA /* AMStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E1C2918460473009628DA /* AMStatusBarView.m */; };
+		451E63DE1B17AB5500A2133C /* NSString+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E63DD1B17AB5500A2133C /* NSString+Calculations.m */; };
 		45279A24188AA5700058FB69 /* aqua_blue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1B188AA5700058FB69 /* aqua_blue.tiff */; };
 		45279A26188AA5700058FB69 /* Clock.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1C188AA5700058FB69 /* Clock.tiff */; };
 		45279A28188AA5700058FB69 /* DefaultInput.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 45279A1D188AA5700058FB69 /* DefaultInput.tiff */; };
@@ -107,6 +108,7 @@
 		45A36ADA16BF098100A82041 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A36AD916BF098100A82041 /* Security.framework */; };
 		45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B56A188451A60052112B /* AMButtonCellView.m */; };
 		45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */; };
+		45D31F951B17A54700FCDFBA /* NSTableView+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */; };
 		45F62C3A1688D11700FE7692 /* AMPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C381688D11600FE7692 /* AMPreferences.m */; };
 		45F62C411688D12B00FE7692 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C3C1688D12900FE7692 /* AMAppDelegate.m */; };
 		45F62C431688D12B00FE7692 /* AMPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F62C401688D12A00FE7692 /* AMPopoverController.m */; };
@@ -162,6 +164,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Sparkle;
+		};
+		45D31F911B17A4E700FCDFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B74D85819217A74006F9DCA;
+			remoteInfo = SandboxService;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -220,6 +229,8 @@
 		451C1FBD168F469300D06A74 /* AMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMApplication.m; path = AudioMate/AMApplication.m; sourceTree = SOURCE_ROOT; };
 		451E1C2818460473009628DA /* AMStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMStatusBarView.h; path = AudioMate/AMStatusBarView.h; sourceTree = SOURCE_ROOT; };
 		451E1C2918460473009628DA /* AMStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMStatusBarView.m; path = AudioMate/AMStatusBarView.m; sourceTree = SOURCE_ROOT; };
+		451E63DC1B17AB5500A2133C /* NSString+Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Calculations.h"; sourceTree = "<group>"; };
+		451E63DD1B17AB5500A2133C /* NSString+Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Calculations.m"; sourceTree = "<group>"; };
 		45279A1B188AA5700058FB69 /* aqua_blue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = aqua_blue.tiff; sourceTree = "<group>"; };
 		45279A1C188AA5700058FB69 /* Clock.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Clock.tiff; sourceTree = "<group>"; };
 		45279A1D188AA5700058FB69 /* DefaultInput.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DefaultInput.tiff; sourceTree = "<group>"; };
@@ -298,6 +309,8 @@
 		45AB3A3D166E2BD900B07220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
+		45D31F931B17A54700FCDFBA /* NSTableView+Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+Calculations.h"; sourceTree = "<group>"; };
+		45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+Calculations.m"; sourceTree = "<group>"; };
 		45D379EF1AABA5D90072D7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45D379F01AABA6F60072D7C6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		45D379F11AABA6FE0072D7C6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
@@ -451,6 +464,7 @@
 				455404A61984999300029F39 /* Sparkle Unit Tests.xctest */,
 				455404A81984999300029F39 /* BinaryDelta */,
 				455404AA1984999300029F39 /* Autoupdate.app */,
+				45D31F921B17A4E700FCDFBA /* org.sparkle-project.Sparkle.SandboxService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -532,14 +546,18 @@
 		45F62C291688C64800FE7692 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				45776B3E1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.h */,
-				45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */,
+				458E3566196EBA9F00C7C630 /* NSImage+BWTinting.h */,
+				458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */,
+				451E63DC1B17AB5500A2133C /* NSString+Calculations.h */,
+				451E63DD1B17AB5500A2133C /* NSString+Calculations.m */,
+				45D31F931B17A54700FCDFBA /* NSTableView+Calculations.h */,
+				45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */,
 				4555210816DD2F1400FE7210 /* NSTableView+ContextMenu.h */,
 				4555210916DD2F1400FE7210 /* NSTableView+ContextMenu.m */,
 				45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */,
 				45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */,
-				458E3566196EBA9F00C7C630 /* NSImage+BWTinting.h */,
-				458E3567196EBA9F00C7C630 /* NSImage+BWTinting.m */,
+				45776B3E1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.h */,
+				45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -564,13 +582,13 @@
 		45FA561B166BC8C500C1D92D = {
 			isa = PBXGroup;
 			children = (
-				45F62C2D1688CC5E00FE7692 /* Scripts */,
-				45AB3A3B166E2BBA00B07220 /* Docs */,
 				45FA5630166BC8C500C1D92D /* AudioMate */,
 				459D6DAC1687EF95007F2226 /* AudioMateLauncher */,
+				45AB3A3B166E2BBA00B07220 /* Docs */,
 				45FA5629166BC8C500C1D92D /* Frameworks */,
-				45FA5627166BC8C500C1D92D /* Products */,
 				29A7BA85406B0FE67AB36776 /* Pods */,
+				45FA5627166BC8C500C1D92D /* Products */,
+				45F62C2D1688CC5E00FE7692 /* Scripts */,
 				455404961984999300029F39 /* Sparkle.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -618,14 +636,6 @@
 		45FA5630166BC8C500C1D92D /* AudioMate */ = {
 			isa = PBXGroup;
 			children = (
-				45915011196C333D00B104EF /* AudioMate.entitlements */,
-				45879E5E197164E5004037D2 /* Models */,
-				451E1C2718460411009628DA /* Custom Views */,
-				45F62C291688C64800FE7692 /* Categories */,
-				4555210416DCF94100FE7210 /* CellViews */,
-				45F9FC6717B517B0005026F2 /* Info Plist Templates */,
-				45FA5631166BC8C500C1D92D /* Supporting Files */,
-				451E5943166D00D600DEF91A /* UI */,
 				45F62C3B1688D12900FE7692 /* AMAppDelegate.h */,
 				45F62C3C1688D12900FE7692 /* AMAppDelegate.m */,
 				451C1FBC168F469300D06A74 /* AMApplication.h */,
@@ -636,6 +646,14 @@
 				451AD492185F136F00D59E64 /* AMAudioEventNotifier.m */,
 				45F62C3F1688D12A00FE7692 /* AMPopoverController.h */,
 				45F62C401688D12A00FE7692 /* AMPopoverController.m */,
+				45915011196C333D00B104EF /* AudioMate.entitlements */,
+				45F62C291688C64800FE7692 /* Categories */,
+				4555210416DCF94100FE7210 /* CellViews */,
+				451E1C2718460411009628DA /* Custom Views */,
+				45F9FC6717B517B0005026F2 /* Info Plist Templates */,
+				45879E5E197164E5004037D2 /* Models */,
+				45FA5631166BC8C500C1D92D /* Supporting Files */,
+				451E5943166D00D600DEF91A /* UI */,
 			);
 			path = AudioMate;
 			sourceTree = "<group>";
@@ -848,6 +866,13 @@
 			fileType = wrapper.application;
 			path = Autoupdate.app;
 			remoteRef = 455404A91984999300029F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45D31F921B17A4E700FCDFBA /* org.sparkle-project.Sparkle.SandboxService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "org.sparkle-project.Sparkle.SandboxService.xpc";
+			remoteRef = 45D31F911B17A4E700FCDFBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1067,6 +1092,7 @@
 				45879E6919716505004037D2 /* AMGeneralPreferences.m in Sources */,
 				4555210A16DD2F1400FE7210 /* NSTableView+ContextMenu.m in Sources */,
 				4555211116DD2F3D00FE7210 /* AMAudioDeviceDefaultsCellView.m in Sources */,
+				45D31F951B17A54700FCDFBA /* NSTableView+Calculations.m in Sources */,
 				45A5B56B188451A60052112B /* AMButtonCellView.m in Sources */,
 				45879E6F19716B4C004037D2 /* AMDevicePreferences.m in Sources */,
 				458E356B196EC3C800C7C630 /* AMDeviceActionsPanel.m in Sources */,
@@ -1074,6 +1100,7 @@
 				458E357C196F422400C7C630 /* AMCellView.m in Sources */,
 				4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */,
 				451AD493185F136F00D59E64 /* AMAudioEventNotifier.m in Sources */,
+				451E63DE1B17AB5500A2133C /* NSString+Calculations.m in Sources */,
 				454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */,
 				45CB6ED218C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m in Sources */,
 				456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */,
@@ -1335,6 +1362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
@@ -1357,6 +1385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

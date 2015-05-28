@@ -56,64 +56,64 @@
     [self runDeviceActionsOnDevices:addedDevices];
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self updatePopoverContent];
+      [self updatePopoverContent];
     });
 }
 
 - (void)hardwareDefaultInputDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
     });
 }
 
 - (void)hardwareDefaultOutputDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
-        [self.popoverController refreshFeaturedAudioDevicePopup];
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+      [self.popoverController refreshFeaturedAudioDevicePopup];
 
-        // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-        [AMStatusBarView sharedInstance].audioDevice = audioDevice;
+      [AMStatusBarView sharedInstance].audioDevice = audioDevice;
     });
 }
 
 - (void)hardwareDefaultSystemDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
     });
 }
 
 - (void)audioDeviceListDidChange:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self updatePopoverContent];
+      [self updatePopoverContent];
     });
 }
 
 - (void)audioDeviceNameDidChange:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        // We can not just update the AudioDeviceName column, because it may
-        // cause rows to become unordered, so we refresh the entire table
+      // We can not just update the AudioDeviceName column, because it may
+      // cause rows to become unordered, so we refresh the entire table
 
-        [self.popoverController refreshTableWith:self.audioManager.allKnownDevices];
+      [self.popoverController refreshTableWith:self.audioManager.allKnownDevices];
     });
 }
 
 - (void)audioDeviceNominalSampleRateDidChange:(AMCoreAudioDevice *)audioDevice
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        // Let's update the existing menu item to display the updated sample rate
+      // Let's update the existing menu item to display the updated sample rate
 
-        [self.popoverController updateTableColumnWithIdentifier:@"SupportedSampleRates"
-                                               andAudioObjectID:audioDevice.deviceID];
+      [self.popoverController updateTableColumnWithIdentifier:@"SupportedSampleRates"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-        // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-        [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
     });
 
     // Generate system notification
@@ -129,14 +129,14 @@
                            andDirection:(AMCoreAudioDirection)direction
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        // Let's update the clock sources to display the updated clock sources
+      // Let's update the clock sources to display the updated clock sources
 
-        [self.popoverController updateTableColumnWithIdentifier:@"ClockSource"
-                                               andAudioObjectID:audioDevice.deviceID];
+      [self.popoverController updateTableColumnWithIdentifier:@"ClockSource"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-        // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-        [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
     });
 
     // Generate system notification
@@ -154,19 +154,19 @@
                       andDirection:(AMCoreAudioDirection)direction
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        // Do not refresh the table row if the user is moving the slider
-        // There's some strange glitches happening when that happens and
-        // it is blatantly redundant in any case
+      // Do not refresh the table row if the user is moving the slider
+      // There's some strange glitches happening when that happens and
+      // it is blatantly redundant in any case
 
-        if (self.popoverController.audioDeviceSliderInMovement != audioDevice.deviceID)
-        {
-            [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumes"
-                                                   andAudioObjectID:audioDevice.deviceID];
-        }
+      if (self.popoverController.audioDeviceSliderInMovement != audioDevice.deviceID)
+      {
+          [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumes"
+                                                 andAudioObjectID:audioDevice.deviceID];
+      }
 
-        // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-        [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
     });
 
     // Generate system notification
@@ -191,12 +191,12 @@
     }
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumesExtras"
-                                               andAudioObjectID:audioDevice.deviceID];
+      [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumesExtras"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-        // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-        [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
     });
 
     // Generate system notification
@@ -206,6 +206,11 @@
         [[AMAudioEventNotifier sharedInstance] muteChangeNotificationWithAudioDevice:audioDevice
                                                                         andDirection:direction];
     }
+}
+
+- (void)audioDeviceIsAliveDidChange:(AMCoreAudioDevice *)audioDevice
+{
+    // NO-OP
 }
 
 #pragma mark - NSApplicationDelegate Methods
