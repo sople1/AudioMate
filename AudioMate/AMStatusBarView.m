@@ -45,9 +45,9 @@
     static dispatch_once_t onceToken;
 
     dispatch_once(&onceToken, ^{
-        NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
+      NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
 
-        sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
+      sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
     });
 
     return sharedInstance;
@@ -71,7 +71,7 @@
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-        if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+        if (&NSAppearanceNameVibrantLight != 0)
         {
             // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
             // in that case, we want to force our UI to use the light theme.
@@ -97,7 +97,7 @@
     if (!_appIconImage)
     {
         _appIconImage = [[NSImage imageNamed:@"Speaker"] copy];
-        
+
         _appIconImage.size = NSMakeSize(16, 12);
     }
 
@@ -107,24 +107,24 @@
 - (void)setImage:(NSImage *)image
 {
     _image = image;
-    
+
     if (!_image)
     {
         _alternateImage = nil;
 
         return;
     }
-    
+
     _alternateImage = [_image copy];
-    
+
     [_alternateImage lockFocus];
     {
         [[NSGraphicsContext currentContext] setCompositingOperation:NSCompositeSourceAtop];
-        
+
         NSRect rect = NSMakeRect(0, 0, _appIconImage.size.width, _appIconImage.size.height);
-        
+
         NSBezierPath *rectanglePath = [NSBezierPath bezierPathWithRect:rect];
-        
+
         [[NSColor whiteColor] setFill];
         [rectanglePath fill];
     }
@@ -178,10 +178,9 @@
         }
 
         _textFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:fontColor,
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -195,10 +194,9 @@
         NSColor *fontColor = [NSColor whiteColor];
 
         _highlightedTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:fontColor,
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -221,10 +219,9 @@
         }
 
         _largeTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:fontColor,
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSSmallControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -238,10 +235,9 @@
         NSColor *fontColor = [NSColor whiteColor];
 
         _largeHighlightedTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:fontColor,
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSSmallControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -373,7 +369,7 @@
 - (NSImage *)icon
 {
     // Return a dark or light version of the icon
-    
+
     return (self.useDarkTheme || self.isHighlighted) && self.alternateImage ? self.alternateImage : self.image;
 }
 
@@ -383,7 +379,7 @@
 {
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+    if (&NSAppearanceNameVibrantDark != 0)
     {
         BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
 
@@ -445,7 +441,7 @@
 
         if (self.displayMode == AMSampleRateOnly)
         {
-            [self.topLine drawInRect:self.frame
+            [self.topLine drawInRect:NSInsetRect(self.frame, 0, 4)
                       withAttributes:attributes];
         }
         else
@@ -487,7 +483,7 @@
                         if (![self.bottomLine isEqualToString:@"Muted"])
                         {
                             self.bottomLine = [NSString stringWithFormat:@"%ld%%",
-                                               (NSInteger)roundf([self scalarVolume] * 100)];
+                                                                         (NSInteger)roundf([self scalarVolume] * 100)];
                         }
 
                         [self.bottomLine drawInRect:self.bottomHalfRect
@@ -528,7 +524,7 @@
                                            0,
                                            1 + [self scalarVolume] * imageSize.width,
                                            imageSize.height);
-    
+
     [self.scaledAndTintedVolumeImage drawAtPoint:imagePoint
                                         fromRect:NSZeroRect
                                        operation:NSCompositeSourceOver

@@ -27,7 +27,8 @@
 typedef enum : NSInteger
 {
     kDefaultOuputDevice = -2,
-    kNoSelection = -1
+    kNoSelection = -1,
+    kSeparatorItem = -99
 } FeaturedAudioDeviceSelection;
 
 typedef enum : NSUInteger
@@ -62,20 +63,24 @@ typedef enum : NSUInteger
 #ifdef APPSTORE
     self.checkForUpdatesButton.hidden = YES;
 #endif
-    
+
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
     if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
     {
         self.popover.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
     }
 #endif
-    
+
     [self.showMasterVolumesButton bind:@"value"
                               toObject:[AMPreferences sharedPreferences].general
                            withKeyPath:@"shouldShowMasterVolumes"
                                options:nil];
 
     self.displayPreferencesButton.toolTip = NSLocalizedString(@"Show Preferences", nil);
+
+    // Allow disabled items in audio devices popup menu
+
+    self.featuredAudioDevicePopupButton.autoenablesItems = NO;
 
     // Keep table view sorted...
 
@@ -202,7 +207,11 @@ typedef enum : NSUInteger
 
     // Add separator "--"
 
-    [popupMenu addItem:[NSMenuItem separatorItem]];
+    NSMenuItem *separatorItem = [NSMenuItem separatorItem];
+
+    separatorItem.tag = kSeparatorItem;
+
+    [popupMenu addItem:separatorItem];
 
     // Add "Match system's default audio output device" entry
 
@@ -234,19 +243,19 @@ typedef enum : NSUInteger
     currentResponder = popoverWindow.firstResponder;
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        // Update tableView
+      // Update tableView
 
-        [self.tableView reloadData];
+      [self.tableView reloadData];
 
-        [popoverWindow recalculateKeyViewLoop];
-        [popoverWindow makeFirstResponder:currentResponder];
+      [popoverWindow recalculateKeyViewLoop];
+      [popoverWindow makeFirstResponder:currentResponder];
 
-        // Recalculate popover bounds based on tableView's size
+      // Recalculate popover bounds based on tableView's size
 
-        if ([self.popover isShown])
-        {
-            [self recalculatePopoverContentSize];
-        }
+      if ([self.popover isShown])
+      {
+          [self recalculatePopoverContentSize];
+      }
     });
 }
 
@@ -292,10 +301,10 @@ typedef enum : NSUInteger
         currentResponder = self.popover.contentViewController.view.window.firstResponder;
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
+          [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
 
-            [self.popover.contentViewController.view.window recalculateKeyViewLoop];
-            [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
+          [self.popover.contentViewController.view.window recalculateKeyViewLoop];
+          [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
         });
     }
 
@@ -507,7 +516,7 @@ typedef enum : NSUInteger
 
     [self.popover close];
 
-    // And now check for updates
+// And now check for updates
 #ifndef APPSTORE
     [[SUUpdater sharedUpdater] checkForUpdates:self];
 #endif
@@ -836,7 +845,7 @@ typedef enum : NSUInteger
     // Find selected menu item
 
     NSString *featuredDeviceUID = [AMPreferences sharedPreferences].device.featuredDeviceUID;
-    
+
     if (featuredDeviceUID)
     {
         if ([kAMNoAudioDevice isEqualToString:featuredDeviceUID])
@@ -850,7 +859,11 @@ typedef enum : NSUInteger
         else
         {
             AMCoreAudioDevice *audioDevice = [AMCoreAudioDevice deviceWithUID:featuredDeviceUID];
-            selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:audioDevice.deviceID];
+
+            if (audioDevice.deviceID != 0)
+            {
+                selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:audioDevice.deviceID];
+            }
         }
     }
     else
@@ -868,7 +881,18 @@ typedef enum : NSUInteger
 
         menuItem.title = [NSString stringWithFormat:@"%@ (OFFLINE)", [AMPreferences sharedPreferences].device.featuredDeviceName];
 
-        [popupMenu addItem:menuItem];
+        menuItem.enabled = NO;
+
+        NSInteger separatorIdx = [popupMenu indexOfItemWithTag:kSeparatorItem];
+
+        if (separatorIdx > 0)
+        {
+            [popupMenu insertItem:menuItem atIndex:separatorIdx];
+        }
+        else
+        {
+            [popupMenu addItem:menuItem];
+        }
 
         selectedMenuItem = menuItem;
     }
@@ -894,6 +918,8 @@ typedef enum : NSUInteger
     // Update status bar view represented audio device
 
     [AMStatusBarView sharedInstance].audioDevice = audioDevice;
+
+    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
 }
 
 @end
