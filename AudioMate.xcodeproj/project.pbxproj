@@ -48,6 +48,7 @@
 		458E357C196F422400C7C630 /* AMCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458E357B196F422400C7C630 /* AMCellView.m */; };
 		458E95B9185B50E500A0EFE6 /* AudioMateLauncher.app in Copy AudioMateLauncher into Contents/Library/LoginItems */ = {isa = PBXBuildFile; fileRef = 459D6DA91687EF95007F2226 /* AudioMateLauncher.app */; };
 		458FA5B5168A1006008C3F39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458FA5B3168A1006008C3F39 /* MainMenu.xib */; };
+		4595B26B1B17C7BD0075D1D1 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4595B26A1B17C7BD0075D1D1 /* dsa_pub.pem */; };
 		459D6DAA1687EF95007F2226 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FA562A166BC8C500C1D92D /* Cocoa.framework */; };
 		459D6DB11687EF95007F2226 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 459D6DAF1687EF95007F2226 /* InfoPlist.strings */; };
 		459D6DB31687EF95007F2226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 459D6DB21687EF95007F2226 /* main.m */; };
@@ -283,6 +284,7 @@
 		458E357A196F422400C7C630 /* AMCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCellView.h; sourceTree = "<group>"; };
 		458E357B196F422400C7C630 /* AMCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCellView.m; sourceTree = "<group>"; };
 		45915011196C333D00B104EF /* AudioMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AudioMate.entitlements; sourceTree = "<group>"; };
+		4595B26A1B17C7BD0075D1D1 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		459D6DA91687EF95007F2226 /* AudioMateLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMateLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		459D6DAE1687EF95007F2226 /* AudioMateLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioMateLauncher-Info.plist"; sourceTree = "<group>"; };
 		459D6DB01687EF95007F2226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -653,15 +655,16 @@
 		45FA5631166BC8C500C1D92D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				458E355C196EB56000C7C630 /* AMConfig.plist */,
 				45279A19188AA5700058FB69 /* Assets */,
-				4509DF7718816B0600881203 /* MoveApplication.strings */,
-				4509DF7218816AE500881203 /* Localizable.strings */,
-				45F62C501688D17900FE7692 /* Credits.rtf */,
-				45F62C521688D17900FE7692 /* InfoPlist.strings */,
-				45F62C691688D1AF00FE7692 /* main.m */,
 				45F62C731688D1E500FE7692 /* AudioMate-Info.plist */,
 				45F62C741688D1E500FE7692 /* AudioMate-Prefix.pch */,
-				458E355C196EB56000C7C630 /* AMConfig.plist */,
+				45F62C501688D17900FE7692 /* Credits.rtf */,
+				4595B26A1B17C7BD0075D1D1 /* dsa_pub.pem */,
+				45F62C521688D17900FE7692 /* InfoPlist.strings */,
+				4509DF7218816AE500881203 /* Localizable.strings */,
+				45F62C691688D1AF00FE7692 /* main.m */,
+				4509DF7718816B0600881203 /* MoveApplication.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -905,6 +908,7 @@
 				45279A30188AA5700058FB69 /* SystemOutput.tiff in Resources */,
 				45279A2A188AA5700058FB69 /* DefaultOutput.tiff in Resources */,
 				45279A2E188AA5700058FB69 /* graphite.tiff in Resources */,
+				4595B26B1B17C7BD0075D1D1 /* dsa_pub.pem in Resources */,
 				45279A35188AA5B80058FB69 /* Logo.pdf in Resources */,
 				45F62C541688D17900FE7692 /* Credits.rtf in Resources */,
 				45F62C551688D17900FE7692 /* InfoPlist.strings in Resources */,

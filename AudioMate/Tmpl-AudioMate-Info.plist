@@ -36,5 +36,7 @@
 	<string>AMApplication</string>
 	<key>SUFeedURL</key>
 	<string>http://backend.9labs.io/appcast/audiomate</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>

@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "`sh $SRCROOT/Scripts/generate-plist-from-template.sh`&#10;&#10;echo Removing SUFeedURL from $SRCROOT/$INFOPLIST_FILE&#10;`/usr/libexec/PlistBuddy -c &quot;Delete :SUFeedURL&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;&#10;# NOTE: On the App Store we must continue using the original CFBundleIdentifier.&#10;echo Renaming CFBundleIdentifier&#10;`/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier com.troikalabs.${PRODUCT_NAME:rfc1034identifier}&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;">
+               scriptText = "`sh $SRCROOT/Scripts/generate-plist-from-template.sh`&#10;&#10;echo Removing SUFeedURL and SUPublicDSAKeyFile from $SRCROOT/$INFOPLIST_FILE&#10;`/usr/libexec/PlistBuddy -c &quot;Delete :SUFeedURL&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;`/usr/libexec/PlistBuddy -c &quot;Delete :SUPublicDSAKeyFile&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;&#10;# NOTE: On the App Store we must continue using the original CFBundleIdentifier.&#10;echo Renaming CFBundleIdentifier&#10;`/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier com.troikalabs.${PRODUCT_NAME:rfc1034identifier}&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
