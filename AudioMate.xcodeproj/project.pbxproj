@@ -304,6 +304,7 @@
 		45CB6ED018C279AE0050DD1E /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		45CB6ED118C279AE0050DD1E /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
 		45D0372C1B1F477500AAB46B /* generate-plist-from-template.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "generate-plist-from-template.sh"; path = "Scripts/generate-plist-from-template.sh"; sourceTree = "<group>"; };
+		45D037341B1F4E7600AAB46B /* update-build-number-and-version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "update-build-number-and-version.sh"; path = "Scripts/update-build-number-and-version.sh"; sourceTree = "<group>"; };
 		45D31F931B17A54700FCDFBA /* NSTableView+Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView+Calculations.h"; sourceTree = "<group>"; };
 		45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+Calculations.m"; sourceTree = "<group>"; };
 		45D379EF1AABA5D90072D7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -561,6 +562,7 @@
 			children = (
 				45D0372C1B1F477500AAB46B /* generate-plist-from-template.sh */,
 				45FA30B4168F557800B3302C /* generate-dmg.rb */,
+				45D037341B1F4E7600AAB46B /* update-build-number-and-version.sh */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -717,7 +719,7 @@
 				2209D33E9EC64C538F3568E0 /* Check Pods Manifest.lock */,
 				45FA5622166BC8C500C1D92D /* Sources */,
 				45FA5623166BC8C500C1D92D /* Frameworks */,
-				45633E4F17B512E40073D8DD /* Auto Increment Build Number */,
+				45633E4F17B512E40073D8DD /* Update Build Number and Version */,
 				45FA5624166BC8C500C1D92D /* Resources */,
 				4591486C1688081300BE1A44 /* Copy Embedded Frameworks */,
 				459D6DC11687EFD3007F2226 /* Copy AudioMateLauncher into Contents/Library/LoginItems */,
@@ -974,19 +976,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		45633E4F17B512E40073D8DD /* Auto Increment Build Number */ = {
+		45633E4F17B512E40073D8DD /* Update Build Number and Version */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Auto Increment Build Number";
+			name = "Update Build Number and Version";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "# Auto Increment Build Number\nbuildPlist=$SRCROOT/$INFOPLIST_FILE\nPlistBuddy=\"/usr/libexec/PlistBuddy\"\n\nCFBundleVersion=`git --git-dir=\"$SRCROOT/.git\" log --oneline | wc -l | tr -d '[:space:]'`\nCFBundleShortVersionString=`git --git-dir=\"$SRCROOT/.git\" describe --tags | sed -e 's/^v//'`\n$PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n$PlistBuddy -c \"Set :CFBundleShortVersionString $CFBundleShortVersionString\" \"$buildPlist\"\n";
+			shellPath = /bin/sh;
+			shellScript = "sh $SRCROOT/Scripts/update-build-number-and-version.sh";
 		};
 		45A336E01AACA48200ED7823 /* Auto Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
