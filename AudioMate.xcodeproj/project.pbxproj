@@ -24,6 +24,7 @@
 		45279A35188AA5B80058FB69 /* Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A34188AA5B80058FB69 /* Logo.pdf */; };
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
+		45442A0A1B1F81FE0094EBE6 /* sign_app.rb in Resources */ = {isa = PBXBuildFile; fileRef = 45442A091B1F81FE0094EBE6 /* sign_app.rb */; };
 		454F243B1AC4341C008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
 		454F243C1AC4341D008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
 		454FF74F16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */; };
@@ -234,6 +235,7 @@
 		45279A34188AA5B80058FB69 /* Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Logo.pdf; sourceTree = "<group>"; };
 		45279A3A188AA60A0058FB69 /* Equalizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Equalizer.png; sourceTree = "<group>"; };
 		45279A3D188AA60F0058FB69 /* Volume-control.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Volume-control.pdf"; sourceTree = "<group>"; };
+		45442A091B1F81FE0094EBE6 /* sign_app.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = sign_app.rb; path = Scripts/sign_app.rb; sourceTree = "<group>"; };
 		454F243A1AC4341C008D9B37 /* Speaker.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Speaker.pdf; sourceTree = "<group>"; };
 		454FF74D16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMClockSourcePopUpButtonCellView.h; path = AudioMate/AMClockSourcePopUpButtonCellView.h; sourceTree = SOURCE_ROOT; };
 		454FF74E16E5235F0035BD6A /* AMClockSourcePopUpButtonCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMClockSourcePopUpButtonCellView.m; path = AudioMate/AMClockSourcePopUpButtonCellView.m; sourceTree = SOURCE_ROOT; };
@@ -560,6 +562,7 @@
 		45F62C2D1688CC5E00FE7692 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				45442A091B1F81FE0094EBE6 /* sign_app.rb */,
 				45D0372C1B1F477500AAB46B /* generate-plist-from-template.sh */,
 				45FA30B4168F557800B3302C /* generate-dmg.rb */,
 				45D037341B1F4E7600AAB46B /* update-build-number-and-version.sh */,
@@ -924,6 +927,7 @@
 				4509DF7918816B0600881203 /* MoveApplication.strings in Resources */,
 				45279A32188AA5700058FB69 /* Select.aiff in Resources */,
 				454F243B1AC4341C008D9B37 /* Speaker.pdf in Resources */,
+				45442A0A1B1F81FE0094EBE6 /* sign_app.rb in Resources */,
 				4509DF7418816AE500881203 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1352,20 +1356,16 @@
 			baseConfigurationReference = 79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMate/AudioMate-Prefix.pch";
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
-				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1375,8 +1375,6 @@
 			baseConfigurationReference = DC17B5B54AD871E44FD86ABC /* Pods-AudioMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1384,13 +1382,11 @@
 				INFOPLIST_FILE = "AudioMate/AudioMate-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LLVM_LTO = YES;
-				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
