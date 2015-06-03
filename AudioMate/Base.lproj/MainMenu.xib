@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7519.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -59,6 +59,9 @@
                 </imageView>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="801">
                     <rect key="frame" x="257" y="186" width="58" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="qRB-RC-wFD"/>
+                    </constraints>
                     <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="v0.0.0" id="831">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -88,6 +91,9 @@
                 </button>
                 <button toolTip="Toggle between Volume / Sample Rate" translatesAutoresizingMaskIntoConstraints="NO" id="1985">
                     <rect key="frame" x="397" y="179" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="QC4-yU-Al8"/>
+                    </constraints>
                     <buttonCell key="cell" type="bevel" bezelStyle="circular" image="Equalizer" imagePosition="only" alignment="left" imageScaling="proportionallyUpOrDown" id="1986">
                         <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                         <font key="font" metaFont="label"/>
@@ -467,7 +473,6 @@
                 <constraint firstItem="800" firstAttribute="top" secondItem="798" secondAttribute="top" constant="9" id="4zi-ac-o6E"/>
                 <constraint firstItem="gc3-Yz-G7s" firstAttribute="leading" secondItem="a6J-Mi-Krz" secondAttribute="leading" id="5SD-0v-dhU"/>
                 <constraint firstItem="ucO-XT-TEi" firstAttribute="top" secondItem="800" secondAttribute="bottom" constant="13" id="6Wh-lB-u56"/>
-                <constraint firstItem="1985" firstAttribute="leading" secondItem="801" secondAttribute="trailing" constant="84" id="8EA-xh-97q"/>
                 <constraint firstItem="gc3-Yz-G7s" firstAttribute="top" secondItem="a6J-Mi-Krz" secondAttribute="bottom" constant="8" symbolic="YES" id="9PQ-TX-pH2"/>
                 <constraint firstItem="ucO-XT-TEi" firstAttribute="leading" secondItem="ljw-tg-SnX" secondAttribute="leading" id="Ahf-sC-J6R"/>
                 <constraint firstItem="MNz-Ov-UlC" firstAttribute="leading" secondItem="3HB-hB-e1z" secondAttribute="trailing" constant="12" symbolic="YES" id="BNx-vP-y5o"/>
@@ -491,7 +496,6 @@
                 <constraint firstItem="800" firstAttribute="leading" secondItem="798" secondAttribute="leading" constant="20" symbolic="YES" id="XxT-9P-gpT"/>
                 <constraint firstItem="ube-mF-uvK" firstAttribute="top" secondItem="ljw-tg-SnX" secondAttribute="bottom" constant="20" id="Z2R-Kh-6xZ"/>
                 <constraint firstItem="803" firstAttribute="top" secondItem="801" secondAttribute="bottom" constant="3" id="c47-ay-PvC"/>
-                <constraint firstAttribute="trailing" secondItem="801" secondAttribute="trailing" constant="227" id="cRW-MN-rSf"/>
                 <constraint firstItem="993" firstAttribute="top" secondItem="798" secondAttribute="top" constant="20" id="jGi-X9-78b"/>
                 <constraint firstAttribute="bottom" secondItem="ucO-XT-TEi" secondAttribute="bottom" constant="118" id="jPj-Vg-cnx"/>
                 <constraint firstItem="3HB-hB-e1z" firstAttribute="baseline" secondItem="ube-mF-uvK" secondAttribute="baseline" id="m2A-11-mD8"/>
