@@ -376,13 +376,6 @@
 
 #pragma mark Drawing
 
-- (void)viewDidChangeBackingProperties
-{
-    DLog(@"it happened");
-
-    [super viewDidChangeBackingProperties];
-}
-
 - (void)drawRect:(NSRect)dirtyRect
 {
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000

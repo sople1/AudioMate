@@ -24,6 +24,7 @@
 		45279A35188AA5B80058FB69 /* Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A34188AA5B80058FB69 /* Logo.pdf */; };
 		45279A3B188AA60A0058FB69 /* Equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3A188AA60A0058FB69 /* Equalizer.png */; };
 		45279A3E188AA60F0058FB69 /* Volume-control.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45279A3D188AA60F0058FB69 /* Volume-control.pdf */; };
+		45330FF21B333A710052BE62 /* NSTableView+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */; };
 		45442A0A1B1F81FE0094EBE6 /* sign_app.rb in Resources */ = {isa = PBXBuildFile; fileRef = 45442A091B1F81FE0094EBE6 /* sign_app.rb */; };
 		454F243B1AC4341C008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
 		454F243C1AC4341D008D9B37 /* Speaker.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 454F243A1AC4341C008D9B37 /* Speaker.pdf */; };
@@ -1054,6 +1055,7 @@
 				45A336C81AACA48200ED7823 /* AMGeneralPreferences.m in Sources */,
 				45A336C91AACA48200ED7823 /* NSTableView+ContextMenu.m in Sources */,
 				45A336CA1AACA48200ED7823 /* AMAudioDeviceDefaultsCellView.m in Sources */,
+				45330FF21B333A710052BE62 /* NSTableView+Calculations.m in Sources */,
 				45A336CB1AACA48200ED7823 /* AMButtonCellView.m in Sources */,
 				45A336CC1AACA48200ED7823 /* AMDevicePreferences.m in Sources */,
 				45A336CD1AACA48200ED7823 /* AMDeviceActionsPanel.m in Sources */,
