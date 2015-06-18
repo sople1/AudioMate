@@ -125,6 +125,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		45330FF01B3339170052BE62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Sparkle;
+		};
 		455404A11984999300029F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
@@ -159,13 +166,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 55C14BB7136EEF1500649790;
 			remoteInfo = Autoupdate;
-		};
-		455404AB198499A400029F39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 455404961984999300029F39 /* Sparkle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = Sparkle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -731,7 +731,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				455404AC198499A400029F39 /* PBXTargetDependency */,
+				45330FF11B3339170052BE62 /* PBXTargetDependency */,
 			);
 			name = AudioMate;
 			productName = AudioDeviceNotifier;
@@ -748,6 +748,7 @@
 				ORGANIZATIONNAME = "Ruben Nine";
 				TargetAttributes = {
 					459D6DA81687EF95007F2226 = {
+						DevelopmentTeam = ZBJR46PSPF;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -1108,10 +1109,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		455404AC198499A400029F39 /* PBXTargetDependency */ = {
+		45330FF11B3339170052BE62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sparkle;
-			targetProxy = 455404AB198499A400029F39 /* PBXContainerItemProxy */;
+			targetProxy = 45330FF01B3339170052BE62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1208,7 +1209,6 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
@@ -1226,7 +1226,6 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
