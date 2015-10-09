@@ -35,6 +35,7 @@
 		4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */; };
 		456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */; };
 		456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */; };
+		45731F191BC835D5008F455D /* NSTableView+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */; settings = {ASSET_TAGS = (); }; };
 		45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45772C4D184690BE00D07EF6 /* Images.xcassets */; };
 		45776B401AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */; };
 		4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */; };
@@ -744,7 +745,7 @@
 		45FA561D166BC8C500C1D92D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ruben Nine";
 				TargetAttributes = {
 					459D6DA81687EF95007F2226 = {
@@ -1053,6 +1054,7 @@
 				45A336C81AACA48200ED7823 /* AMGeneralPreferences.m in Sources */,
 				45A336C91AACA48200ED7823 /* NSTableView+ContextMenu.m in Sources */,
 				45A336CA1AACA48200ED7823 /* AMAudioDeviceDefaultsCellView.m in Sources */,
+				45731F191BC835D5008F455D /* NSTableView+Calculations.m in Sources */,
 				45A336CB1AACA48200ED7823 /* AMButtonCellView.m in Sources */,
 				45A336CC1AACA48200ED7823 /* AMDevicePreferences.m in Sources */,
 				45A336CD1AACA48200ED7823 /* AMDeviceActionsPanel.m in Sources */,
@@ -1213,6 +1215,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.9labs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1231,6 +1234,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioMateLauncher/AudioMateLauncher-Prefix.pch";
 				INFOPLIST_FILE = "AudioMateLauncher/AudioMateLauncher-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.9labs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1259,6 +1263,7 @@
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troikalabs.AudioMate;
 				PRODUCT_NAME = AudioMate;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1288,6 +1293,7 @@
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troikalabs.AudioMate;
 				PRODUCT_NAME = AudioMate;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1305,6 +1311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1365,6 +1372,7 @@
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troikalabs.AudioMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1386,6 +1394,7 @@
 					"$(inherited)",
 					"\"-Wl,-rpath,@loader_path/../Frameworks\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.troikalabs.AudioMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
