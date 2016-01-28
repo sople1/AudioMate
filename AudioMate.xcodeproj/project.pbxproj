@@ -35,7 +35,7 @@
 		4555211316DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555211016DD2F3D00FE7210 /* AMSampleRatePopUpButtonCellView.m */; };
 		456BCA0917AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0817AAE52E008AF5C3 /* AMAudioDeviceMasterVolumesCellView.m */; };
 		456BCA0E17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456BCA0D17AAE5F8008AF5C3 /* AMAudioDeviceMasterVolumesExtrasCellView.m */; };
-		45731F191BC835D5008F455D /* NSTableView+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */; settings = {ASSET_TAGS = (); }; };
+		45731F191BC835D5008F455D /* NSTableView+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D31F941B17A54700FCDFBA /* NSTableView+Calculations.m */; };
 		45772C4E184690BE00D07EF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45772C4D184690BE00D07EF6 /* Images.xcassets */; };
 		45776B401AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 45776B3F1AAB7EC200B8122B /* NSWindow+canBecomeKeyWindow.m */; };
 		4584563F18843EC100809657 /* AMAudioDeviceActionsCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584563E18843EC100809657 /* AMAudioDeviceActionsCellView.m */; };
@@ -706,6 +706,7 @@
 				45A336E11AACA48200ED7823 /* Resources */,
 				45A336F51AACA48200ED7823 /* Copy AudioMateLauncher into Contents/Library/LoginItems */,
 				23795CB5FEB49ACE5FD7C4B3 /* Copy Pods Resources */,
+				57153949080A61556D667E11 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -728,6 +729,7 @@
 				4591486C1688081300BE1A44 /* Copy Embedded Frameworks */,
 				459D6DC11687EFD3007F2226 /* Copy AudioMateLauncher into Contents/Library/LoginItems */,
 				EB516B035F754E2182036CF4 /* Copy Pods Resources */,
+				B34BE2A9D14ADD86EA65C8B5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1008,6 +1010,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# Auto Increment Build Number\nbuildPlist=$SRCROOT/$INFOPLIST_FILE\nPlistBuddy=\"/usr/libexec/PlistBuddy\"\n\nCFBundleVersion=`git --git-dir=\"$SRCROOT/.git\" log --oneline | wc -l | tr -d '[:space:]'`\n$PlistBuddy -c \"Set :CFBundleVersion $[10000 + $CFBundleVersion]\" \"$buildPlist\"\n";
+		};
+		57153949080A61556D667E11 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioMate-AppStore/Pods-AudioMate-AppStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B34BE2A9D14ADD86EA65C8B5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		EB516B035F754E2182036CF4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

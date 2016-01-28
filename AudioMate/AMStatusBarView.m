@@ -7,12 +7,12 @@
 //
 // TODO: Completely refactor this POS.
 
+#import "AMPreferences.h"
 #import "AMStatusBarView.h"
+#import "NSString+Calculations.h"
+#import <AMCoreAudio/AMCoreAudio.h>
 #import <AMCoreAudio/AMCoreAudioDevice+Formatters.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
-#import "AMPreferences.h"
-#import <AMCoreAudio/AMCoreAudio.h>
-#import "NSString+Calculations.h"
 
 @interface AMStatusBarView ()
 
@@ -353,20 +353,6 @@
     [self setNeedsDisplay:YES];
 }
 
-- (void)setTopLine:(NSString *)topLine
-{
-    _topLine = topLine;
-
-    [self setNeedsDisplay:YES];
-}
-
-- (void)setBottomLine:(NSString *)bottomLine
-{
-    _bottomLine = bottomLine;
-
-    [self setNeedsDisplay:YES];
-}
-
 - (NSImage *)icon
 {
     // Return a dark or light version of the icon
@@ -375,13 +361,6 @@
 }
 
 #pragma mark Drawing
-
-- (void)viewDidChangeBackingProperties
-{
-    DLog(@"it happened");
-
-    [super viewDidChangeBackingProperties];
-}
 
 - (void)drawRect:(NSRect)dirtyRect
 {
