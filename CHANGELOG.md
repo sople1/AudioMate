@@ -2,6 +2,7 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
+| 2.2.4         | Fixed high CPU load on dual monitor setups.| January 29th, 2016|
 | 2.2.3         | Using default system fonts in menu bar.| May 28th, 2015|
 |               | Fixed a condition that would cause the app to quit unexpectedly after a device was removed.||
 | 2.2.2         | Fixed that information to show on status bar set to none was not persisted upon relaunch.| March 26th, 2015|
