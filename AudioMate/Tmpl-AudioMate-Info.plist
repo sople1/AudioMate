@@ -29,13 +29,13 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2013-2015 9Labs. All rights reserved.</string>
+	<string>Copyright © 2013-2016 9Labs. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>AMApplication</string>
 	<key>SUFeedURL</key>
-	<string>http://backend.9labs.io/appcast/audiomate</string>
+	<string>https://backend.9labs.io/appcast/audiomate</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 </dict>
