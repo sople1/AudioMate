@@ -338,6 +338,9 @@
 		45FA562F166BC8C500C1D92D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45FA5668166BD3FF00C1D92D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
 		51952C5498857129454D3785 /* Pods-AudioMate-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate-AppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate-AppStore/Pods-AudioMate-AppStore.release.xcconfig"; sourceTree = "<group>"; };
+		57BF7A8C1C5FA71F0006EF47 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		57BF7A8D1C5FA71F0006EF47 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		57BF7A8E1C5FA71F0006EF47 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/MoveApplication.strings; sourceTree = "<group>"; };
 		79039B7A6E45542E7F47E018 /* Pods-AudioMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMate/Pods-AudioMate.debug.xcconfig"; sourceTree = "<group>"; };
 		7BDDBC9676AA6A39FA220A19 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8368B88C31D2BDD7A277A84C /* libPods-AudioMate-AppStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMate-AppStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -816,6 +819,7 @@
 				"zh-Hant",
 				"zh-Hans",
 				Base,
+				pt,
 			);
 			mainGroup = 45FA561B166BC8C500C1D92D;
 			productRefGroup = 45FA5627166BC8C500C1D92D /* Products */;
@@ -1160,6 +1164,7 @@
 				457370311889956400C34775 /* ja */,
 				1CEB160119853F52007B82EC /* ko */,
 				B8242DE4198C0EFE00D43D61 /* ru */,
+				57BF7A8D1C5FA71F0006EF47 /* pt */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1174,6 +1179,7 @@
 				457370301889956400C34775 /* ja */,
 				1CEB160019853F52007B82EC /* ko */,
 				B8242DE3198C0EFE00D43D61 /* ru */,
+				57BF7A8E1C5FA71F0006EF47 /* pt */,
 			);
 			name = MoveApplication.strings;
 			sourceTree = "<group>";
@@ -1188,6 +1194,7 @@
 				45D379F31AABA70F0072D7C6 /* zh-Hant */,
 				45D379F41AABA71B0072D7C6 /* ko */,
 				45D379F51AABA7240072D7C6 /* ja */,
+				57BF7A8C1C5FA71F0006EF47 /* pt */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
