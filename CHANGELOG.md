@@ -2,7 +2,7 @@
 
 | Version       | Description   | Date     |
 | -------------:|:------------- |:--------:|
-| 2.x.x         | Added Portuguese (pt) localization (thanks to [@vitu](https://github.com/vitu)!).| ???|
+| 2.2.6         | Added Portuguese (pt) localization (thanks to [@vitu](https://github.com/vitu)!).| February 2nd, 2016|
 | 2.2.5         | Fixed a security vulnerability involving the Sparkle Updater (VulnSec.)| January 30th, 2016|
 | 2.2.4         | Fixed high CPU load on dual monitor setups.| January 29th, 2016|
 | 2.2.3         | Using default system fonts in menu bar.| May 28th, 2015|
