@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0700"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -10,8 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Copy Info Plist from template&#10;OIFS=$IFS&#10;IFS=&quot;/&quot;&#10;arrIN=(${INFOPLIST_FILE})&#10;IFS=$OIFS&#10;&#10;pListName=${arrIN[${#arrIN[@]} - 1]}&#10;tmplPListName=${INFOPLIST_FILE/$pListName/Tmpl-$pListName}&#10;    &#10;echo Copying $SRCROOT/$tmplPListName into $SRCROOT/$INFOPLIST_FILE&#10;`cp &quot;$SRCROOT/$tmplPListName&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;"
-               shellToInvoke = "/bin/bash">
+               scriptText = "`sh $SRCROOT/Scripts/generate-plist-from-template.sh`&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -42,10 +41,10 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
       <MacroExpansion>
@@ -57,17 +56,21 @@
             ReferencedContainer = "container:AudioMate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45FA5625166BC8C500C1D92D"
@@ -76,16 +79,23 @@
             ReferencedContainer = "container:AudioMate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-NSConstraintBasedLayoutVisualizeMutuallyExclusiveConstraints YES"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45FA5625166BC8C500C1D92D"
@@ -106,7 +116,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "ruby $SRCROOT/Scripts/generate-dmg.rb">
+               scriptText = "exec &gt; ~/Desktop/post_deploy_log.txt 2&gt;&amp;1&#10;cd &quot;$ARCHIVE_PATH/Products/Applications&quot;&#10;ruby &quot;$SRCROOT/Scripts/sign_app.rb&quot;&#10;ruby $SRCROOT/Scripts/generate-dmg.rb">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"

@@ -7,16 +7,19 @@
 //
 
 #import "AMAppDelegate.h"
-#import <Growl/Growl.h>
+
+#ifndef APPSTORE
+#import "PFMoveApplication.h"
+#endif
+
 #import <AMCoreAudio/AMCoreAudio.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
-#import "PFMoveApplication.h"
 #import "AMPreferences.h"
 #import "AMAudioDeviceActions.h"
 #import "AMAudioEventNotifier.h"
 #import "AMStatusBarView.h"
 
-@interface AMAppDelegate () <AMCoreAudioManagerDelegate>
+@interface AMAppDelegate () <AMCoreAudioManagerDelegate, NSUserNotificationCenterDelegate>
 
 @property (nonatomic, strong) AMCoreAudioManager *audioManager;
 @property (nonatomic, strong) NSRunningApplication *previousActiveApplication;
@@ -25,7 +28,7 @@
 
 @implementation AMAppDelegate
 
-#pragma mark - Access
+#pragma mark - Access Methods
 
 - (AMCoreAudioManager *)audioManager
 {
@@ -51,52 +54,67 @@
     }
 
     [self runDeviceActionsOnDevices:addedDevices];
-    [self updatePopoverContent];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self updatePopoverContent];
+    });
 }
 
 - (void)hardwareDefaultInputDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
-    [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+    });
 }
 
 - (void)hardwareDefaultOutputDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
-    [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
-    [self.popoverController refreshFeaturedAudioDevicePopup];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+      [self.popoverController refreshFeaturedAudioDevicePopup];
 
-    // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-    [AMStatusBarView sharedInstance].audioDevice = audioDevice;
+      [AMStatusBarView sharedInstance].audioDevice = audioDevice;
+    });
 }
 
 - (void)hardwareDefaultSystemDeviceChangedTo:(AMCoreAudioDevice *)audioDevice
 {
-    [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.popoverController refreshTableColumnWithIdentifier:@"Defaults"];
+    });
 }
 
 - (void)audioDeviceListDidChange:(AMCoreAudioDevice *)audioDevice
 {
-    [self updatePopoverContent];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self updatePopoverContent];
+    });
 }
 
 - (void)audioDeviceNameDidChange:(AMCoreAudioDevice *)audioDevice
 {
-    // We can not just update the AudioDeviceName column, because it may
-    // cause rows to become unordered, so we refresh the entire table
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // We can not just update the AudioDeviceName column, because it may
+      // cause rows to become unordered, so we refresh the entire table
 
-    [self.popoverController refreshTableWith:self.audioManager.allKnownDevices];
+      [self.popoverController refreshTableWith:self.audioManager.allKnownDevices];
+    });
 }
 
 - (void)audioDeviceNominalSampleRateDidChange:(AMCoreAudioDevice *)audioDevice
 {
-    // Let's update the existing menu item to display the updated sample rate
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // Let's update the existing menu item to display the updated sample rate
 
-    [self.popoverController updateTableColumnWithIdentifier:@"SupportedSampleRates"
-                                           andAudioObjectID:audioDevice.deviceID];
+      [self.popoverController updateTableColumnWithIdentifier:@"SupportedSampleRates"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-    // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+    });
 
     // Generate system notification
 
@@ -110,14 +128,16 @@
                              forChannel:(UInt32)channel
                            andDirection:(AMCoreAudioDirection)direction
 {
-    // Let's update the clock sources to display the updated clock sources
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // Let's update the clock sources to display the updated clock sources
 
-    [self.popoverController updateTableColumnWithIdentifier:@"ClockSource"
-                                           andAudioObjectID:audioDevice.deviceID];
+      [self.popoverController updateTableColumnWithIdentifier:@"ClockSource"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-    // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+    });
 
     // Generate system notification
 
@@ -133,19 +153,21 @@
                         forChannel:(UInt32)channel
                       andDirection:(AMCoreAudioDirection)direction
 {
-    // Do not refresh the table row if the user is moving the slider
-    // There's some strange glitches happening when that happens and
-    // it is blatantly redundant in any case
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // Do not refresh the table row if the user is moving the slider
+      // There's some strange glitches happening when that happens and
+      // it is blatantly redundant in any case
 
-    if (self.popoverController.audioDeviceSliderInMovement != audioDevice.deviceID)
-    {
-        [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumes"
-                                               andAudioObjectID:audioDevice.deviceID];
-    }
+      if (self.popoverController.audioDeviceSliderInMovement != audioDevice.deviceID)
+      {
+          [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumes"
+                                                 andAudioObjectID:audioDevice.deviceID];
+      }
 
-    // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+    });
 
     // Generate system notification
 
@@ -168,12 +190,14 @@
         return;
     }
 
-    [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumesExtras"
-                                           andAudioObjectID:audioDevice.deviceID];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.popoverController updateTableColumnWithIdentifier:@"MasterVolumesExtras"
+                                             andAudioObjectID:audioDevice.deviceID];
 
-    // Refresh the status bar if necessary
+      // Refresh the status bar if necessary
 
-    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+      [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
+    });
 
     // Generate system notification
 
@@ -184,17 +208,24 @@
     }
 }
 
+- (void)audioDeviceIsAliveDidChange:(AMCoreAudioDevice *)audioDevice
+{
+    // NO-OP
+}
+
 #pragma mark - NSApplicationDelegate Methods
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 #ifndef DEBUG
+#ifndef APPSTORE
     PFMoveToApplicationsFolderIfNecessary();
 #endif
+#endif
 
-    // Set GrowlApplicationBridge delegate to self
+    // Set NSUserNotificationCenter delegate to self
 
-    [GrowlApplicationBridge setGrowlDelegate:self];
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
 
     // Set CoreAudioManager delegate to self
 
@@ -264,14 +295,14 @@
     [AMStatusBarView sharedInstance].isHighlighted = NO;
 }
 
-#pragma mark - GrowlApplicationBridgeDelegate
+#pragma mark - NSUserNotificationCenterDelegate Methods
 
-- (BOOL)hasNetworkClientEntitlement
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
 {
-    return NO;
+    return YES;
 }
 
-#pragma mark - Private
+#pragma mark - Private Methods
 
 - (void)runDeviceActionsOnDevices:(NSSet *)devices
 {

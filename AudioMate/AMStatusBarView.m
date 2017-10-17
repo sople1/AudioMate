@@ -5,14 +5,16 @@
 //  Created by Ruben Nine on 27/11/13.
 //  Copyright (c) 2013 Ruben Nine. All rights reserved.
 //
+// TODO: Completely refactor this POS.
 
+#import "AMPreferences.h"
 #import "AMStatusBarView.h"
+#import "NSString+Calculations.h"
+#import <AMCoreAudio/AMCoreAudio.h>
 #import <AMCoreAudio/AMCoreAudioDevice+Formatters.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
-#import "AMPreferences.h"
-#import <AMCoreAudio/AMCoreAudio.h>
 
-@interface AMStatusBarView ();
+@interface AMStatusBarView ()
 
 @property (nonatomic, retain) NSImage *image;
 @property (nonatomic, retain) NSImage *alternateImage;
@@ -32,6 +34,7 @@
 @property (nonatomic, retain) NSDictionary *largeTextFontAttributes;
 @property (nonatomic, retain) NSDictionary *largeHighlightedTextFontAttributes;
 @property (nonatomic, retain) NSShadow *textShadow;
+@property (nonatomic, assign) BOOL useDarkTheme;
 
 @end
 
@@ -43,9 +46,9 @@
     static dispatch_once_t onceToken;
 
     dispatch_once(&onceToken, ^{
-        NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
+      NSStatusItem *statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
 
-        sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
+      sharedInstance = [[AMStatusBarView alloc] initWithStatusItem:statusItem];
     });
 
     return sharedInstance;
@@ -58,12 +61,26 @@
     if (self)
     {
         // Initialization code here.
+
         self.statusItem = statusItem;
         self.statusItem.view = self;
+        self.useDarkTheme = NO;
 
         _isHighlighted = NO;
         _topLine = @"";
         _bottomLine = @"";
+
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
+
+        if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+        {
+            // On OS X Yosemite (10.10) user may have vibrant dark theme enabled,
+            // in that case, we want to force our UI to use the light theme.
+
+            self.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+        }
+
+#endif
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(controlTintChanged:)
@@ -80,11 +97,39 @@
 {
     if (!_appIconImage)
     {
-        _appIconImage = [[NSImage imageNamed:@"AppIcon"] copy];
-        _appIconImage.size = NSMakeSize(19, 19);
+        _appIconImage = [[NSImage imageNamed:@"Speaker"] copy];
+
+        _appIconImage.size = NSMakeSize(16, 12);
     }
 
     return _appIconImage;
+}
+
+- (void)setImage:(NSImage *)image
+{
+    _image = image;
+
+    if (!_image)
+    {
+        _alternateImage = nil;
+
+        return;
+    }
+
+    _alternateImage = [_image copy];
+
+    [_alternateImage lockFocus];
+    {
+        [[NSGraphicsContext currentContext] setCompositingOperation:NSCompositeSourceAtop];
+
+        NSRect rect = NSMakeRect(0, 0, _appIconImage.size.width, _appIconImage.size.height);
+
+        NSBezierPath *rectanglePath = [NSBezierPath bezierPathWithRect:rect];
+
+        [[NSColor whiteColor] setFill];
+        [rectanglePath fill];
+    }
+    [_alternateImage unlockFocus];
 }
 
 - (NSImage *)volumeImage
@@ -122,11 +167,21 @@
 {
     if (!_textFontAttributes)
     {
+        NSColor *fontColor;
+
+        if (self.useDarkTheme)
+        {
+            fontColor = [NSColor whiteColor];
+        }
+        else
+        {
+            fontColor = [NSColor blackColor];
+        }
+
         _textFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:[NSColor blackColor],
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -137,11 +192,12 @@
 {
     if (!_highlightedTextFontAttributes)
     {
+        NSColor *fontColor = [NSColor whiteColor];
+
         _highlightedTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
-            NSForegroundColorAttributeName:[NSColor whiteColor],
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSMiniControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -152,11 +208,21 @@
 {
     if (!_largeTextFontAttributes)
     {
+        NSColor *fontColor;
+
+        if (self.useDarkTheme)
+        {
+            fontColor = [NSColor whiteColor];
+        }
+        else
+        {
+            fontColor = [NSColor blackColor];
+        }
+
         _largeTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:[NSColor blackColor],
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -167,11 +233,12 @@
 {
     if (!_largeHighlightedTextFontAttributes)
     {
+        NSColor *fontColor = [NSColor whiteColor];
+
         _largeHighlightedTextFontAttributes = @{
-            NSFontAttributeName:[NSFont fontWithName:@"Helvetica-Bold"
-                                                size:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
-            NSForegroundColorAttributeName:[NSColor whiteColor],
-            NSParagraphStyleAttributeName:self.paragraphStyle
+            NSFontAttributeName: [NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSRegularControlSize]],
+            NSForegroundColorAttributeName: fontColor,
+            NSParagraphStyleAttributeName: self.paragraphStyle
         };
     }
 
@@ -182,8 +249,19 @@
 {
     if (!_textShadow)
     {
+        NSColor *shadowColor;
+
+        if (self.useDarkTheme)
+        {
+            shadowColor = [NSColor blackColor];
+        }
+        else
+        {
+            shadowColor = [NSColor whiteColor];
+        }
+
         _textShadow = [NSShadow new];
-        _textShadow.shadowColor = [[NSColor whiteColor] colorWithAlphaComponent:0.5];
+        _textShadow.shadowColor = [shadowColor colorWithAlphaComponent:0.5];
         _textShadow.shadowOffset = NSMakeSize(0.1, -1.1);
         _textShadow.shadowBlurRadius = 0;
     }
@@ -275,39 +353,43 @@
     [self setNeedsDisplay:YES];
 }
 
-- (void)setTopLine:(NSString *)topLine
-{
-    _topLine = topLine;
-
-    [self setNeedsDisplay:YES];
-}
-
-- (void)setBottomLine:(NSString *)bottomLine
-{
-    _bottomLine = bottomLine;
-
-    [self setNeedsDisplay:YES];
-}
-
 - (NSImage *)icon
 {
-    NSImage *theIcon;
+    // Return a dark or light version of the icon
 
-    theIcon = (self.isHighlighted && self.alternateImage) ? self.alternateImage : self.image;
-
-    return theIcon;
+    return (self.useDarkTheme || self.isHighlighted) && self.alternateImage ? self.alternateImage : self.image;
 }
 
 #pragma mark Drawing
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [self setup];
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
 
-    NSDictionary *attributes;
+    if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+    {
+        BOOL shouldUseDarkTheme = [self.superview.effectiveAppearance.name isEqualTo:NSAppearanceNameVibrantDark];
+
+        if (shouldUseDarkTheme != self.useDarkTheme)
+        {
+            self.useDarkTheme = shouldUseDarkTheme;
+            self.textShadow = nil;
+            self.largeTextFontAttributes = nil;
+            self.textFontAttributes = nil;
+        }
+    }
+
+#endif
+
+    if (NSEqualRects(dirtyRect, self.bounds))
+    {
+        [self setup];
+    }
 
     [self.statusItem drawStatusBarBackgroundInRect:dirtyRect
                                      withHighlight:self.isHighlighted];
+
+    NSDictionary *attributes;
 
     if (self.displayMode == AMSampleRateOnly)
     {
@@ -318,22 +400,18 @@
         attributes = self.isHighlighted ? self.highlightedTextFontAttributes : self.textFontAttributes;
     }
 
-    self.frame = self.calculatedStatusBarRect;
-
     [NSGraphicsContext saveGraphicsState];
 
     if (self.icon)
     {
-        NSRect bounds;
         NSSize iconSize;
         CGFloat iconX;
         CGFloat iconY;
         NSPoint iconPoint;
 
-        bounds = self.bounds;
         iconSize = self.icon.size;
-        iconX = roundf((NSWidth(bounds) - iconSize.width) / 2);
-        iconY = roundf((NSHeight(bounds) - iconSize.height) / 2);
+        iconX = roundf((NSWidth(self.frame) - iconSize.width) / 2);
+        iconY = roundf((NSHeight(self.frame) - iconSize.height) / 2);
         iconPoint = NSMakePoint(iconX, iconY);
 
         [self.icon drawAtPoint:iconPoint
@@ -350,7 +428,12 @@
 
         if (self.displayMode == AMSampleRateOnly)
         {
-            [self.topLine drawInRect:self.fullFrameRect
+            NSAttributedString *asp = [[NSAttributedString alloc] initWithString:self.topLine attributes:attributes];
+
+            CGRect stringRect = [self.topLine dimensionsForAttributedString:asp];
+            CGFloat dY = round(fabs(self.frame.size.height - stringRect.size.height) / 2) - 1;
+
+            [self.topLine drawInRect:NSInsetRect(self.frame, 0, dY)
                       withAttributes:attributes];
         }
         else
@@ -392,7 +475,7 @@
                         if (![self.bottomLine isEqualToString:@"Muted"])
                         {
                             self.bottomLine = [NSString stringWithFormat:@"%ld%%",
-                                               (NSInteger)roundf([self scalarVolume] * 100)];
+                                                                         (NSInteger)roundf([self scalarVolume] * 100)];
                         }
 
                         [self.bottomLine drawInRect:self.bottomHalfRect
@@ -405,8 +488,8 @@
             }
             else
             {
-                [@"N/A" drawInRect : self.bottomHalfRect
-                 withAttributes : attributes];
+                [@"N/A" drawInRect:self.bottomHalfRect
+                    withAttributes:attributes];
             }
         }
     }
@@ -436,8 +519,8 @@
 
     [self.scaledAndTintedVolumeImage drawAtPoint:imagePoint
                                         fromRect:NSZeroRect
-                                       operation:(self.isHighlighted ? NSCompositePlusLighter : NSCompositeSourceOut)
-                                        fraction:0.3];
+                                       operation:NSCompositeSourceOver
+                                        fraction:self.isHighlighted ? 1.0 : 0.2];
 
     [self.scaledAndTintedVolumeImage drawAtPoint:imagePoint
                                         fromRect:volumeClippingRect
@@ -469,15 +552,12 @@
 
 - (NSRect)calculatedStatusBarRect
 {
-    NSImage *icon;
     NSRect rect;
     CGFloat width;
 
-    icon = self.icon;
-
-    if (icon)
+    if (!self.audioDevice)
     {
-        width = icon.size.width + 8;
+        width = self.appIconImage.size.width + 8;
     }
     else if (self.displayMode == AMSampleRateOnly)
     {
@@ -494,14 +574,6 @@
                       [NSStatusBar systemStatusBar].thickness);
 
     return rect;
-}
-
-- (NSRect)fullFrameRect
-{
-    return NSMakeRect(0.0,
-                      0.0,
-                      NSWidth(self.frame),
-                      NSHeight(self.frame) - 2);
 }
 
 - (NSRect)bottomHalfRect
@@ -581,6 +653,8 @@
         default:
             break;
     }
+
+    self.frame = self.calculatedStatusBarRect;
 }
 
 - (Float32)scalarVolume

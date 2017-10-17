@@ -7,7 +7,11 @@
 //
 
 #import "AMPopoverController.h"
+
+#ifndef APPSTORE
 #import <Sparkle/SUUpdater.h>
+#endif
+
 #import <AMCoreAudio/AMCoreAudioDevice+Formatters.h>
 #import <AMCoreAudio/AMCoreAudioDevice+PreferredDirections.h>
 #import "AMPreferences.h"
@@ -17,14 +21,15 @@
 #import "AMDeviceActionsPanel.h"
 #import "AMPreferencesPanel.h"
 #import "NSImage+BWTinting.h"
-#import "NSPopoverFrame+LionFixes.h"
 #import "NSTableView+ContextMenu.h"
+#import "NSTableView+Calculations.h"
 #import "NSWindow+canBecomeKeyWindow.h"
 
 typedef enum : NSInteger
 {
     kDefaultOuputDevice = -2,
-    kNoSelection = -1
+    kNoSelection = -1,
+    kSeparatorItem = -99
 } FeaturedAudioDeviceSelection;
 
 typedef enum : NSUInteger
@@ -56,12 +61,27 @@ typedef enum : NSUInteger
 
 - (void)awakeFromNib
 {
+#ifdef APPSTORE
+    self.checkForUpdatesButton.hidden = YES;
+#endif
+
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 101000
+    if (lround(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
+    {
+        self.popover.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+    }
+#endif
+
     [self.showMasterVolumesButton bind:@"value"
                               toObject:[AMPreferences sharedPreferences].general
                            withKeyPath:@"shouldShowMasterVolumes"
                                options:nil];
 
     self.displayPreferencesButton.toolTip = NSLocalizedString(@"Show Preferences", nil);
+
+    // Allow disabled items in audio devices popup menu
+
+    self.featuredAudioDevicePopupButton.autoenablesItems = NO;
 
     // Keep table view sorted...
 
@@ -91,7 +111,7 @@ typedef enum : NSUInteger
 {
     if (!_startAtLoginController)
     {
-        _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"com.troikalabs.AudioMateLauncher"];
+        _startAtLoginController = [[StartAtLoginController alloc] initWithIdentifier:@"io.9labs.AudioMateLauncher"];
     }
 
     return _startAtLoginController;
@@ -159,6 +179,14 @@ typedef enum : NSUInteger
         menuItem.representedObject = audioDevice;
         menuItem.tag = audioDevice.deviceID;
 
+        // An aggregate / multi-output audio device may return a null deviceName
+        // at a certain point while it is in a transitory state
+
+        if (!audioDevice.deviceName)
+        {
+            continue;
+        }
+
         if ([self.featuredAudioDevicePopupButton itemWithTitle:audioDevice.deviceName])
         {
             // If item by this title already exist, also display the deviceID
@@ -180,7 +208,11 @@ typedef enum : NSUInteger
 
     // Add separator "--"
 
-    [popupMenu addItem:[NSMenuItem separatorItem]];
+    NSMenuItem *separatorItem = [NSMenuItem separatorItem];
+
+    separatorItem.tag = kSeparatorItem;
+
+    [popupMenu addItem:separatorItem];
 
     // Add "Match system's default audio output device" entry
 
@@ -211,19 +243,21 @@ typedef enum : NSUInteger
     popoverWindow = self.popover.contentViewController.view.window;
     currentResponder = popoverWindow.firstResponder;
 
-    // Update tableView
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // Update tableView
 
-    [self.tableView reloadData];
+      [self.tableView reloadData];
 
-    [popoverWindow recalculateKeyViewLoop];
-    [popoverWindow makeFirstResponder:currentResponder];
+      [popoverWindow recalculateKeyViewLoop];
+      [popoverWindow makeFirstResponder:currentResponder];
 
-    // Recalculate popover bounds based on tableView's size
+      // Recalculate popover bounds based on tableView's size
 
-    if ([self.popover isShown])
-    {
-        [self recalculatePopoverContentSize];
-    }
+      if ([self.popover isShown])
+      {
+          [self recalculatePopoverContentSize];
+      }
+    });
 }
 
 - (void)refreshTableColumnWithIdentifier:(NSString *)identifier
@@ -267,10 +301,12 @@ typedef enum : NSUInteger
 
         currentResponder = self.popover.contentViewController.view.window.firstResponder;
 
-        [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
+        dispatch_async(dispatch_get_main_queue(), ^{
+          [self.tableView reloadDataForRowIndexes:ris columnIndexes:cis];
 
-        [self.popover.contentViewController.view.window recalculateKeyViewLoop];
-        [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
+          [self.popover.contentViewController.view.window recalculateKeyViewLoop];
+          [self.popover.contentViewController.view.window makeFirstResponder:currentResponder];
+        });
     }
 
     return rowAndColumnFound;
@@ -278,10 +314,15 @@ typedef enum : NSUInteger
 
 #pragma mark - NSTableViewDelegate Methods
 
-- (NSView *) tableView:(NSTableView *)tableView
-    viewForTableColumn:(NSTableColumn *)tableColumn
-                   row:(NSInteger)row
+- (NSView *)tableView:(NSTableView *)tableView
+   viewForTableColumn:(NSTableColumn *)tableColumn
+                  row:(NSInteger)row
 {
+    if (self.audioDevices.count <= row)
+    {
+        return nil;
+    }
+
     NSString *identifier = tableColumn.identifier;
 
     if ([identifier isEqualToString:@"AudioDeviceName"] ||
@@ -378,7 +419,7 @@ typedef enum : NSUInteger
     soundOutputMenuItem = [NSMenuItem new];
 
     soundOutputMenuItem.title = [NSString stringWithFormat:NSLocalizedString(@"Use %@ for sound output", nil),
-                                 selectedAudioDevice.deviceName];
+                                                           selectedAudioDevice.deviceName];
 
     soundOutputMenuItem.image = [NSImage imageNamed:@"DefaultOutput"];
 
@@ -414,7 +455,7 @@ typedef enum : NSUInteger
 
 - (void)popoverWillShow:(NSNotification *)notification
 {
-    self.popover.behavior = ![AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorSemitransient : NSPopoverBehaviorTransient;
+    self.popover.behavior = [AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorTransient : NSPopoverBehaviorSemitransient;
 
     [self toggleShowMasterVolumes:self.showMasterVolumesButton];
 }
@@ -481,9 +522,10 @@ typedef enum : NSUInteger
 
     [self.popover close];
 
-    // And now check for updates
-
+// And now check for updates
+#ifndef APPSTORE
     [[SUUpdater sharedUpdater] checkForUpdates:self];
+#endif
 }
 
 - (IBAction)openBrowserURL:(id)sender
@@ -618,6 +660,10 @@ typedef enum : NSUInteger
 
         audioDevice = [AMCoreAudioDevice defaultOutputDevice];
 
+        [AMPreferences sharedPreferences].device.featuredDeviceUID = (NSString *)kAMDefaultAudioDevice;
+    }
+    else if ([sender selectedItem].tag == kNoSelection)
+    {
         [AMPreferences sharedPreferences].device.featuredDeviceUID = (NSString *)kAMNoAudioDevice;
     }
     else
@@ -702,6 +748,8 @@ typedef enum : NSUInteger
 
 - (IBAction)displayDeviceActionsSheet:(id)sender
 {
+    ((NSButton *)sender).state = NSOffState;
+
     NSWindow *popoverWindow;
     AMCoreAudioDevice *audioDevice;
     AudioObjectID audioObjectID;
@@ -739,7 +787,7 @@ typedef enum : NSUInteger
          returnCode:(NSInteger)returnCode
         contextInfo:(void *)contextInfo
 {
-    self.popover.behavior = ![AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorSemitransient : NSPopoverBehaviorTransient;
+    self.popover.behavior = [AMPreferences sharedPreferences].general.isPopupTransient ? NSPopoverBehaviorTransient : NSPopoverBehaviorSemitransient;
 }
 
 #pragma mark - Private Methods
@@ -756,30 +804,7 @@ typedef enum : NSUInteger
         _originalPopoverContentHeight = self.popover.contentSize.height;
     }
 
-    // We calculate the table view height by summing all the cell heights
-    // and taking intercell padding into account
-
-    CGFloat tableViewContentHeight = 0;
-
-    for (int i = 0; i < self.tableView.numberOfRows; i++)
-    {
-        // Note that this is for view-based tableviews
-
-        NSView *v = [self.tableView viewAtColumn:0
-                                             row:i
-                                 makeIfNecessary:YES];
-
-        if (v)
-        {
-            tableViewContentHeight += v.frame.size.height;
-
-            // take intercell padding into account
-
-            tableViewContentHeight += self.tableView.intercellSpacing.height;
-        }
-    }
-
-    CGFloat deltaY = tableViewContentHeight - _originalTableViewHeight;
+    CGFloat deltaY = [self.tableView contentHeight] - _originalTableViewHeight;
 
     // Resize popover, but only if it is visible
     // but ensuring that the content height is never
@@ -808,12 +833,20 @@ typedef enum : NSUInteger
     {
         if ([kAMNoAudioDevice isEqualToString:featuredDeviceUID])
         {
+            selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:kNoSelection];
+        }
+        else if ([kAMDefaultAudioDevice isEqualToString:featuredDeviceUID])
+        {
             selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:kDefaultOuputDevice];
         }
         else
         {
             AMCoreAudioDevice *audioDevice = [AMCoreAudioDevice deviceWithUID:featuredDeviceUID];
-            selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:audioDevice.deviceID];
+
+            if (audioDevice.deviceID != 0)
+            {
+                selectedMenuItem = [self.featuredAudioDevicePopupButton.menu itemWithTag:audioDevice.deviceID];
+            }
         }
     }
     else
@@ -831,7 +864,18 @@ typedef enum : NSUInteger
 
         menuItem.title = [NSString stringWithFormat:@"%@ (OFFLINE)", [AMPreferences sharedPreferences].device.featuredDeviceName];
 
-        [popupMenu addItem:menuItem];
+        menuItem.enabled = NO;
+
+        NSInteger separatorIdx = [popupMenu indexOfItemWithTag:kSeparatorItem];
+
+        if (separatorIdx > 0)
+        {
+            [popupMenu insertItem:menuItem atIndex:separatorIdx];
+        }
+        else
+        {
+            [popupMenu addItem:menuItem];
+        }
 
         selectedMenuItem = menuItem;
     }
@@ -857,6 +901,8 @@ typedef enum : NSUInteger
     // Update status bar view represented audio device
 
     [AMStatusBarView sharedInstance].audioDevice = audioDevice;
+
+    [[AMStatusBarView sharedInstance] setNeedsDisplay:YES];
 }
 
 @end

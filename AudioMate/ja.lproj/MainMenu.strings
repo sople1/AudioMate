@@ -1,6 +1,6 @@
 ﻿
-/* Class = "NSTextFieldCell"; title = "© 2014 TroikaLabs. All Rights Reserved."; ObjectID = "829"; */
-"829.title" = "© 2014 TroikaLabs。無断複写·転載を禁じます。";
+/* Class = "NSTextFieldCell"; title = "© 2014-2016 9Labs. All Rights Reserved."; ObjectID = "829"; */
+"829.title" = "© 2014-2016 9Labs。無断複写·転載を禁じます。";
 
 /* Class = "NSTextFieldCell"; title = "v0.0.0"; ObjectID = "831"; */
 "831.title" = "v0.0.0";
@@ -48,13 +48,13 @@
 "6ia-Om-4SA.title" = "OtherViews";
 
 /* Class = "NSTextFieldCell"; title = "Device information to show in status bar:"; ObjectID = "89Z-X0-Esm"; */
-"89Z-X0-Esm.title" = "デバイス情報をステータスバーに表示する:";
+"89Z-X0-Esm.title" = "ステータスバーに表示するデバイス情報:";
 
 /* Class = "NSTextFieldCell"; title = "Status bar appearance:"; ObjectID = "8U8-sj-JEX"; */
 "8U8-sj-JEX.title" = "ステータスバーの外観:";
 
 /* Class = "NSButtonCell"; title = "Start at Login"; ObjectID = "AIi-70-pzy"; */
-"AIi-70-pzy.title" = "ログインで開始する";
+"AIi-70-pzy.title" = "ログイン時に AudioMate を開始";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "BCr-bf-8f7"; */
 "BCr-bf-8f7.title" = "Text Cell";
@@ -63,7 +63,7 @@
 "BRy-VI-lQq.title" = "OtherViews";
 
 /* Class = "NSButtonCell"; title = "Mute"; ObjectID = "CQX-JG-KCV"; */
-"CQX-JG-KCV.title" = "ミュート ";
+"CQX-JG-KCV.title" = "ミュート";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Dfv-Rt-zEG"; */
 "Dfv-Rt-zEG.title" = "Text Cell";
@@ -78,22 +78,22 @@
 "EYe-Z8-IGn.title" = "設定画面";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's clock source changes"; ObjectID = "G27-4f-I57"; */
-"G27-4f-I57.title" = "デバイスの時計ソースが変更される都度";
+"G27-4f-I57.title" = "デバイスのクロックソースが変更される度";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Gb4-MC-qcj"; */
 "Gb4-MC-qcj.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "Clock Source"; ObjectID = "Gia-BP-lu2"; */
-"Gia-BP-lu2.headerCell.title" = "時計ソース";
+"Gia-BP-lu2.headerCell.title" = "クロックソース";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "H25-Y6-xqp"; */
 "H25-Y6-xqp.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Check for Updates"; ObjectID = "J8b-Kd-dif"; */
-"J8b-Kd-dif.title" = "更新をチェックする";
+"J8b-Kd-dif.title" = "更新をチェック";
 
 /* Class = "NSButtonCell"; title = "Quit"; ObjectID = "K1T-cy-QeO"; */
-"K1T-cy-QeO.title" = "やめる";
+"K1T-cy-QeO.title" = "終了";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "L4f-dD-Nq0"; */
 "L4f-dD-Nq0.title" = "Text Cell";
@@ -105,7 +105,7 @@
 "LtE-0Q-Oks.title" = "このオーディオデバイスが利用可能になった時:";
 
 /* Class = "NSButtonCell"; title = "Everytime a device is added or removed"; ObjectID = "NYQ-uW-vnB"; */
-"NYQ-uW-vnB.title" = "デバイスが追加または削除される都度";
+"NYQ-uW-vnB.title" = "デバイスが追加または削除される度";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Otv-5I-vcf"; */
 "Otv-5I-vcf.title" = "Text Cell";
@@ -114,10 +114,10 @@
 "PKd-2b-itG.title" = "Button";
 
 /* Class = "NSButtonCell"; title = "Close"; ObjectID = "PjO-2a-Mwe"; */
-"PjO-2a-Mwe.title" = "クローズ";
+"PjO-2a-Mwe.title" = "閉じる";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's volume changes"; ObjectID = "Pvc-Lw-x7N"; */
-"Pvc-Lw-x7N.title" = "デバイスの音量が変更される都度";
+"Pvc-Lw-x7N.title" = "デバイスの音量が変更される度";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "QGF-Ee-Sm9"; */
 "QGF-Ee-Sm9.title" = "Text Cell";
@@ -126,22 +126,22 @@
 "RJy-Sr-KQo.title" = "OtherViews";
 
 /* Class = "NSButtonCell"; title = "Set Master Volume to"; ObjectID = "UWJ-YH-3as"; */
-"UWJ-YH-3as.title" = "マスター音量を設定する";
+"UWJ-YH-3as.title" = "マスター音量を設定";
 
 /* Class = "NSTextFieldCell"; title = "dB"; ObjectID = "Ubr-nQ-dD0"; */
 "Ubr-nQ-dD0.title" = "dB";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's sample rate changes"; ObjectID = "Ukj-fb-hoL"; */
-"Ukj-fb-hoL.title" = "デバイスのサンプルレートが変更される都度";
+"Ukj-fb-hoL.title" = "デバイスのサンプルレートが変更される度";
 
 /* Class = "NSTabViewItem"; label = "General"; ObjectID = "Wde-Nx-pnz"; */
 "Wde-Nx-pnz.label" = "一般";
 
 /* Class = "NSButtonCell"; title = "Play feedback sound when changing master output volume"; ObjectID = "Wk0-Af-tG6"; */
-"Wk0-Af-tG6.title" = "マスター出力音量変更時にフィードバックサウンドを再生する";
+"Wk0-Af-tG6.title" = "マスター出力音量変更時にフィードバックサウンドを再生";
 
 /* Class = "NSButtonCell"; title = "Close"; ObjectID = "X3q-Ne-Clp"; */
-"X3q-Ne-Clp.title" = "クローズ";
+"X3q-Ne-Clp.title" = "閉じる";
 
 /* Class = "NSMenu"; title = "OtherViews"; ObjectID = "XWw-BQ-Phc"; */
 "XWw-BQ-Phc.title" = "OtherViews";
@@ -159,16 +159,16 @@
 "dPg-pn-ivv.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Show selected device information in status bar:"; ObjectID = "gZr-iP-bif"; */
-"gZr-iP-bif.title" = "選択したデバイスの情報をステータスバーに表示する:";
+"gZr-iP-bif.title" = "選択したデバイスの情報をステータスバーに表示:";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jNg-f5-jeI"; */
 "jNg-f5-jeI.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Set Clock Source to"; ObjectID = "kiS-JL-rVJ"; */
-"kiS-JL-rVJ.title" = "時計ソースを設定する";
+"kiS-JL-rVJ.title" = "クロックソースを設定";
 
 /* Class = "NSButtonCell"; title = "Everytime a device's mute state changes"; ObjectID = "lGm-Bg-NOp"; */
-"lGm-Bg-NOp.title" = "デバイスのミュートの状態が変更される都度";
+"lGm-Bg-NOp.title" = "デバイスのミュートの状態が変更される度";
 
 /* Class = "NSPanel"; title = "Actions"; ObjectID = "lUJ-iP-jRJ"; */
 "lUJ-iP-jRJ.title" = "アクション";
@@ -177,7 +177,7 @@
 "lX0-H2-Yme.title" = "OtherViews";
 
 /* Class = "NSButtonCell"; title = "Dismiss popup when another app becomes active"; ObjectID = "n5P-h6-G7H"; */
-"n5P-h6-G7H.title" = "他のアプリの実行中はポップアップが出ないようにする";
+"n5P-h6-G7H.title" = "他のアプリの実行中はポップアップを出さない";
 
 /* Class = "NSTextFieldCell"; title = "-24.65"; ObjectID = "o3I-F9-af1"; */
 "o3I-F9-af1.title" = "-24.65";
@@ -186,7 +186,7 @@
 "p6L-IO-nBe.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Set Sample Rate to"; ObjectID = "pV6-XF-mfY"; */
-"pV6-XF-mfY.title" = "サンプルレートを設定する";
+"pV6-XF-mfY.title" = "サンプルレートを設定";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pxq-Ow-Huk"; */
 "pxq-Ow-Huk.title" = "Text Cell";
@@ -198,7 +198,7 @@
 "rhc-qy-A5e.title" = "00 in / 00 out";
 
 /* Class = "NSTextFieldCell"; title = "Audio Device Name"; ObjectID = "uxN-8j-6jS"; */
-"uxN-8j-6jS.title" = "Audio Device Name";
+"uxN-8j-6jS.title" = "オーディオデバイス名";
 
 /* Class = "NSTextFieldCell"; title = "00 in / 00 out"; ObjectID = "vBi-x7-0hA"; */
 "vBi-x7-0hA.title" = "00 in / 00 out";
@@ -213,4 +213,4 @@
 "x5T-zX-rmF.title" = "Audio Device Name";
 
 /* Class = "NSTableColumn"; headerCell.title = "Clock Source"; ObjectID = "zfd-Fg-OE5"; */
-"zfd-Fg-OE5.headerCell.title" = "時計ソース";
+"zfd-Fg-OE5.headerCell.title" = "クロックソース";

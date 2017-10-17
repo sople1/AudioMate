@@ -9,6 +9,7 @@
 #import "AMPreferences.h"
 
 const NSString *kAMNoAudioDevice = @"~NoAudioDevice";
+const NSString *kAMDefaultAudioDevice = @"~DefaultAudioDevice";
 
 static NSString *kGeneral = @"General";
 static NSString *kGeneral_isFirstLaunch = @"General.isFirstLaunch";

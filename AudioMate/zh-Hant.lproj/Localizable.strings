@@ -131,15 +131,6 @@
 "Show Sample Rates" = "顯示採樣率";
 
 /* No comment provided by engineer. */
-"Thanks for registering!" = "感謝您的註冊！";
-
-/* No comment provided by engineer. */
-"Thanks for trying AudioMate!" = "感謝您試用 AudioMate！";
-
-/* No comment provided by engineer. */
-"The trial time has run out. If you want to continue using AudioMate without interruptions, please register your copy." = "試用期已結束。如果您想不間斷繼續使用AudioMate，請註冊您的副本。";
-
-/* No comment provided by engineer. */
 "Unmuted" = "沒有靜音";
 
 /* No comment provided by engineer. */
@@ -153,3 +144,9 @@
 
 /* No comment provided by engineer. */
 "Your copy is now fully registered." = "您的副本現已註冊完成。";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f kHz";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f kHz";

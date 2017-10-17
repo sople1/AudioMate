@@ -1,0 +1,155 @@
+﻿/* No comment provided by engineer. */
+"%.1fms in" = "%.1fms 들어옴";
+
+/* No comment provided by engineer. */
+"%.1fms out" = "%.1fms 나감";
+
+/* No comment provided by engineer. */
+"%@ Actions" = "%@ 조절 항목";
+
+/* No comment provided by engineer. */
+"%@ appeared" = "%@이(가) 감지됨";
+
+/* No comment provided by engineer. */
+"%@ audio was muted" = "%@의 오디오를 음소거 하였습니다.";
+
+/* No comment provided by engineer. */
+"%@ audio was unmuted" = "%@의 오디오를 음소거에서 해제하였습니다.";
+
+/* No comment provided by engineer. */
+"%@ clock source" = "%@의 클럭 정보 장치";
+
+/* No comment provided by engineer. */
+"%@ clock source changed to %@" = "%1$@의 클럭 정보 장치를 %2$@로 변경하였습니다.";
+
+/* No comment provided by engineer. */
+"%@ disappeared" = "%@이(가) 분리됨";
+
+/* No comment provided by engineer. */
+"%@ sample rate changed to %@" = "%1$@의 샘플링 레이트를 %2$@로 변경하였습니다.";
+
+/* No comment provided by engineer. */
+"%@ volume changed to %@" = "%1$@의 볼륨을 %2$@로 조절하였습니다.";
+
+/* No comment provided by engineer. */
+"%d in/ %d out" = "%1$d 들어옴/ %2$d 나감";
+
+/* No comment provided by engineer. */
+"/ " = "/ ";
+
+/* No comment provided by engineer. */
+"Audio Device Appeared" = "오디오 디바이스가 감지됨";
+
+/* No comment provided by engineer. */
+"Audio Device Disappeared" = "오디오 디바이스가 분리됨";
+
+/* No comment provided by engineer. */
+"Audio Muted" = "오디오를 음소거함";
+
+/* No comment provided by engineer. */
+"Audio Unmuted" = "오디오를 음소거에서 해제함";
+
+/* No comment provided by engineer. */
+"Blue appearance" = "푸른계통 모양새";
+
+/* No comment provided by engineer. */
+"Channels layout: %@\nI/O latency: %@" = "채널 레이아웃: %1$@\nI/O 지연: %2$@";
+
+/* No comment provided by engineer. */
+"Clock Source Changed" = "클럭 정보 장치를 변경함";
+
+/* No comment provided by engineer. */
+"Default" = "기본값";
+
+/* No comment provided by engineer. */
+"Default clock source" = "기본 클럭 정보 장치";
+
+/* No comment provided by engineer. */
+"Getting Started / Register…" = "시작 가이드 / 등록…";
+
+/* No comment provided by engineer. */
+"Getting Started…" = "시작 가이드…";
+
+/* No comment provided by engineer. */
+"Graphite appearance" = "그래픽 모양새";
+
+/* No comment provided by engineer. */
+"Honor system's appearance" = "Honor 시스템 방식 모양새";
+
+/* No comment provided by engineer. */
+"Muted" = "음소거함";
+
+/* No comment provided by engineer. */
+"N/A" = "사용 불가능";
+
+/* No comment provided by engineer. */
+"None" = "없음";
+
+/* No comment provided by engineer. */
+"OK" = "확인";
+
+/* No comment provided by engineer. */
+"Play alerts and sound effects through %@" = "알림음과 사운드 효과를 %@로 재생합니다";
+
+/* No comment provided by engineer. */
+"Please double-check that you have entered your name and serial number correctly." = "등록자 이름과 시리얼 넘버를 정확히 입력했는지 다시 한번 확인해 주세요.";
+
+/* No comment provided by engineer. */
+"Quit" = "종료";
+
+/* No comment provided by engineer. */
+"Register Now" = "지금 등록";
+
+/* No comment provided by engineer. */
+"Registration details are not valid" = "등록 정보가 올바르지 않음";
+
+/* No comment provided by engineer. */
+"Sample Rate" = "샘플링 레이트";
+
+/* No comment provided by engineer. */
+"Sample Rate + Clock Source" = "샘플링 레이트 + 클럭 정보 장치 이름";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume" = "샘플링 레이트 + 마스터 출력 볼륨 (dB)";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Graphic" = "샘플링 레이트 + 마스터 출력 볼륨 (그래픽)";
+
+/* No comment provided by engineer. */
+"Sample Rate + Master Output Volume Percentage" = "샘플링 레이트 + 마스터 출력 볼륨 (비율)";
+
+/* No comment provided by engineer. */
+"Sample Rate Changed" = "샘플링 레이트를 변경함";
+
+/* No comment provided by engineer. */
+"Show Master Volumes" = "마스터 볼륨 보이기";
+
+/* No comment provided by engineer. */
+"Show Preferences" = "환경설정 보기";
+
+/* No comment provided by engineer. */
+"Show Sample Rates" = "샘플링 레이트 보기";
+
+/* No comment provided by engineer. */
+"Unmuted" = "음소거에서 해제함";
+
+/* No comment provided by engineer. */
+"Use %@ for sound input" = "들어오는 사운드로 %@을(를) 이용";
+
+/* No comment provided by engineer. */
+"Use %@ for sound output" = "나가는 사운드로 %@을(를) 이용";
+
+/* No comment provided by engineer. */
+"Volume Changed" = "볼륨 조절됨";
+
+/* No comment provided by engineer. */
+"Your copy is now fully registered." = "이 제품의 모든 기능을 사용할 수 있습니다.";
+
+/* No comment provided by engineer. */
+"Match system's default audio output device" = "시스템 기본 오디오 출력 디바이스를 이용";
+
+/* No comment provided by engineer. */
+"%.1f kHz" = "%.1f kHz";
+
+/* No comment provided by engineer. */
+"%.3f kHz" = "%.3f kHz";

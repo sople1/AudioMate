@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0700"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "`sh $SRCROOT/Scripts/generate-plist-from-template.sh`&#10;&#10;echo Removing SUFeedURL and SUPublicDSAKeyFile from $SRCROOT/$INFOPLIST_FILE&#10;`/usr/libexec/PlistBuddy -c &quot;Delete :SUFeedURL&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;`/usr/libexec/PlistBuddy -c &quot;Delete :SUPublicDSAKeyFile&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;&#10;# NOTE: On the App Store we must continue using the original CFBundleIdentifier.&#10;echo Renaming CFBundleIdentifier&#10;`/usr/libexec/PlistBuddy -c &quot;Set :CFBundleIdentifier com.troikalabs.${PRODUCT_NAME:rfc1034identifier}&quot; &quot;$SRCROOT/$INFOPLIST_FILE&quot;`&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "45A336B81AACA48200ED7823"
+                     BuildableName = "AudioMate.app"
+                     BlueprintName = "AudioMate-AppStore"
+                     ReferencedContainer = "container:AudioMate.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "45A336B81AACA48200ED7823"
+               BuildableName = "AudioMate.app"
+               BlueprintName = "AudioMate-AppStore"
+               ReferencedContainer = "container:AudioMate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "45A336B81AACA48200ED7823"
+            BuildableName = "AudioMate.app"
+            BlueprintName = "AudioMate-AppStore"
+            ReferencedContainer = "container:AudioMate.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "45A336B81AACA48200ED7823"
+            BuildableName = "AudioMate.app"
+            BlueprintName = "AudioMate-AppStore"
+            ReferencedContainer = "container:AudioMate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "45A336B81AACA48200ED7823"
+            BuildableName = "AudioMate.app"
+            BlueprintName = "AudioMate-AppStore"
+            ReferencedContainer = "container:AudioMate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -19,7 +19,8 @@
 
     for (NSRunningApplication *app in running)
     {
-        if ([[app bundleIdentifier] isEqualToString:@"com.troikalabs.AudioMate"])
+        if ([[app bundleIdentifier] isEqualToString:@"io.9labs.AudioMate"] ||
+            [[app bundleIdentifier] isEqualToString:@"com.troikalabs.AudioMate"])
         {
             alreadyRunning = YES;
         }
